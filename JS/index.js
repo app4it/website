@@ -1,14 +1,102 @@
 // index.js
-function validateForm() {
-    var emailInput = document.getElementById('emailInput');
-    var emailValue = emailInput.value.trim();
+document.addEventListener('DOMContentLoaded', function() {
+    // Theme toggle functionality
+    const themeToggle = document.querySelector('.theme-toggle');
+    const htmlElement = document.documentElement;
+    const themeIcon = themeToggle.querySelector('i');
+    
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    htmlElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
 
-    // Check if the email is not empty and matches the email regex
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (emailValue === '' || !emailRegex.test(emailValue)) {
-        alert('Please enter a valid email address.');
-        return false; // Prevent form submission
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        htmlElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+    });
+
+    function updateThemeIcon(theme) {
+        themeIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
     }
 
-    return true; // Allow form submission
-}
+    // Initialize animation observers
+    const animateElements = document.querySelectorAll('.animate-in');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '50px'
+    });
+
+    animateElements.forEach(element => {
+        observer.observe(element);
+    });
+
+    // Form validation and submission
+    window.validateForm = function() {
+        const emailInput = document.getElementById('emailInput');
+        const email = emailInput.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(email)) {
+            emailInput.classList.add('error');
+            alert('Please enter a valid email address');
+            return false;
+        }
+
+        // Show success message
+        const successMessage = document.getElementById('successMessage');
+        successMessage.style.display = 'block';
+        
+        // Clear form
+        emailInput.value = '';
+        emailInput.classList.remove('error');
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+            successMessage.style.display = 'none';
+        }, 5000);
+
+        return true;
+    };
+
+    // Lazy load images
+    const lazyImages = document.querySelectorAll('.event-image');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.src; // This will trigger the actual image load
+                imageObserver.unobserve(img);
+            }
+        });
+    });
+
+    lazyImages.forEach(img => {
+        imageObserver.observe(img);
+    });
+
+    // Add smooth scroll behavior for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+});

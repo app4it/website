@@ -1,37 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App4it</title>
+    <title>App4it - Real Events. Real People. Right Here.</title>
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
-    <script src="JS/index.js"></script>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/app_icon_light.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJTXC37LXF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-SJTXC37LXF');
     </script>
 </head>
 <body>
-    <div class="content">
-        <div class="title-container">
-            <h1>App4it</h1>
-            <p class="subtitle">Are you up for it?</p>
-            <p class="join-text">JOIN OUR BETA PROGRAM</p>
-            <div class="line"></div>
-            <form class="email-form" action="https://public.herotofu.com/v1/b58582a0-ba06-11ee-9dd2-c1caafee32ff" method="POST" accept-charset="UTF-8" onsubmit="return validateForm()">
-                <input type="text" id="emailInput" placeholder="Enter your email address" name="E-mail">
-                <button type="submit">SUBMIT</button>
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <main class="hero">
+        <div class="decorative-circle circle-1"></div>
+        <div class="decorative-circle circle-2"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title animate-in">Real Events. Real People.<br>Right Here.</h1>
+            <p class="hero-subtitle animate-in" style="animation-delay: 0.2s">
+                Turn your online connections into real-life adventures. 
+                App4it helps young adults discover local events and create meaningful friendships through shared experiences.
+            </p>
+            <form class="email-form animate-in" style="animation-delay: 0.4s" action="https://usebasin.com/f/8cb7c5475510" method="POST" accept-charset="UTF-8" onsubmit="return handleSubmit(event)">
+                <input type="email" class="email-input" id="emailInput" placeholder="Enter your email for early access" name="email" required>
+                <button type="submit" class="submit-button">Join the Waitlist</button>
             </form>
         </div>
-    </div>
+    </main>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <h2 class="section-title">Our Values</h2>
+        <div class="values-grid">
+            <div class="value-card animate-in">
+                <i class="fas fa-heart feature-icon"></i>
+                <h3>Authenticity First</h3>
+                <p>Real connections over perfect profiles. Be yourself, meet others who do the same.</p>
+            </div>
+            <div class="value-card animate-in" style="animation-delay: 0.2s">
+                <i class="fas fa-users feature-icon"></i>
+                <h3>Community Driven</h3>
+                <p>Join a vibrant community of people who believe in the power of real-world connections.</p>
+            </div>
+            <div class="value-card animate-in" style="animation-delay: 0.4s">
+                <i class="fas fa-star feature-icon"></i>
+                <h3>Spontaneous Joy</h3>
+                <p>Discover unexpected moments and create memories that last a lifetime.</p>
+            </div>
+            <div class="value-card animate-in" style="animation-delay: 0.6s">
+                <i class="fas fa-shield-alt feature-icon"></i>
+                <h3>Real Connections</h3>
+                <p>Connect only with people you've met in person through our unique QR code system.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2 class="section-title">Our Features</h2>
+        <div class="features-grid">
+            <div class="feature-card animate-in">
+                <i class="fas fa-calendar-plus feature-icon"></i>
+                <h3>Discover & Create Events</h3>
+                <p>Find exciting local events or create your own gatherings. From parties to book clubs, there's something for everyone.</p>
+            </div>
+            <div class="feature-card animate-in" style="animation-delay: 0.2s">
+                <i class="fas fa-qrcode feature-icon"></i>
+                <h3>Authentic Connections</h3>
+                <p>Connect with new friends by scanning their QR code in person - ensuring all connections are real and meaningful.</p>
+            </div>
+            <div class="feature-card animate-in" style="animation-delay: 0.4s">
+                <i class="fas fa-camera feature-icon"></i>
+                <h3>Share Memories</h3>
+                <p>Capture and share moments from events, creating lasting memories with your new friends.</p>
+            </div>
+            <div class="feature-card animate-in" style="animation-delay: 0.6s">
+                <i class="fas fa-comments feature-icon"></i>
+                <h3>Stay Connected</h3>
+                <p>Chat with your connections, comment on memories, and plan future meetups together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section">
+        <h2 class="section-title">Experience Real Connections</h2>
+        <div class="events-grid">
+            <div class="event-image-container">
+                <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg" 
+                     alt="Food gathering at home" 
+                     class="event-image animate-in"
+                     loading="lazy">
+            </div>
+            <div class="event-image-container">
+                <img src="https://images.pexels.com/photos/2444852/pexels-photo-2444852.jpeg" 
+                     alt="Sports event" 
+                     class="event-image animate-in"
+                     loading="lazy">
+            </div>
+            <div class="event-image-container">
+                <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg" 
+                     alt="Concert event" 
+                     class="event-image animate-in"
+                     loading="lazy">
+            </div>
+            <div class="event-image-container">
+                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" 
+                     alt="Book club" 
+                     class="event-image animate-in"
+                     loading="lazy">
+            </div>
+            <div class="event-image-container">
+                <img src="https://images.pexels.com/photos/7780108/pexels-photo-7780108.jpeg" 
+                     alt="Conference" 
+                     class="event-image animate-in"
+                     loading="lazy">
+            </div>
+            <div class="event-image-container">
+                <img src="https://images.pexels.com/photos/2414845/pexels-photo-2414845.jpeg" 
+                     alt="Group of people walking their dogs in a park" 
+                     class="event-image animate-in"
+                     loading="lazy">
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
-        <p>© 2024 App4it GmbH. All rights reserved.</p>
+        <p>© 2025 App4it GmbH. All rights reserved.</p>
     </footer>
+
+    <script>
+        async function handleSubmit(event) {
+            event.preventDefault();
+            
+            try {
+                const form = event.target;
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form)
+                });
+                
+                if (response.ok) {
+                    window.location.href = 'success/success.html';
+                } else {
+                    alert('Oops! Something went wrong. Please try again.');
+                }
+            } catch (error) {
+                alert('Oops! Something went wrong. Please try again.');
+            }
+            
+            return false;
+        }
+    </script>
+    <script src="JS/index.js"></script>
 </body>
 </html>
