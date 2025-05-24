@@ -5,18 +5,47 @@ document.addEventListener('DOMContentLoaded', function() {
     const htmlElement = document.documentElement;
     const themeIcon = themeToggle.querySelector('i');
     
-    // Check for saved theme preference
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    htmlElement.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
+    // Function to update favicons based on theme
+    function updateFavicons(theme) {
+        const favicon = document.querySelector('link[rel="shortcut icon"]');
+        if (favicon) {
+            favicon.href = `./assets/icons/favicon_${theme}.png`;
+        }
+    }
+
+    // Function to update theme
+    function setTheme(theme) {
+        htmlElement.setAttribute('data-theme', theme);
+        updateThemeIcon(theme);
+        updateFavicons(theme);
+        localStorage.setItem('theme', theme);
+    }
+
+    // Check for system theme preference
+    function getPreferredTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            return savedTheme;
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    // Set initial theme
+    const initialTheme = getPreferredTheme();
+    setTheme(initialTheme);
+
+    // Listen for system theme changes
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    darkModeMediaQuery.addListener((e) => {
+        if (!localStorage.getItem('theme')) {
+            setTheme(e.matches ? 'dark' : 'light');
+        }
+    });
 
     themeToggle.addEventListener('click', () => {
         const currentTheme = htmlElement.getAttribute('data-theme');
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        
-        htmlElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeIcon(newTheme);
+        setTheme(newTheme);
     });
 
     function updateThemeIcon(theme) {
