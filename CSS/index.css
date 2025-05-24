@@ -154,6 +154,7 @@ body {
     font-size: clamp(0.875rem, 2vw, 1rem);
     background: transparent;
     transition: all 0.3s ease;
+    color: var(--text-color);
 }
 
 .email-input:focus {
