@@ -7,10 +7,18 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Function to update favicons based on theme
     function updateFavicons(theme) {
-        const favicon = document.querySelector('link[rel="shortcut icon"]');
-        if (favicon) {
-            favicon.href = `./assets/icons/favicon_${theme}.png`;
-        }
+        const faviconSelectors = [
+            'link[rel="shortcut icon"]',
+            'link[rel="apple-touch-icon"]',
+            'link[rel="mask-icon"]'
+        ];
+        
+        faviconSelectors.forEach(selector => {
+            const favicon = document.querySelector(selector);
+            if (favicon) {
+                favicon.href = `./assets/icons/favicon_${theme}.png`;
+            }
+        });
     }
 
     // Function to update theme
