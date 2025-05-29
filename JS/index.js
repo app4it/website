@@ -83,27 +83,15 @@ document.addEventListener('DOMContentLoaded', function() {
     window.validateForm = function() {
         const emailInput = document.getElementById('emailInput');
         const email = emailInput.value.trim();
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
+        const emailRegex = /^[a-zA-Z0-9](?:[a-zA-Z0-9._%+-]{0,61}[a-zA-Z0-9])?@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z]{2,6})+$/;
+    
         if (!emailRegex.test(email)) {
             emailInput.classList.add('error');
             alert('Please enter a valid email address');
             return false;
         }
-
-        // Show success message
-        const successMessage = document.getElementById('successMessage');
-        successMessage.style.display = 'block';
-        
-        // Clear form
-        emailInput.value = '';
+    
         emailInput.classList.remove('error');
-        
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-            successMessage.style.display = 'none';
-        }, 5000);
-
         return true;
     };
 
