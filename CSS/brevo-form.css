@@ -1,0 +1,149 @@
+.brevo-form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.brevo-form {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+#sib-container {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.sib-form-block {
+    padding: 0 !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.entry__label {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    color: var(--text-color) !important;
+    font-size: clamp(0.875rem, 2vw, 1rem) !important;
+    margin-bottom: 0.5rem !important;
+    text-align: left !important;
+}
+
+.form__entry {
+    background: transparent !important;
+    border: none !important;
+}
+
+.entry__field {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.input {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem 1.5rem !important;
+    border: 2px solid var(--primary-color) !important;
+    border-radius: var(--border-radius) !important;
+    font-size: clamp(0.875rem, 2vw, 1rem) !important;
+    background: transparent !important;
+    transition: all 0.3s ease !important;
+    color: var(--text-color) !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    box-shadow: none !important;
+}
+
+.input:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(23, 155, 149, 0.3) !important;
+}
+
+.sib-form-block__button {
+    padding: 1rem 2rem !important;
+    background: var(--primary-color) !important;
+    color: var(--background-color) !important;
+    border: none !important;
+    border-radius: var(--border-radius) !important;
+    font-size: clamp(0.875rem, 2vw, 1rem) !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    min-width: 150px !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+.sib-form-block__button:hover {
+    background: var(--secondary-color) !important;
+    transform: translateY(-2px) !important;
+}
+
+.entry__choice {
+    margin-top: 0.5rem !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.checkbox_tick_positive {
+    border: 2px solid var(--primary-color) !important;
+    border-radius: 4px !important;
+}
+
+.entry__specification {
+    color: var(--light-text) !important;
+    font-size: 0.875rem !important;
+    margin-top: 0.5rem !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+.sib-form-message-panel {
+    margin-bottom: 1.5rem !important;
+    border-radius: var(--border-radius) !important;
+}
+
+.sib-form__declaration {
+    color: var(--light-text) !important;
+    font-size: 0.875rem !important;
+    margin-top: 1.5rem !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+.sib-form__declaration a {
+    color: var(--primary-color) !important;
+    text-decoration: underline !important;
+}
+
+.sib-hide-loader-icon {
+    display: none !important;
+}
+
+.brevo-form .declaration-block-icon {
+    display: none !important;
+}
+
+.privacy-policy-error .checkbox_tick_positive {
+    border-color: #ff4444 !important;
+}
+
+.privacy-policy-error span {
+    color: #ff4444 !important;
+}
+
+#privacy-policy-error {
+    color: #ff4444;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.invalid-email {
+    border-color: #ff4444 !important;
+    background-color: rgba(255, 68, 68, 0.05) !important;
+}
+
+.invalid-email:focus {
+    box-shadow: 0 0 0 3px rgba(255, 68, 68, 0.2) !important;
+} 

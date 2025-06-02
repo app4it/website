@@ -20,6 +20,8 @@
     <link rel="mask-icon" href="./assets/icons/favicon_light.png" color="#000000">
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/brevo-form.css">
+    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -39,6 +41,28 @@
         gtag('js', new Date());
         gtag('config', 'G-SJTXC37LXF');
     </script>
+    <!-- Brevo Form Scripts -->
+    <script type="text/javascript">
+        (function() {
+            window.sib = {
+                equeue: [],
+                client_key: "MUIFAK4TetfBvPW7d1VeZkJ7P_KTw55p_oaMS1mKyFOsvSRlOocCSu2sAI5cW56-xMxxssXALhBkSsWDoUMaCtiER-d51SLvMzc8XlcB9NfDq2n9J4B4JLaC-fx9FKjnLjxTgRUJ2fhAhY5m6ptitCA7zEE41sAbg9bLsTsV6RzVj51bX83KDuakUl1zM6-MnFTXY7kYo-lGCp-r"
+            };
+            window.sendinblue = {};
+            for (var j = ['track', 'identify', 'trackLink', 'page'], i = 0; i < j.length; i++) {
+                (function(k) {
+                    window.sendinblue[k] = function() {
+                        var arg = Array.prototype.slice.call(arguments);
+                        (window.sib[k] || function() {
+                            var t = {};
+                            t[k] = arg;
+                            window.sib.equeue.push(t);
+                        })(arg[0], arg[1], arg[2], arg[3]);
+                    }
+                })(j[i]);
+            }
+        })();
+    </script>
 </head>
 <body>
     <button class="theme-toggle" aria-label="Toggle dark mode">
@@ -56,10 +80,71 @@
                 Every event is a chance to meet someone special. 
                 App4it helps you turn those in-person connections into lasting friendships through shared experiences.
             </p>
-            <form class="email-form animate-in" style="animation-delay: 0.4s" action="https://usebasin.com/f/8cb7c5475510" method="POST" accept-charset="UTF-8" onsubmit="return handleSubmit(event)">
-                <input type="email" class="email-input" id="emailInput" placeholder="Enter your email for early access" name="email" required>
-                <button type="submit" class="submit-button">Join the Waitlist</button>
-            </form>
+            
+            <!-- Brevo Form -->
+            <div class="brevo-form-container animate-in" style="animation-delay: 0.4s">
+                <div class="sib-form brevo-form">
+                    <div id="sib-form-container" class="sib-form-container">
+                        <div id="error-message" class="sib-form-message-panel" style="display:none;">
+                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                <span class="sib-form-message-panel__inner-text">
+                                    A confirmation email has been sent. Please check your inbox (and spam folder if not found). If you don't receive it within a few minutes, try submitting again.
+                                </span>
+                            </div>
+                        </div>
+                        <div id="success-message" class="sib-form-message-panel" style="display:none;">
+                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                <span class="sib-form-message-panel__inner-text">
+                                    Your subscription to the app4it early access has been successful.
+                                </span>
+                            </div>
+                        </div>
+                        <form id="sib-form" method="POST" action="https://sibforms.com/serve/MUIFAK4TetfBvPW7d1VeZkJ7P_KTw55p_oaMS1mKyFOsvSRlOocCSu2sAI5cW56-xMxxssXALhBkSsWDoUMaCtiER-d51SLvMzc8XlcB9NfDq2n9J4B4JLaC-fx9FKjnLjxTgRUJ2fhAhY5m6ptitCA7zEE41sAbg9bLsTsV6RzVj51bX83KDuakUl1zM6-MnFTXY7kYo-lGCp-r" data-type="subscription">
+                            <div class="sib-input sib-form-block">
+                                <div class="form__entry entry_block">
+                                    <div class="form__label-row">
+                                        <label class="entry__label" for="EMAIL">Request Early Access</label>
+                                        <div class="entry__field">
+                                            <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="your@email.com" data-required="true" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sib-form__declaration">
+                                <div style="font-size:14px; color: var(--light-text);">
+                                    <p>We use Brevo as our marketing platform. By submitting this form you agree that the personal data you provided will be transferred to Brevo for processing in accordance with <a href="https://www.brevo.com/en/legal/privacypolicy/" target="_blank" style="color: var(--primary-color);">Brevo's Privacy Policy</a>.</p>
+                                </div>
+                            </div>
+                            <div class="sib-optin sib-form-block">
+                                <div class="form__entry entry_mcq">
+                                    <div class="form__label-row">
+                                        <div class="entry__choice">
+                                            <label>
+                                                <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
+                                                <span class="checkbox checkbox_tick_positive"></span>
+                                                <span style="font-size:14px;">I agree to receive your newsletters and accept the data privacy statement.</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label class="entry__specification">
+                                        You may unsubscribe at any time using the link in our e-mail updates.
+                                    </label>
+                                    <div id="privacy-policy-error">
+                                        Please accept the privacy policy to continue.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sib-form-block">
+                                <button class="sib-form-block__button" form="sib-form" type="submit">
+                                    SUBMIT
+                                </button>
+                            </div>
+                            <input type="text" name="email_address_check" value="" class="input--hidden">
+                            <input type="hidden" name="locale" value="en">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -164,29 +249,8 @@
         <p>© 2025 App4it GmbH. All rights reserved.</p>
     </footer>
 
-    <script>
-        async function handleSubmit(event) {
-            event.preventDefault();
-            
-            try {
-                const form = event.target;
-                const response = await fetch(form.action, {
-                    method: 'POST',
-                    body: new FormData(form)
-                });
-                
-                if (response.ok) {
-                    window.location.href = 'success/success.html';
-                } else {
-                    alert('Oops! Something went wrong. Please try again.');
-                }
-            } catch (error) {
-                alert('Oops! Something went wrong. Please try again.');
-            }
-            
-            return false;
-        }
-    </script>
     <script src="JS/index.js"></script>
+    <script src="JS/brevo-form.js"></script>
+    <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 </body>
 </html>
