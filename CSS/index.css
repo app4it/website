@@ -520,12 +520,19 @@ body {
 }
 
 /* Dark mode adjustments */
-[data-theme="dark"] .value-card,
-[data-theme="dark"] .feature-card {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+[data-theme="dark"] .value-card {
+    box-shadow: 0 4px 20px rgba(23, 155, 149, 0.4);
 }
 
-[data-theme="dark"] .value-card:hover,
+[data-theme="dark"] .value-card:hover {
+    box-shadow: 0 8px 30px rgba(23, 155, 149, 0.65);
+}
+
+[data-theme="dark"] .feature-card {
+    box-shadow: 0 4px 20px rgba(64, 224, 208, 0.1);
+}
+
 [data-theme="dark"] .feature-card:hover {
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 30px rgba(64, 224, 208, 0.2);
+    background: rgba(64, 224, 208, 0.05);
 }
