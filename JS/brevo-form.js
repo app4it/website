@@ -113,6 +113,18 @@ function handleEmailValidation(input) {
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('sib-form');
     if (form) {
+        // Add privacy toggle handler
+        const privacyToggle = form.querySelector('.privacy-toggle');
+        const privacyDetails = document.getElementById('privacy-details');
+        
+        if (privacyToggle && privacyDetails) {
+            privacyToggle.addEventListener('click', () => {
+                const isExpanded = privacyToggle.getAttribute('aria-expanded') === 'true';
+                privacyToggle.setAttribute('aria-expanded', !isExpanded);
+                privacyDetails.hidden = isExpanded;
+            });
+        }
+
         // Add privacy policy checkbox handler
         const checkbox = document.getElementById('OPT_IN');
         if (checkbox) {
