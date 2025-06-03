@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
         faviconSelectors.forEach(selector => {
             const favicon = document.querySelector(selector);
             if (favicon) {
-                favicon.href = `./assets/icons/favicon_${theme}.png`;
+                const path = window.location.pathname.includes('/success/') ? '../' : './';
+                favicon.href = `${path}assets/icons/favicon_${theme}.png`;
             }
         });
     }
@@ -44,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Listen for system theme changes
     const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    darkModeMediaQuery.addListener((e) => {
+    darkModeMediaQuery.addEventListener('change', (e) => {
         if (!localStorage.getItem('theme')) {
             setTheme(e.matches ? 'dark' : 'light');
         }
@@ -57,7 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function updateThemeIcon(theme) {
-        themeIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+        if (themeIcon) {
+            themeIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+        }
     }
 
     // Initialize animation observers
