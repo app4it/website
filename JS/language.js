@@ -41,7 +41,7 @@ const translations = {
         acceptPrivacy: "Please accept the privacy policy to continue.",
         
         // Footer
-        copyright: "© 2025 App4it UG i.G. All rights reserved.",
+        copyright: "© 2025 App4it Project Team. All rights reserved.",
         impressum: "Imprint",
         
         // Success Page
@@ -52,17 +52,15 @@ const translations = {
         // Impressum Page
         impressumTitle: "Imprint",
         impressumBackToHome: "Back to Homepage",
-        companyDetails: "Company Details",
-        companyName: "App4it UG i.G.",
-        managingDirector: "Managing Director",
-        address: "Address",
+        projectDetails: "Project Details",
+        projectName: "App4it Project",
+        projectTeam: "Project Team",
+        address: "Contact Address",
         contact: "Contact",
-        registerInfo: "Register Information",
-        vatId: "VAT ID",
         responsibleContent: "Responsible for Content",
         country: "Germany",
-        commercialRegister: "Commercial Register",
-        registrationNumber: "Registration Number"
+        projectDisclaimer: "Project Status",
+        projectDisclaimerText: "App4it is currently a pre-launch project developed by a team of four individuals. This website serves to provide information about our upcoming service.",
     },
     de: {
         // Hero Section
@@ -105,7 +103,7 @@ const translations = {
         acceptPrivacy: "Bitte akzeptieren Sie die Datenschutzerklärung, um fortzufahren.",
         
         // Footer
-        copyright: "© 2025 App4it UG i.G. Alle Rechte vorbehalten.",
+        copyright: "© 2025 App4it Projektteam. Alle Rechte vorbehalten.",
         impressum: "Impressum",
         
         // Success Page
@@ -116,17 +114,15 @@ const translations = {
         // Impressum Page
         impressumTitle: "Impressum",
         impressumBackToHome: "Zurück zur Startseite",
-        companyDetails: "Unternehmensdetails",
-        companyName: "App4it UG i.G.",
-        managingDirector: "Geschäftsführer",
-        address: "Adresse",
+        projectDetails: "Projektdetails",
+        projectName: "App4it Projekt",
+        projectTeam: "Projektteam",
+        address: "Kontaktadresse",
         contact: "Kontakt",
-        registerInfo: "Handelsregister",
-        vatId: "USt-IdNr.",
         responsibleContent: "Inhaltlich Verantwortlicher",
         country: "Deutschland",
-        commercialRegister: "Handelsregister",
-        registrationNumber: "Registernummer"
+        projectDisclaimer: "Projektstatus",
+        projectDisclaimerText: "App4it ist derzeit ein Vorstart-Projekt, das von einem Team aus vier Personen entwickelt wird. Diese Website dient dazu, Informationen über unseren kommenden Service bereitzustellen.",
     }
 };
 
