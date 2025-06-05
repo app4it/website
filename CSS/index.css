@@ -522,13 +522,12 @@ body {
     }
 
     .nav-container {
-        top: 1rem;
+        gap: 1.5rem;
         padding: 0.75rem 1.25rem;
+        transform: translateX(calc(-50% - 1.5rem));
     }
     
     .settings-container {
-        top: 1rem;
-        right: 1rem;
         padding: 0.5rem;
     }
 
@@ -567,6 +566,8 @@ body {
     .nav-container {
         gap: 1.25rem;
         padding: 0.75rem 1rem;
+        transform: translateX(calc(-50% - 2rem));
+        right: auto;
     }
     
     .nav-link {
@@ -575,6 +576,7 @@ body {
     
     .settings-container {
         padding: 0.5rem;
+        right: 1rem;
     }
     
     .theme-toggle,
