@@ -66,6 +66,7 @@ body {
     transition: color 0.3s ease;
     position: relative;
     padding: 0.25rem 0;
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .nav-link::after {
@@ -522,7 +523,7 @@ body {
 
     .nav-container {
         top: 1rem;
-        padding: 0.5rem 1.25rem;
+        padding: 0.75rem 1.25rem;
     }
     
     .settings-container {
@@ -533,8 +534,16 @@ body {
 
     .theme-toggle,
     .lang-toggle {
-        width: 2rem;
-        height: 2rem;
+        width: 2.5rem;  /* Increased from original size */
+        height: 2.5rem; /* Increased from original size */
+    }
+    
+    .theme-toggle i {
+        font-size: 1.1rem; /* Slightly larger icon */
+    }
+    
+    .lang-toggle {
+        font-size: 0.9rem; /* Slightly larger text */
     }
 }
 
@@ -556,7 +565,8 @@ body {
     }
 
     .nav-container {
-        padding: 0.5rem 1rem;
+        gap: 1.25rem;
+        padding: 0.75rem 1rem;
     }
     
     .nav-link {
@@ -566,19 +576,19 @@ body {
     .settings-container {
         padding: 0.5rem;
     }
-
+    
     .theme-toggle,
     .lang-toggle {
-        width: 1.75rem;
-        height: 1.75rem;
+        width: 2.5rem;  /* Increased from original size */
+        height: 2.5rem; /* Increased from original size */
     }
-
+    
     .theme-toggle i {
-        font-size: 0.9rem;
+        font-size: 1.1rem; /* Slightly larger icon */
     }
-
+    
     .lang-toggle {
-        font-size: 0.75rem;
+        font-size: 0.9rem; /* Slightly larger text */
     }
 
     .hero {
