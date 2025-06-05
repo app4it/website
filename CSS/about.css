@@ -1,0 +1,305 @@
+/* About Page Styles */
+body.about-page {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] body.about-page {
+    background: linear-gradient(rgba(var(--primary-color-rgb), 0.1), rgba(142, 226, 220, 0.1));
+}
+
+.about-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 8rem var(--padding) 2rem;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.about-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.about-subtitle {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.mission-vision-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.mission-card, .vision-card {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-card h2, .vision-card h2 {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.mission-card::after, .vision-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.mission-card:hover, .vision-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(23, 155, 149, 0.15);
+}
+
+.mission-card:hover::after, .vision-card:hover::after {
+    opacity: 0.05;
+}
+
+.mission-card p, .vision-card p {
+    position: relative;
+    z-index: 2;
+}
+
+.motivation-section {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 3rem;
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08);
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.motivation-section h2 {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.motivation-section::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.motivation-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(23, 155, 149, 0.15);
+}
+
+.motivation-section:hover::after {
+    opacity: 0.05;
+}
+
+.motivation-section p {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-section {
+    margin-top: 4rem;
+}
+
+.team-section h2 {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(23, 155, 149, 0.15);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+.team-member h3 {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    color: var(--light-text);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-link {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--card-background);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.social-link:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--background-color);
+}
+
+.about-circle-1, .about-circle-2 {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.about-circle-1 {
+    width: 350px;
+    height: 350px;
+    top: -150px;
+    left: -150px;
+    background: var(--primary-color);
+    opacity: 0.1;
+}
+
+.about-circle-2 {
+    width: 250px;
+    height: 250px;
+    bottom: -100px;
+    right: -100px;
+    background: var(--secondary-color);
+    opacity: 0.1;
+}
+
+/* Dark Mode Specific Styles */
+[data-theme="dark"] .mission-card,
+[data-theme="dark"] .vision-card,
+[data-theme="dark"] .motivation-section,
+[data-theme="dark"] .team-member {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 20px rgba(64, 224, 208, 0.1);
+}
+
+[data-theme="dark"] .mission-card:hover,
+[data-theme="dark"] .vision-card:hover,
+[data-theme="dark"] .motivation-section:hover,
+[data-theme="dark"] .team-member:hover {
+    box-shadow: 0 8px 30px rgba(64, 224, 208, 0.2);
+    background: rgba(64, 224, 208, 0.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-header {
+        padding-top: 4rem;
+    }
+
+    .mission-vision-section {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .motivation-section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-header {
+        padding-top: 3rem;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+} 

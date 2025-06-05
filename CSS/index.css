@@ -401,15 +401,19 @@ body {
 .impressum-container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: var(--padding);
+    padding: 8rem var(--padding) 2rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 
 .impressum-header {
     text-align: center;
     margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
 }
 
 .impressum-title {
@@ -419,11 +423,19 @@ body {
 }
 
 .impressum-content {
-    background: var(--background-color);
+    background: var(--card-background);
     border-radius: var(--border-radius);
     padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08);
+}
+
+.impressum-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(23, 155, 149, 0.15);
 }
 
 .impressum-section {
@@ -472,133 +484,57 @@ body {
 /* Dark mode specific styles */
 [data-theme="dark"] .impressum-content {
     background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 20px rgba(64, 224, 208, 0.1);
+}
+
+[data-theme="dark"] .impressum-content:hover {
+    box-shadow: 0 8px 30px rgba(64, 224, 208, 0.2);
+    background: rgba(64, 224, 208, 0.05);
+}
+
+body.impressum-page {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] body.impressum-page {
+    background: linear-gradient(rgba(var(--primary-color-rgb), 0.1), rgba(142, 226, 220, 0.1));
+}
+
+.impressum-circle-1 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: -150px;
+    left: -150px;
+    background: var(--primary-color);
+    opacity: 0.1;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.impressum-circle-2 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    bottom: -100px;
+    right: -100px;
+    background: var(--secondary-color);
+    opacity: 0.1;
+    border-radius: 50%;
+    z-index: 0;
 }
 
 @media (max-width: 768px) {
-    :root {
-        --padding: 1.5rem;
-    }
-
-    .hero {
-        padding-top: 8rem;
-    }
-
-    .hero-title {
-        font-size: clamp(2rem, 6vw, 2.5rem);
-        margin-bottom: 1rem;
-    }
-
-    .hero-subtitle {
-        font-size: clamp(1rem, 4vw, 1.25rem);
-    }
-
-    .email-form {
-        flex-direction: column;
-        gap: 0.75rem;
-    }
-    
-    .email-input, .submit-button {
-        width: 100%;
-        min-width: auto;
-    }
-
-    .values-grid, .features-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .events-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-    }
-
-    .event-image-container {
-        padding-bottom: 100%;
-        max-height: 200px;
-    }
-
-    .section-title {
-        margin-bottom: 2rem;
-    }
-
-    .nav-container {
-        gap: 1.5rem;
-        padding: 0.75rem 1.25rem;
-        transform: translateX(calc(-50% - 1.5rem));
-    }
-    
-    .settings-container {
-        padding: 0.5rem;
-    }
-
-    .theme-toggle,
-    .lang-toggle {
-        width: 2.5rem;  /* Increased from original size */
-        height: 2.5rem; /* Increased from original size */
-    }
-    
-    .theme-toggle i {
-        font-size: 1.1rem; /* Slightly larger icon */
-    }
-    
-    .lang-toggle {
-        font-size: 0.9rem; /* Slightly larger text */
+    .impressum-container {
+        padding-top: 7rem;
     }
 }
 
 @media (max-width: 480px) {
-    :root {
-        --padding: 1rem;
-    }
-
-    .events-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .event-image-container {
-        max-height: 300px;
-    }
-
-    .value-card, .feature-card {
-        padding: 1.25rem;
-    }
-
-    .nav-container {
-        gap: 1.25rem;
-        padding: 0.75rem 1rem;
-        transform: translateX(calc(-50% - 2rem));
-        right: auto;
-    }
-    
-    .nav-link {
-        font-size: 0.9rem;
-    }
-    
-    .settings-container {
-        padding: 0.5rem;
-        right: 1rem;
-    }
-    
-    .theme-toggle,
-    .lang-toggle {
-        width: 2.5rem;  /* Increased from original size */
-        height: 2.5rem; /* Increased from original size */
-    }
-    
-    .theme-toggle i {
-        font-size: 1.1rem; /* Slightly larger icon */
-    }
-    
-    .lang-toggle {
-        font-size: 0.9rem; /* Slightly larger text */
-    }
-
-    .hero {
-        padding-top: 7rem;
-    }
-    
-    .hero-title {
-        font-size: clamp(1.75rem, 4vw, 2.5rem);
+    .impressum-container {
+        padding-top: 6rem;
     }
 }
 

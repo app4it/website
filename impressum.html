@@ -20,20 +20,31 @@
     <link rel="mask-icon" href="./assets/icons/favicon_light.png" color="#000000">
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/about.css">
+    <link rel="stylesheet" type="text/css" href="CSS/impressum.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="toggle-container">
-        <button class="theme-toggle" aria-label="Toggle dark mode">
-            <i class="fas fa-moon" aria-hidden="true"></i>
-        </button>
-        <button class="lang-toggle" aria-label="Toggle language">EN</button>
+<body class="impressum-page">
+    <div class="nav-container">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link" data-i18n="aboutUs">About Us</a>
+    </div>
+
+    <div class="settings-container">
+        <div class="toggle-container">
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+            <button class="lang-toggle" aria-label="Toggle language">EN</button>
+        </div>
     </div>
 
     <div class="impressum-container">
+        <div class="impressum-circle-1"></div>
+        <div class="impressum-circle-2"></div>
         <div class="impressum-header">
             <h1 class="impressum-title" data-i18n="impressumTitle">Imprint</h1>
         </div>
