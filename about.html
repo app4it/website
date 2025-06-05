@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // Check system theme preference and set it immediately
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+</script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <title>App4it - About Us</title>
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_light.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon_light.png">
+    <link rel="mask-icon" href="./assets/icons/favicon_light.png" color="#000000">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="about-page">
+    <div class="nav-container">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active" data-i18n="aboutUs">About Us</a>
+    </div>
+
+    <div class="settings-container">
+        <div class="toggle-container">
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+            <button class="lang-toggle" aria-label="Toggle language">EN</button>
+        </div>
+    </div>
+
+    <div class="about-container">
+        <div class="about-circle-1"></div>
+        <div class="about-circle-2"></div>
+        
+        <div class="about-header">
+            <h1 class="about-title" data-i18n="aboutTitle">Meet the App4it Team</h1>
+            <p class="about-subtitle" data-i18n="aboutSubtitle">We're a passionate team of four, dedicated to revolutionizing how people connect at events and build lasting friendships.</p>
+        </div>
+
+        <div class="mission-vision-section">
+            <div class="mission-card animate-in">
+                <h2 data-i18n="ourMission">Our Mission</h2>
+                <p data-i18n="missionText">To redefine social connection in the digital age by encouraging authentic, in-person interactions. We're bringing back the magic of real-world connections while embracing modern technology to make it happen.</p>
+            </div>
+            <div class="vision-card animate-in" style="animation-delay: 0.2s">
+                <h2 data-i18n="ourVision">Our Vision</h2>
+                <p data-i18n="visionText">A world where technology enhances real-life social experiences instead of replacing them. We believe in creating meaningful friendships that start with shared moments and grow through genuine interactions.</p>
+            </div>
+        </div>
+
+        <div class="motivation-section animate-in" style="animation-delay: 0.4s">
+            <h2 data-i18n="ourMotivation">What Drives Us</h2>
+            <p data-i18n="motivationText">We're passionate about bringing the joy of human connection back into our tech-driven world. By creating a platform that celebrates real-world interactions and makes discovering local events effortless, we're making it easier than ever to build authentic friendships in your community.</p>
+        </div>
+
+        <div class="team-section">
+            <h2 data-i18n="meetTheTeam">Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-member animate-in" style="animation-delay: 0.6s">
+                    <img src="assets/images/team/julia.jpeg" alt="Julia Agüero">
+                    <h3>Julia Agüero</h3>
+                    <p data-i18n="juliaDesc">Frontend developer and JIRA expert. Creating colorful chaos with watercolors and calling it art in my free time.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/aaguueeroo" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/julia-aguero-fraguas/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://juliaaguero.com/" target="_blank" class="social-link" aria-label="Personal Website">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-member animate-in" style="animation-delay: 0.8s">
+                    <img src="assets/images/team/savo.jpeg" alt="Savo Simeunović">
+                    <h3>Savo Simeunović</h3>
+                    <p data-i18n="savoDesc">Specializing in AI/ML and databases. Proudly serving my cat's every whim in my free time.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Rek27" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ssimeunovic/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-member animate-in" style="animation-delay: 1s">
+                    <img src="assets/images/team/sophia.jpeg" alt="Sophia Soares">
+                    <h3>Sophia Soares</h3>
+                    <p data-i18n="sophiaDesc">Frontend developer and UX/UI designer. If you want a knitted plushie, send me a DM.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/sophiasoares" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sophia-ss/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-member animate-in" style="animation-delay: 1.2s">
+                    <img src="assets/images/team/marin.jpeg" alt="Marin Sušić">
+                    <h3>Marin Sušić</h3>
+                    <p data-i18n="marinDesc">Passionate about security, forced to also do backend development. I like to lie to myself that I am a decent motorcycle rider.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Sule57" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/marinsusic/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://susic-security.com/" target="_blank" class="social-link" aria-label="Personal Website">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>
+            <span data-i18n="copyright">© 2025 App4it Project Team. All rights reserved.</span>
+            <span class="footer-separator">|</span>
+            <a href="impressum.html" class="footer-link" data-i18n="impressum">Impressum</a>
+        </p>
+    </footer>
+
+    <script src="JS/index.js"></script>
+    <script src="JS/language.js"></script>
+</body>
+</html> 

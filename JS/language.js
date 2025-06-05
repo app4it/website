@@ -61,6 +61,26 @@ const translations = {
         country: "Germany",
         projectDisclaimer: "Project Status",
         projectDisclaimerText: "App4it is currently a pre-launch project developed by a team of four individuals. This website serves to provide information about our upcoming service.",
+        
+        // Navigation
+        aboutUs: "About Us",
+        
+        // About Page
+        aboutTitle: "Meet the App4it Team",
+        aboutSubtitle: "We're a passionate team of four, dedicated to revolutionizing how people connect at events and build lasting friendships.",
+        ourMission: "Our Mission",
+        missionText: "To redefine social connection in the digital age by encouraging authentic, in-person interactions. We're bringing back the magic of real-world connections while embracing modern technology to make it happen.",
+        ourVision: "Our Vision",
+        visionText: "A world where technology enhances real-life social experiences instead of replacing them. We believe in creating meaningful friendships that start with shared moments and grow through genuine interactions.",
+        ourMotivation: "What Drives Us",
+        motivationText: "We're passionate about bringing the joy of human connection back into our tech-driven world. By creating a platform that celebrates real-world interactions and makes discovering local events effortless, we're making it easier than ever to build authentic friendships in your community.",
+        meetTheTeam: "Meet the Team",
+        
+        // Team Descriptions
+        juliaDesc: "Frontend developer and JIRA expert. Creating colorful chaos with watercolors and calling it art in my free time.",
+        savoDesc: "Specializing in AI/ML and databases. Proudly serving my cat's every whim in my free time.",
+        sophiaDesc: "Frontend developer and UX/UI designer. If you want a knitted plushie, send me a DM.",
+        marinDesc: "Passionate about security, forced to also do backend development. I like to lie to myself that I am a decent motorcycle rider.",
     },
     de: {
         // Hero Section
@@ -123,6 +143,26 @@ const translations = {
         country: "Deutschland",
         projectDisclaimer: "Projektstatus",
         projectDisclaimerText: "App4it ist derzeit ein Vorstart-Projekt, das von einem Team aus vier Personen entwickelt wird. Diese Website dient dazu, Informationen über unseren kommenden Service bereitzustellen.",
+        
+        // Navigation
+        aboutUs: "Über Uns",
+        
+        // About Page
+        aboutTitle: "Das App4it Team",
+        aboutSubtitle: "Wir sind ein engagiertes Team von vier Personen, das sich der Revolution der Art und Weise verschrieben hat, wie Menschen bei Veranstaltungen Kontakte knüpfen und dauerhafte Freundschaften aufbauen.",
+        ourMission: "Unsere Mission",
+        missionText: "Die soziale Verbindung im digitalen Zeitalter neu zu definieren, indem wir authentische persönliche Interaktionen fördern. Wir bringen die Magie echter Begegnungen zurück und nutzen moderne Technologie, um dies zu ermöglichen.",
+        ourVision: "Unsere Vision",
+        visionText: "Eine Welt, in der Technologie echte soziale Erfahrungen bereichert, anstatt sie zu ersetzen. Wir glauben an bedeutungsvolle Freundschaften, die durch gemeinsame Momente entstehen und durch echte Interaktionen wachsen.",
+        ourMotivation: "Was uns antreibt",
+        motivationText: "Wir setzen uns leidenschaftlich dafür ein, die Freude an menschlicher Verbindung in unsere technologiegetriebene Welt zurückzubringen. Durch eine Plattform, die echte Interaktionen feiert und das Entdecken lokaler Events mühelos macht, erleichtern wir es mehr denn je, authentische Freundschaften in deiner Community aufzubauen.",
+        meetTheTeam: "Das Team",
+        
+        // Team Descriptions
+        juliaDesc: "Frontend-Entwicklerin und JIRA-Expertin. In meiner Freizeit erschaffe ich buntes Chaos mit Aquarellfarben und nenne es Kunst.",
+        savoDesc: "Spezialisiert auf KI/ML und Datenbanken. In meiner Freizeit erfülle ich stolz jeden Wunsch meiner Katze.",
+        sophiaDesc: "Frontend-Entwicklerin und UX/UI-Designerin. Wenn du ein gestricktes Plüschtier möchtest, schick mir eine DM.",
+        marinDesc: "Leidenschaftlich in Sicherheit, zwangsweise auch Backend-Entwickler. Ich belüge mich gerne selbst damit, dass ich ein anständiger Motorradfahrer bin.",
     }
 };
 
