@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // Check system theme preference and set it immediately
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+</script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <title>App4it - Impressum</title>
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_light.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon_light.png">
+    <link rel="mask-icon" href="./assets/icons/favicon_light.png" color="#000000">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="toggle-container">
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="lang-toggle" aria-label="Toggle language">EN</button>
+    </div>
+
+    <div class="impressum-container">
+        <div class="impressum-header">
+            <h1 class="impressum-title" data-i18n="impressumTitle">Imprint</h1>
+        </div>
+
+        <div class="impressum-content">
+            <div class="impressum-section">
+                <h2 data-i18n="companyDetails">Company Details</h2>
+                <p><strong data-i18n="companyName">App4it UG i.G.</strong></p>
+                <p><strong data-i18n="managingDirector">Managing Director:</strong> To Be Announced</p>
+            </div>
+
+            <div class="impressum-section">
+                <h2 data-i18n="address">Address</h2>
+                <p>Non Existant Street 123<br>
+                69420 CityStadt<br>
+                <span data-i18n="country">Germany</span></p>
+            </div>
+
+            <div class="impressum-section">
+                <h2 data-i18n="contact">Contact</h2>
+                <p>Email: app4itde@gmail.com<br>
+                Phone: UnknownNumber</p>
+            </div>
+
+            <div class="impressum-section">
+                <h2 data-i18n="registerInfo">Register Information</h2>
+                <p><span data-i18n="commercialRegister">Commercial Register</span>: Unregistered<br>
+                <span data-i18n="registrationNumber">Registration Number</span>: Unregistered<br>
+                <strong data-i18n="vatId">VAT ID</strong>: What's tax</p>
+            </div>
+
+            <div class="impressum-section">
+                <h2 data-i18n="responsibleContent">Responsible for Content</h2>
+                <p>Person Personalski<br>
+                App4it UG i.G.<br>
+                app4itde@gmail.com</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-to-home">
+            <i class="fas fa-arrow-left"></i>
+            <span data-i18n="impressumBackToHome">Back to Homepage</span>
+        </a>
+    </div>
+
+    <footer class="footer">
+        <p>
+            <span data-i18n="copyright">© 2025 App4it GmbH. All rights reserved.</span>
+            <span class="footer-separator">|</span>
+            <a href="impressum.html" class="footer-link" data-i18n="impressum">Impressum</a>
+        </p>
+    </footer>
+
+    <script src="JS/index.js"></script>
+    <script src="JS/language.js"></script>
+</body>
+</html> 

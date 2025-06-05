@@ -41,12 +41,28 @@ const translations = {
         acceptPrivacy: "Please accept the privacy policy to continue.",
         
         // Footer
-        copyright: "© 2025 App4it GmbH. All rights reserved.",
+        copyright: "© 2025 App4it UG i.G. All rights reserved.",
+        impressum: "Imprint",
         
         // Success Page
         successTitle: "Woohoo! You're in! 🎉",
         successSubtitle: "High five! ✋ You're officially on the waitlist for the coolest way to meet new friends. Get ready for adventures that are way better than scrolling! Are you App4it?",
-        backToHome: "Back to homepage"
+        backToHome: "Back to homepage",
+        
+        // Impressum Page
+        impressumTitle: "Imprint",
+        impressumBackToHome: "Back to Homepage",
+        companyDetails: "Company Details",
+        companyName: "App4it UG i.G.",
+        managingDirector: "Managing Director",
+        address: "Address",
+        contact: "Contact",
+        registerInfo: "Register Information",
+        vatId: "VAT ID",
+        responsibleContent: "Responsible for Content",
+        country: "Germany",
+        commercialRegister: "Commercial Register",
+        registrationNumber: "Registration Number"
     },
     de: {
         // Hero Section
@@ -89,12 +105,28 @@ const translations = {
         acceptPrivacy: "Bitte akzeptieren Sie die Datenschutzerklärung, um fortzufahren.",
         
         // Footer
-        copyright: "© 2025 App4it GmbH. Alle Rechte vorbehalten.",
+        copyright: "© 2025 App4it UG i.G. Alle Rechte vorbehalten.",
+        impressum: "Impressum",
         
         // Success Page
         successTitle: "Juhu! Du bist dabei! 🎉",
         successSubtitle: "High five! ✋ Du bist jetzt offiziell auf der Warteliste für die coolste Art, neue Freunde zu finden. Mach dich bereit für Abenteuer, die viel besser sind als Scrollen! Bist du App4it?",
-        backToHome: "Zurück zur Startseite"
+        backToHome: "Zurück zur Startseite",
+        
+        // Impressum Page
+        impressumTitle: "Impressum",
+        impressumBackToHome: "Zurück zur Startseite",
+        companyDetails: "Unternehmensdetails",
+        companyName: "App4it UG i.G.",
+        managingDirector: "Geschäftsführer",
+        address: "Adresse",
+        contact: "Kontakt",
+        registerInfo: "Handelsregister",
+        vatId: "USt-IdNr.",
+        responsibleContent: "Inhaltlich Verantwortlicher",
+        country: "Deutschland",
+        commercialRegister: "Handelsregister",
+        registrationNumber: "Registernummer"
     }
 };
 
