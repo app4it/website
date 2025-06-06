@@ -56,6 +56,8 @@ body {
     backdrop-filter: blur(8px);
     border-radius: var(--border-radius);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: calc(100% - 9rem); /* Leave space for settings container */
+    margin-right: 7rem; /* Ensure space for settings on the right */
 }
 
 .nav-link {
@@ -1063,9 +1065,9 @@ body.about-page {
 
 @media (max-width: 480px) {
     .nav-container {
-        top: 5rem;
         padding: 0.5rem 1rem;
         gap: 1.5rem;
+        font-size: 0.8rem;
     }
     
     .nav-link {
