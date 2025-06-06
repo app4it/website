@@ -1050,6 +1050,9 @@ body.about-page {
     .nav-container {
         padding: 0.5rem 1rem;
         gap: 1rem;
+        height: 2.25rem; /* Match height of a single settings button */
+        display: flex;
+        align-items: center; /* Center the nav links vertically */
     }
     
     .nav-link {
