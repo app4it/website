@@ -51,7 +51,7 @@ body.about-page {
 }
 
 .mission-card, .vision-card, .motivation-section, .team-member {
-    background: var(--card-background);
+    background: var(--background-color);
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
@@ -186,7 +186,7 @@ body.about-page {
 [data-theme="dark"] .vision-card,
 [data-theme="dark"] .motivation-section,
 [data-theme="dark"] .team-member {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--dark-card-background);
     box-shadow: 0 4px 20px rgba(64, 224, 208, 0.1);
 }
 

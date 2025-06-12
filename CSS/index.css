@@ -10,16 +10,18 @@
     --background-color: #ffffff;
     --primary-color: #179B95;
     --primary-color-rgb: 23, 155, 149;
-    --secondary-color: #8EE2DC;
+    --secondary-color: #40E0D0;
     --tertiary-color: #8EE2DC;
-    --text-color: #333;
-    --light-text: #737777;
+    --text-color: #333333;
+    --light-text: #666666;
     --max-width: 1200px;
     --padding: 2rem;
-    --border-radius: 12px;
+    --border-radius: 15px;
     --border-radius-circle: 50%;
     --card-background: #ffffff;
-    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --dark-card-background: #2a2a2a;
+    --card-shadow: 0 4px 20px rgba(23, 155, 149, 0.08);
+    --header-height: 80px;
 }
 
 [data-theme="dark"] {
