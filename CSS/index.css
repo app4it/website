@@ -325,7 +325,6 @@ body {
     padding: clamp(1.5rem, 3vw, 2rem);
     background: var(--background-color);
     border-radius: var(--border-radius);
-    transition: all 0.3s ease;
     text-align: center;
     position: relative;
     box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08); 
@@ -591,15 +590,8 @@ body.impressum-page {
     text-align: center;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-    position: relative;
-    box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08); 
+    box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08);
     margin: 0;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(23, 155, 149, 0.15); 
 }
 
 .feature-card .feature-icon {
@@ -741,11 +733,7 @@ body.impressum-page {
 
 [data-theme="dark"] .feature-card {
     box-shadow: 0 4px 20px rgba(64, 224, 208, 0.1);
-}
-
-[data-theme="dark"] .feature-card:hover {
-    box-shadow: 0 8px 30px rgba(64, 224, 208, 0.2);
-    background: rgba(64, 224, 208, 0.05);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 /* About Page Styles */
@@ -793,14 +781,16 @@ body.about-page {
     margin-bottom: 4rem;
 }
 
-.mission-card, .vision-card {
+.mission-card, .vision-card, .motivation-section {
     background: var(--card-background);
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.mission-card::after, .vision-card::after {
+    display: none;
 }
 
 .mission-card h2, .vision-card h2 {
@@ -812,29 +802,9 @@ body.about-page {
     margin-bottom: 1rem;
 }
 
-.mission-card::after, .vision-card::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(100%);
-    width: 95%;
-    height: 10px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    border-radius: 50%;
-    filter: blur(5px);
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
 .mission-card:hover, .vision-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.mission-card:hover::after, .vision-card:hover::after {
-    opacity: 0.7;
-    transform: translateX(-50%) translateY(50%);
 }
 
 .mission-card p, .vision-card p {
@@ -842,16 +812,15 @@ body.about-page {
 }
 
 .motivation-section {
-    text-align: center;
-    margin-bottom: 4rem;
-    padding: 3rem;
     background: var(--card-background);
+    padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
-    position: relative;
-    z-index: 1;
-    transition: all 0.3s ease;
-    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.motivation-section::after {
+    display: none;
 }
 
 .motivation-section h2 {
@@ -861,31 +830,6 @@ body.about-page {
     color: transparent;
     font-size: 2rem;
     margin-bottom: 1.5rem;
-}
-
-.motivation-section::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(100%);
-    width: 95%;
-    height: 10px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    border-radius: 50%;
-    filter: blur(5px);
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.motivation-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.motivation-section:hover::after {
-    opacity: 0.7;
-    transform: translateX(-50%) translateY(50%);
 }
 
 .motivation-section p {
@@ -1009,15 +953,14 @@ body.about-page {
 /* Dark mode specific styles */
 [data-theme="dark"] .mission-card,
 [data-theme="dark"] .vision-card,
-[data-theme="dark"] .motivation-section,
-[data-theme="dark"] .team-member {
+[data-theme="dark"] .motivation-section {
     background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 20px rgba(64, 224, 208, 0.1);
 }
 
 [data-theme="dark"] .mission-card p,
 [data-theme="dark"] .vision-card p,
-[data-theme="dark"] .motivation-section p,
-[data-theme="dark"] .team-member p {
+[data-theme="dark"] .motivation-section p {
     color: var(--text-color);
 }
 

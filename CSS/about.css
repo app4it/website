@@ -2,7 +2,6 @@
 body.about-page {
     background-color: var(--background-color);
     color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 [data-theme="dark"] body.about-page {
@@ -51,14 +50,12 @@ body.about-page {
     margin-bottom: 4rem;
 }
 
-.mission-card, .vision-card {
+.mission-card, .vision-card, .motivation-section, .team-member {
     background: var(--card-background);
     padding: 2rem;
     border-radius: var(--border-radius);
-    box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 2rem;
 }
 
 .mission-card h2, .vision-card h2 {
@@ -71,79 +68,27 @@ body.about-page {
     text-align: center;
 }
 
-.mission-card::after, .vision-card::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-}
-
-.mission-card:hover, .vision-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(23, 155, 149, 0.15);
-}
-
-.mission-card:hover::after, .vision-card:hover::after {
-    opacity: 0.05;
-}
-
 .mission-card p, .vision-card p {
-    position: relative;
-    z-index: 2;
+    color: var(--text-color);
 }
 
 .motivation-section {
     text-align: center;
     margin-bottom: 4rem;
     padding: 3rem;
-    background: var(--card-background);
-    border-radius: var(--border-radius);
-    box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08);
-    position: relative;
-    z-index: 1;
-    transition: all 0.3s ease;
-    overflow: hidden;
 }
 
 .motivation-section h2 {
-    color: var(--primary-color);
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-    z-index: 2;
-}
-
-.motivation-section::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-}
-
-.motivation-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(23, 155, 149, 0.15);
-}
-
-.motivation-section:hover::after {
-    opacity: 0.05;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .motivation-section p {
-    position: relative;
-    z-index: 2;
+    color: var(--text-color);
     max-width: 800px;
     margin: 0 auto;
 }
@@ -168,42 +113,25 @@ body.about-page {
 }
 
 .team-member {
-    background: var(--card-background);
-    padding: 2rem;
-    border-radius: var(--border-radius);
     text-align: center;
-    box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.team-member:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(23, 155, 149, 0.15);
 }
 
 .team-member img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-bottom: 1.5rem;
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover img {
-    transform: scale(1.1);
+    margin-bottom: 1rem;
 }
 
 .team-member h3 {
     color: var(--text-color);
-    font-size: 1.25rem;
     margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .team-member p {
-    color: var(--light-text);
-    font-size: 0.95rem;
+    color: var(--text-color);
+    font-size: 0.9rem;
     margin-bottom: 1.5rem;
 }
 
@@ -218,21 +146,13 @@ body.about-page {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
-    background: var(--card-background);
+    background: rgba(var(--primary-color-rgb), 0.1);
     color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: all 0.3s ease;
     opacity: 0.8;
-}
-
-.social-link:hover {
-    opacity: 1;
-    transform: translateY(-2px);
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: var(--background-color);
 }
 
 .about-circle-1, .about-circle-2 {
@@ -266,14 +186,6 @@ body.about-page {
 [data-theme="dark"] .team-member {
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 4px 20px rgba(64, 224, 208, 0.1);
-}
-
-[data-theme="dark"] .mission-card:hover,
-[data-theme="dark"] .vision-card:hover,
-[data-theme="dark"] .motivation-section:hover,
-[data-theme="dark"] .team-member:hover {
-    box-shadow: 0 8px 30px rgba(64, 224, 208, 0.2);
-    background: rgba(64, 224, 208, 0.05);
 }
 
 /* Responsive Styles */
