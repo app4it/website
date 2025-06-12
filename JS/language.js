@@ -180,10 +180,18 @@ function setPageLanguage(lang) {
     // Update HTML lang attribute
     document.documentElement.lang = lang;
     
-    // Update button text
+    // Update flag visibility - show the opposite flag of current language
     const langToggle = document.querySelector('.lang-toggle');
     if (langToggle) {
-        langToggle.textContent = lang === 'en' ? 'DE' : 'EN';
+        const enFlag = langToggle.querySelector('.flag-en');
+        const deFlag = langToggle.querySelector('.flag-de');
+        if (lang === 'en') {
+            enFlag.style.display = 'none';
+            deFlag.style.display = 'block';
+        } else {
+            enFlag.style.display = 'block';
+            deFlag.style.display = 'none';
+        }
     }
     
     // Update all translatable elements
