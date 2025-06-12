@@ -40,13 +40,7 @@ body.impressum-page {
     margin-bottom: 2rem;
     position: relative;
     z-index: 2;
-    transition: all 0.3s ease;
     box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08);
-}
-
-.impressum-content:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(23, 155, 149, 0.15);
 }
 
 .impressum-section {
@@ -96,11 +90,6 @@ body.impressum-page {
 [data-theme="dark"] .impressum-content {
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 4px 20px rgba(64, 224, 208, 0.1);
-}
-
-[data-theme="dark"] .impressum-content:hover {
-    box-shadow: 0 8px 30px rgba(64, 224, 208, 0.2);
-    background: rgba(64, 224, 208, 0.05);
 }
 
 .impressum-circle-1 {
