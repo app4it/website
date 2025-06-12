@@ -7,6 +7,11 @@ const translations = {
         requestAccess: "Request Early Access",
         submit: "SUBMIT",
         
+        // Early Access Page
+        earlyAccessTitle: "Request Early Access",
+        earlyAccessSubtitle: "Be among the first to experience a new way of connecting at events. Join our waitlist today!",
+        joinWaitlist: "Join the Waitlist",
+        
         // Values Section
         ourValues: "Our Values",
         authenticity: "Authenticity First",
@@ -88,6 +93,11 @@ const translations = {
         heroSubtitle: "Jedes Event ist eine Chance, jemand Besonderes kennenzulernen. App4it hilft dir, diese persönlichen Begegnungen durch gemeinsame Erlebnisse in dauerhafte Freundschaften zu verwandeln.",
         requestAccess: "Frühen Zugang Anfragen",
         submit: "ABSENDEN",
+        
+        // Early Access Page
+        earlyAccessTitle: "Frühen Zugang Anfragen",
+        earlyAccessSubtitle: "Sei einer der Ersten, die eine neue Art der Verbindung bei Events erleben. Trage dich heute in unsere Warteliste ein!",
+        joinWaitlist: "Warteliste Beitreten",
         
         // Values Section
         ourValues: "Unsere Werte",

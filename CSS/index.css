@@ -1063,3 +1063,76 @@ body.about-page {
     background: rgba(var(--primary-color-rgb), 0.15);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Early Access Page */
+.early-access-page {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] .early-access-page {
+    background: linear-gradient(rgba(var(--primary-color-rgb), 0.1), rgba(142, 226, 220, 0.1));
+}
+
+.early-access-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 8rem var(--padding) 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.early-access-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.early-access-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.early-access-subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: var(--light-text);
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    color: var(--background-color);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .early-access-container {
+        padding-top: 7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .early-access-container {
+        padding-top: 6rem;
+    }
+}

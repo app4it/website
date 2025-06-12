@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    // Check localStorage first, then system theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+</script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <title>App4it - Request Early Access</title>
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_light.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon_light.png">
+    <link rel="mask-icon" href="./assets/icons/favicon_light.png" color="#000000">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/brevo-form.css">
+    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="early-access-page">
+    <div class="nav-container">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link" data-i18n="aboutUs">About Us</a>
+        <a href="impressum.html" class="nav-link" data-i18n="impressum">Imprint</a>
+    </div>
+
+    <div class="settings-container">
+        <div class="toggle-container">
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+            <button class="lang-toggle" aria-label="Toggle language">
+                <span class="flag-icon flag-en" aria-hidden="true">🇬🇧</span>
+                <span class="flag-icon flag-de" aria-hidden="true" style="display: none;">🇩🇪</span>
+            </button>
+        </div>
+    </div>
+
+    <main class="early-access-container">
+        <div class="decorative-circle circle-1"></div>
+        <div class="decorative-circle circle-2"></div>
+        
+        <div class="early-access-content">
+            <h1 class="early-access-title" data-i18n="earlyAccessTitle">Request Early Access</h1>
+            <p class="early-access-subtitle" data-i18n="earlyAccessSubtitle">Be among the first to experience a new way of connecting at events. Join our waitlist today!</p>
+            
+            <!-- Brevo Form -->
+            <div class="sib-form">
+                <div id="sib-form-container" class="sib-form-container">
+                    <div id="error-message" class="sib-form-message-panel">
+                        <div class="sib-form-message-panel__text-center">
+                            <span class="sib-form-message-panel__inner-text">
+                                A confirmation email has been sent. Please check your inbox (and spam folder if not found). If you don't receive it within a few minutes, try submitting again.
+                            </span>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div id="success-message" class="sib-form-message-panel">
+                        <div class="sib-form-message-panel__text-center">
+                            <span class="sib-form-message-panel__inner-text">
+                                Your subscription to the app4it early access has been successful.
+                            </span>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div id="sib-container" class="sib-container--large sib-container--vertical">
+                        <form id="sib-form" method="POST" action="https://sibforms.com/serve/MUIFAK4TetfBvPW7d1VeZkJ7P_KTw55p_oaMS1mKyFOsvSRlOocCSu2sAI5cW56-xMxxssXALhBkSsWDoUMaCtiER-d51SLvMzc8XlcB9NfDq2n9J4B4JLaC-fx9FKjnLjxTgRUJ2fhAhY5m6ptitCA7zEE41sAbg9bLsTsV6RzVj51bX83KDuakUl1zM6-MnFTXY7kYo-lGCp-r" data-type="subscription">
+                            <div class="form__entry entry_block">
+                                <div class="form__label-row">
+                                    <div class="entry__field">
+                                        <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="your@email.com" data-required="true" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sib-form__declaration">
+                                <button type="button" class="privacy-toggle" aria-expanded="false" aria-controls="privacy-details" data-i18n="viewPrivacy">
+                                    View Privacy Details <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div id="privacy-details" class="privacy-details" hidden>
+                                    <div style="font-size:14px; color: var(--light-text);">
+                                        <p>
+                                            <span data-i18n="privacyText">We use Brevo as our marketing platform. By submitting this form you agree that the personal data you provided will be transferred to Brevo for processing in accordance with</span>
+                                            <a href="https://www.brevo.com/en/legal/privacypolicy/" target="_blank" style="color: var(--primary-color);" data-i18n="privacyPolicy">Brevo's Privacy Policy</a>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sib-optin sib-form-block">
+                                <div class="form__entry entry_mcq">
+                                    <div class="form__label-row">
+                                        <div class="entry__choice">
+                                            <label>
+                                                <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" required />
+                                                <span class="checkbox checkbox_tick_positive"></span>
+                                                <span style="font-size:14px;" data-i18n="agreeText">I agree to receive news and updates provided by App4it and accept the data privacy statement.</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label class="entry__specification" data-i18n="unsubscribeText">
+                                        You may unsubscribe at any time using the link in our e-mail updates.
+                                    </label>
+                                    <div id="privacy-policy-error" data-i18n="acceptPrivacy">
+                                        Please accept the privacy policy to continue.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sib-form-block">
+                                <button class="sib-form-block__button" form="sib-form" type="submit" data-i18n="submit">
+                                    SUBMIT
+                                </button>
+                            </div>
+                            <input type="text" name="email_address_check" value="" class="input--hidden">
+                            <input type="hidden" name="locale" value="en">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>
+            <span data-i18n="copyright">© 2025 App4it Project Team. All rights reserved.</span>
+            <span class="footer-separator">|</span>
+            <a href="impressum.html" class="footer-link" data-i18n="impressum">Impressum</a>
+        </p>
+    </footer>
+
+    <script src="JS/index.js"></script>
+    <script src="JS/language.js"></script>
+    <script src="JS/brevo-form.js"></script>
+    <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+</body>
+</html> 
