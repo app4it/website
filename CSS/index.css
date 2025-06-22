@@ -318,7 +318,7 @@ body {
 
 /* Values Section */
 .values-section {
-    padding: var(--padding);
+    padding: 8rem var(--padding);
     background: white;
 }
 
@@ -587,7 +587,7 @@ body.impressum-page {
 
 /* Features Section */
 .features-section {
-    padding: var(--padding);
+    padding: 8rem var(--padding);
     background: linear-gradient(to bottom, var(--background-color), rgba(23, 155, 149, 0.1));
 }
 
@@ -675,7 +675,7 @@ body.impressum-page {
 }
 
 .events-section {
-    padding: var(--padding);
+    padding: 6rem var(--padding);
 }
 
 /* Add a loading placeholder */
