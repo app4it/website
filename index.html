@@ -1,254 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>
+  <script>
     // Check localStorage first, then system theme preference
-    const savedTheme = localStorage.getItem('theme');
+    const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.setAttribute('data-theme', 'dark');
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    } else if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.documentElement.setAttribute("data-theme", "dark");
     } else {
-        document.documentElement.setAttribute('data-theme', 'light');
+      document.documentElement.setAttribute("data-theme", "light");
     }
-</script>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
+  </script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
     <title>App4it - Real Events. Real People. Right Here.</title>
     <!-- Favicons -->
-    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_light.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon_light.png">
-    <link rel="mask-icon" href="./assets/icons/favicon_light.png" color="#000000">
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon_light.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/favicon_light.png"
+    />
+    <link
+      rel="mask-icon"
+      href="./assets/icons/favicon_light.png"
+      color="#000000"
+    />
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="CSS/index.css">
-    <link rel="stylesheet" type="text/css" href="CSS/about.css">
-    <link rel="stylesheet" type="text/css" href="CSS/impressum.css">
-    <link rel="stylesheet" type="text/css" href="CSS/brevo-form.css">
-    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/about.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/impressum.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/brevo-form.css" />
+    <link
+      rel="stylesheet"
+      href="https://sibforms.com/forms/end-form/build/sib-styles.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- Theme change listener -->
     <script>
-        // Listen for system theme changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-            document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      // Listen for system theme changes
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (e) => {
+          document.documentElement.setAttribute(
+            "data-theme",
+            e.matches ? "dark" : "light"
+          );
         });
     </script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJTXC37LXF"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SJTXC37LXF"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-SJTXC37LXF');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-SJTXC37LXF");
     </script>
     <!-- Brevo Form Scripts -->
     <script type="text/javascript">
-        (function() {
-            window.sib = {
-                equeue: [],
-                client_key: "MUIFAK4TetfBvPW7d1VeZkJ7P_KTw55p_oaMS1mKyFOsvSRlOocCSu2sAI5cW56-xMxxssXALhBkSsWDoUMaCtiER-d51SLvMzc8XlcB9NfDq2n9J4B4JLaC-fx9FKjnLjxTgRUJ2fhAhY5m6ptitCA7zEE41sAbg9bLsTsV6RzVj51bX83KDuakUl1zM6-MnFTXY7kYo-lGCp-r"
+      (function () {
+        window.sib = {
+          equeue: [],
+          client_key:
+            "MUIFAK4TetfBvPW7d1VeZkJ7P_KTw55p_oaMS1mKyFOsvSRlOocCSu2sAI5cW56-xMxxssXALhBkSsWDoUMaCtiER-d51SLvMzc8XlcB9NfDq2n9J4B4JLaC-fx9FKjnLjxTgRUJ2fhAhY5m6ptitCA7zEE41sAbg9bLsTsV6RzVj51bX83KDuakUl1zM6-MnFTXY7kYo-lGCp-r",
+        };
+        window.sendinblue = {};
+        for (
+          var j = ["track", "identify", "trackLink", "page"], i = 0;
+          i < j.length;
+          i++
+        ) {
+          (function (k) {
+            window.sendinblue[k] = function () {
+              var arg = Array.prototype.slice.call(arguments);
+              (
+                window.sib[k] ||
+                function () {
+                  var t = {};
+                  t[k] = arg;
+                  window.sib.equeue.push(t);
+                }
+              )(arg[0], arg[1], arg[2], arg[3]);
             };
-            window.sendinblue = {};
-            for (var j = ['track', 'identify', 'trackLink', 'page'], i = 0; i < j.length; i++) {
-                (function(k) {
-                    window.sendinblue[k] = function() {
-                        var arg = Array.prototype.slice.call(arguments);
-                        (window.sib[k] || function() {
-                            var t = {};
-                            t[k] = arg;
-                            window.sib.equeue.push(t);
-                        })(arg[0], arg[1], arg[2], arg[3]);
-                    }
-                })(j[i]);
-            }
-        })();
+          })(j[i]);
+        }
+      })();
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="nav-container">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link" data-i18n="aboutUs">About Us</a>
-        <a href="impressum.html" class="nav-link" data-i18n="impressum">Imprint</a>
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link" data-i18n="aboutUs">About Us</a>
     </div>
 
     <div class="settings-container">
-        <div class="toggle-container">
-            <button class="theme-toggle" aria-label="Toggle dark mode">
-                <i class="fas fa-moon" aria-hidden="true"></i>
-            </button>
-            <button class="lang-toggle" aria-label="Toggle language">
-                <span class="flag-icon flag-en" aria-hidden="true">🇬🇧</span>
-                <span class="flag-icon flag-de" aria-hidden="true" style="display: none;">🇩🇪</span>
-            </button>
-        </div>
+      <div class="toggle-container">
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="lang-toggle" aria-label="Toggle language">
+          <span class="flag-icon flag-en" aria-hidden="true">🇬🇧</span>
+          <span
+            class="flag-icon flag-de"
+            aria-hidden="true"
+            style="display: none"
+            >🇩🇪</span
+          >
+        </button>
+      </div>
     </div>
 
     <!-- Hero Section -->
     <main class="hero">
-        <div class="decorative-circle circle-1"></div>
-        <div class="decorative-circle circle-2"></div>
-        
-        <div class="hero-content">
-            <h1 class="hero-title animate-in" data-i18n="heroTitle">Real Events. Real People.<br>Right Here.</h1>
-            <p class="hero-subtitle animate-in" style="animation-delay: 0.2s" data-i18n="heroSubtitle">
-                Every event is a chance to meet someone special. 
-                App4it helps you turn those in-person connections into lasting friendships through shared experiences.
-            </p>
-            
-            <a href="early-access.html" class="cta-button animate-in" style="animation-delay: 0.4s" data-i18n="joinWaitlist">Join the Waitlist</a>
-        </div>
+      <div class="decorative-circle circle-1"></div>
+      <div class="decorative-circle circle-2"></div>
+
+      <div class="hero-content">
+        <h1 class="hero-title animate-in" data-i18n="heroTitle">
+          Real Events. Real People.<br />Right Here.
+        </h1>
+        <p
+          class="hero-subtitle animate-in"
+          style="animation-delay: 0.2s"
+          data-i18n="heroSubtitle"
+        ></p>
+
+        <a
+          href="early-access.html"
+          class="cta-button animate-in"
+          style="animation-delay: 0.4s"
+          data-i18n="joinWaitlist"
+          >Join the Waitlist</a
+        >
+      </div>
     </main>
 
     <!-- Values Section -->
     <section class="values-section">
-        <h2 class="section-title" data-i18n="ourValues">Our Values</h2>
-        <div class="values-grid">
-            <div class="value-card animate-in">
-                <i class="fas fa-heart feature-icon"></i>
-                <h3 data-i18n="authenticity">Authenticity First</h3>
-                <p data-i18n="authenticityDesc">Genuine connections over perfect profiles. Be yourself, meet others who do the same.</p>
-            </div>
-            <div class="value-card animate-in" style="animation-delay: 0.2s">
-                <i class="fas fa-users feature-icon"></i>
-                <h3 data-i18n="community">Community Driven</h3>
-                <p data-i18n="communityDesc">Join a vibrant community of people who believe in the power of real-world connections.</p>
-            </div>
-            <div class="value-card animate-in" style="animation-delay: 0.4s">
-                <i class="fas fa-star feature-icon"></i>
-                <h3 data-i18n="spontaneous">Spontaneous Joy</h3>
-                <p data-i18n="spontaneousDesc">Discover unexpected moments and create memories that last a lifetime.</p>
-            </div>
-            <div class="value-card animate-in" style="animation-delay: 0.6s">
-                <i class="fas fa-shield-alt feature-icon"></i>
-                <h3 data-i18n="realConnections">Real Connections</h3>
-                <p data-i18n="realConnectionsDesc">Connect only with people you've met in person through our unique QR code system.</p>
-            </div>
+      <h2 class="section-title" data-i18n="ourValues">Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card animate-in">
+          <i class="fas fa-heart feature-icon"></i>
+          <h3 data-i18n="keepItReal">Keep It Real</h3>
+          <p data-i18n="keepItRealDesc">We celebrate authenticity. Real people, real interests, and real connections. No filters, no fakes. Just honest experiences that feel like you.</p>
         </div>
+        <div class="value-card animate-in" style="animation-delay: 0.2s">
+          <i class="fas fa-shield-alt feature-icon"></i>
+          <h3 data-i18n="safetyFirst">Safety First, Always</h3>
+          <p data-i18n="safetyFirstDesc">From who you meet to what you share, everything is built to keep you secure. Trust is the foundation for great times, so we take it seriously.</p>
+        </div>
+        <div class="value-card animate-in" style="animation-delay: 0.4s">
+          <i class="fas fa-users feature-icon"></i>
+          <h3 data-i18n="connectWithPurpose">Connect With Purpose</h3>
+          <p data-i18n="connectWithPurposeDesc">It's not about meeting everyone, but about finding the right ones. Be ready to spark genuine connections and build communities around what you love.</p>
+        </div>
+        <div class="value-card animate-in" style="animation-delay: 0.6s">
+          <i class="fas fa-star feature-icon"></i>
+          <h3 data-i18n="poweredByJoy">Powered by Joy</h3>
+          <p data-i18n="poweredByJoyDesc">No more endless scrolling just to feel entertained. There's always something to do, someone to join, and a good time waiting. Boredom doesn't stand a chance.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Features Section -->
     <section class="features-section">
-        <h2 class="section-title" data-i18n="ourFeatures">Our Features</h2>
-        <div class="features-grid">
-            <div class="feature-card animate-in">
-                <i class="fas fa-eye feature-icon"></i>
-                <h3>See What's Happening</h3>
-                <p>Stay in the loop with everything going on around you. No more FOMO, no more "I didn't know that was happening."</p>
-            </div>
-            <div class="feature-card animate-in" style="animation-delay: 0.2s">
-                <i class="fas fa-magic feature-icon"></i>
-                <h3>Events Made for You</h3>
-                <p>Explore gatherings that match your vibe. Whether you're into art, music, or something in between, your city has more than you think.</p>
-            </div>
-            <div class="feature-card animate-in" style="animation-delay: 0.4s">
-                <i class="fas fa-rocket feature-icon"></i>
-                <h3>Start Something</h3>
-                <p>Create your own events and bring people together. It's easy, fast, and surprisingly fun to see who shows up.</p>
-            </div>
-            <div class="feature-card animate-in" style="animation-delay: 0.6s">
-                <i class="fas fa-handshake feature-icon"></i>
-                <h3>Real Friends Only</h3>
-                <p>Add only the people you've met in person. Connections happen in real life. We're just here to keep them going.</p>
-            </div>
-            <div class="feature-card animate-in" style="animation-delay: 0.8s">
-                <i class="fas fa-camera feature-icon"></i>
-                <h3>Remember Together</h3>
-                <p>Capture moments from the events you attend and share memories with the people who made them special.</p>
-            </div>
-            <div class="feature-card animate-in" style="animation-delay: 1.0s">
-                <i class="fas fa-users feature-icon"></i>
-                <h3>Bring Your People</h3>
-                <p>Invite friends to your events with a tap. Let them know what's happening and make it happen together.</p>
-            </div>
-            <div class="feature-card animate-in" style="animation-delay: 1.2s">
-                <i class="fas fa-compass feature-icon"></i>
-                <h3>Join the Fun</h3>
-                <p>See where your friends are going and tag along. Great events start with a little curiosity.</p>
-            </div>
-            <div class="feature-card animate-in" style="animation-delay: 1.4s">
-                <i class="fas fa-user-edit feature-icon"></i>
-                <h3>Make It Yours</h3>
-                <p>Customize your profile to reflect your vibe: username, photo, stats and all.</p>
-            </div>
-            <div class="feature-card animate-in" style="animation-delay: 1.6s">
-                <i class="fas fa-bell feature-icon"></i>
-                <h3>Never Miss a Beat</h3>
-                <p>Get gentle nudges when something's happening nearby. You decide what's worth your time — we just make sure you know it's out there.</p>
-            </div>
+      <h2 class="section-title" data-i18n="ourFeatures">Our Features</h2>
+      <div class="features-grid">
+        <div class="feature-card animate-in">
+          <i class="fas fa-eye feature-icon"></i>
+          <h3 data-i18n="seeWhatsHappening">See What's Happening</h3>
+          <p data-i18n="seeWhatsHappeningDesc">
+            Stay in the loop with everything going on around you. No more FOMO,
+            no more "I didn't know that was happening."
+          </p>
         </div>
+        <div class="feature-card animate-in" style="animation-delay: 0.2s">
+          <i class="fas fa-magic feature-icon"></i>
+          <h3 data-i18n="eventsMadeForYou">Events Made for You</h3>
+          <p data-i18n="eventsMadeForYouDesc">
+            Explore gatherings that match your vibe. Whether you're into art,
+            music, or something in between, your city has more than you think.
+          </p>
+        </div>
+        <div class="feature-card animate-in" style="animation-delay: 0.4s">
+          <i class="fas fa-rocket feature-icon"></i>
+          <h3 data-i18n="startSomething">Start Something</h3>
+          <p data-i18n="startSomethingDesc">
+            Create your own events and bring people together. It's easy, fast,
+            and surprisingly fun to see who shows up.
+          </p>
+        </div>
+        <div class="feature-card animate-in" style="animation-delay: 0.6s">
+          <i class="fas fa-handshake feature-icon"></i>
+          <h3 data-i18n="realFriendsOnly">Real Friends Only</h3>
+          <p data-i18n="realFriendsOnlyDesc">
+            Add only the people you've met in person. Connections happen in real
+            life. We're just here to keep them going.
+          </p>
+        </div>
+        <div class="feature-card animate-in" style="animation-delay: 0.8s">
+          <i class="fas fa-camera feature-icon"></i>
+          <h3 data-i18n="rememberTogether">Remember Together</h3>
+          <p data-i18n="rememberTogetherDesc">
+            Capture moments from the events you attend and share memories with
+            the people who made them special.
+          </p>
+        </div>
+        <div class="feature-card animate-in" style="animation-delay: 1s">
+          <i class="fas fa-user-edit feature-icon"></i>
+          <h3 data-i18n="makeItYours">Make It Yours</h3>
+          <p data-i18n="makeItYoursDesc">
+            Customize your profile to reflect your vibe: username, photo, stats
+            and all.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Events Section -->
     <section class="events-section">
-        <h2 class="section-title" data-i18n="experienceTitle">Experience Real Connections</h2>
-        <div class="events-grid">
-            <div class="event-image-container">
-                <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg" 
-                     alt="Food gathering at home" 
-                     class="event-image animate-in"
-                     loading="lazy">
-            </div>
-            <div class="event-image-container">
-                <img src="https://images.pexels.com/photos/2444852/pexels-photo-2444852.jpeg" 
-                     alt="Sports event" 
-                     class="event-image animate-in"
-                     loading="lazy">
-            </div>
-            <div class="event-image-container">
-                <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg" 
-                     alt="Street art exhibition with murals and graffiti" 
-                     class="event-image animate-in"
-                     loading="lazy">
-            </div>
-            <div class="event-image-container">
-                <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg" 
-                     alt="Concert event" 
-                     class="event-image animate-in"
-                     loading="lazy">
-            </div>
-            <div class="event-image-container">
-                <img src="https://images.pexels.com/photos/7780108/pexels-photo-7780108.jpeg" 
-                     alt="Conference" 
-                     class="event-image animate-in"
-                     loading="lazy">
-            </div>
-            <div class="event-image-container">
-                <img src="https://images.pexels.com/photos/2414845/pexels-photo-2414845.jpeg" 
-                alt="Group of people walking their dogs in a park" 
-                class="event-image animate-in"
-                loading="lazy">
-            </div>
-            <div class="event-image-container">
-                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" 
-                     alt="Book club" 
-                     class="event-image animate-in"
-                     loading="lazy">
-            </div>
-            <div class="event-image-container">
-                <img src="https://images.pexels.com/photos/3184331/pexels-photo-3184331.jpeg" 
-                     alt="Installation art exhibition with interactive pieces" 
-                     class="event-image animate-in"
-                     loading="lazy">
-            </div>
+      <h2 class="section-title" data-i18n="experienceTitle">
+        Experience Real Connections
+      </h2>
+      <div class="events-grid">
+        <div class="event-image-container">
+          <img
+            src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg"
+            alt="Food gathering at home"
+            class="event-image animate-in"
+            loading="lazy"
+          />
         </div>
+        <div class="event-image-container">
+          <img
+            src="https://images.pexels.com/photos/2444852/pexels-photo-2444852.jpeg"
+            alt="Sports event"
+            class="event-image animate-in"
+            loading="lazy"
+          />
+        </div>
+        <div class="event-image-container">
+          <img
+            src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg"
+            alt="Street art exhibition with murals and graffiti"
+            class="event-image animate-in"
+            loading="lazy"
+          />
+        </div>
+        <div class="event-image-container">
+          <img
+            src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg"
+            alt="Concert event"
+            class="event-image animate-in"
+            loading="lazy"
+          />
+        </div>
+        <div class="event-image-container">
+          <img
+            src="https://images.pexels.com/photos/7780108/pexels-photo-7780108.jpeg"
+            alt="Conference"
+            class="event-image animate-in"
+            loading="lazy"
+          />
+        </div>
+        <div class="event-image-container">
+          <img
+            src="https://images.pexels.com/photos/2414845/pexels-photo-2414845.jpeg"
+            alt="Group of people walking their dogs in a park"
+            class="event-image animate-in"
+            loading="lazy"
+          />
+        </div>
+        <div class="event-image-container">
+          <img
+            src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+            alt="Book club"
+            class="event-image animate-in"
+            loading="lazy"
+          />
+        </div>
+        <div class="event-image-container">
+          <img
+            src="https://images.pexels.com/photos/3184331/pexels-photo-3184331.jpeg"
+            alt="Installation art exhibition with interactive pieces"
+            class="event-image animate-in"
+            loading="lazy"
+          />
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <p>
-            <span data-i18n="copyright">© 2025 App4it Project Team. All rights reserved.</span>
-            <span class="footer-separator">|</span>
-            <a href="impressum.html" class="footer-link" data-i18n="impressum">Impressum</a>
-        </p>
+      <p>
+        <span data-i18n="copyright"
+          >© 2025 App4it Project Team. All rights reserved.</span
+        >
+        <span class="footer-separator">|</span>
+        <a href="impressum.html" class="footer-link" data-i18n="impressum"
+          >Impressum</a
+        >
+      </p>
     </footer>
 
     <script src="JS/index.js"></script>
     <script src="JS/language.js"></script>
     <script src="JS/brevo-form.js"></script>
-    <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-</body>
+    <script
+      defer
+      src="https://sibforms.com/forms/end-form/build/main.js"
+    ></script>
+  </body>
 </html>

@@ -3,7 +3,7 @@ const translations = {
     en: {
         // Hero Section
         heroTitle: "Real Events. Real People.<br>Right Here.",
-        heroSubtitle: "Every event is a chance to meet someone special. App4it helps you turn those in-person connections into lasting friendships through shared experiences.",
+        heroSubtitle: "Built around in-person moments, not endless feeds. Discover what's happening nearby, make plans with friends, and turn shared experiences into lasting connections.",
         requestAccess: "Request Early Access",
         submit: "SUBMIT",
         
@@ -14,17 +14,29 @@ const translations = {
         
         // Values Section
         ourValues: "Our Values",
-        authenticity: "Authenticity First",
-        authenticityDesc: "Genuine connections over perfect profiles. Be yourself, meet others who do the same.",
-        community: "Community Driven",
-        communityDesc: "Join a vibrant community of people who believe in the power of real-world connections.",
-        spontaneous: "Spontaneous Joy",
-        spontaneousDesc: "Discover unexpected moments and create memories that last a lifetime.",
-        realConnections: "Real Connections",
-        realConnectionsDesc: "Connect only with people you've met in person through our unique QR code system.",
+        keepItReal: "Keep It Real",
+        keepItRealDesc: "We celebrate authenticity. Real people, real interests, and real connections. No filters, no fakes. Just honest experiences that feel like you.",
+        safetyFirst: "Safety First, Always",
+        safetyFirstDesc: "From who you meet to what you share, everything is built to keep you secure. Trust is the foundation for great times, so we take it seriously.",
+        connectWithPurpose: "Connect With Purpose",
+        connectWithPurposeDesc: "It's not about meeting everyone, but about finding the right ones. Be ready to spark genuine connections and build communities around what you love.",
+        poweredByJoy: "Powered by Joy",
+        poweredByJoyDesc: "No more endless scrolling just to feel entertained. There's always something to do, someone to join, and a good time waiting. Boredom doesn't stand a chance.",
         
         // Features Section
         ourFeatures: "Our Features",
+        seeWhatsHappening: "See What's Happening",
+        seeWhatsHappeningDesc: "Stay in the loop with everything going on around you. No more FOMO, no more \"I didn't know that was happening.\"",
+        eventsMadeForYou: "Events Made for You",
+        eventsMadeForYouDesc: "Explore gatherings that match your vibe. Whether you're into art, music, or something in between, your city has more than you think.",
+        startSomething: "Start Something",
+        startSomethingDesc: "Create your own events and bring people together. It's easy, fast, and surprisingly fun to see who shows up.",
+        realFriendsOnly: "Real Friends Only",
+        realFriendsOnlyDesc: "Add only the people you've met in person. Connections happen in real life. We're just here to keep them going.",
+        rememberTogether: "Remember Together",
+        rememberTogetherDesc: "Built for real-life friendships. Capture moments from shared events and relive them with the people who were actually there.",
+        makeItYours: "Make It Yours",
+        makeItYoursDesc: "Customize your profile to reflect your vibe: username, photo, stats and all.",
         discoverEvents: "Discover & Create Events",
         discoverEventsDesc: "Find exciting local events or create your own gatherings. From parties to book clubs, there's something for everyone.",
         authenticConnections: "Authentic Connections",
@@ -101,17 +113,29 @@ const translations = {
         
         // Values Section
         ourValues: "Unsere Werte",
-        authenticity: "Authentizität Zuerst",
-        authenticityDesc: "Echte Verbindungen statt perfekter Profile. Sei du selbst und triff andere, die das auch sind.",
-        community: "Gemeinschaft im Fokus",
-        communityDesc: "Werde Teil einer lebendigen Community, die an die Kraft echter Begegnungen glaubt.",
-        spontaneous: "Spontane Freude",
-        spontaneousDesc: "Entdecke unerwartete Momente und schaffe Erinnerungen, die ein Leben lang halten.",
-        realConnections: "Echte Verbindungen",
-        realConnectionsDesc: "Verbinde dich nur mit Menschen, die du persönlich durch unser einzigartiges QR-Code-System getroffen hast.",
+        keepItReal: "Keep It Real",
+        keepItRealDesc: "Wir feiern Authentizität. Echte Menschen, echte Interessen und echte Verbindungen. Keine Filter, keine Fakes. Nur ehrliche Erfahrungen, die dir gefallen.",
+        safetyFirst: "Safety First, Always",
+        safetyFirstDesc: "Von wem du kennst bis zu dem, was du teilst, alles ist darauf ausgelegt, dich zu sichern. Vertrauen ist die Grundlage für großartige Zeiten, also nehmen wir es ernst.",
+        connectWithPurpose: "Connect With Purpose",
+        connectWithPurposeDesc: "Es geht nicht darum, jeden zu treffen, sondern darum, die richtigen zu finden. Sei bereit, echte Verbindungen zu entfachen und Gemeinschaften um das zu schaffen, was dich am meisten liebt.",
+        poweredByJoy: "Powered by Joy",
+        poweredByJoyDesc: "Kein endloses Scrollen mehr, nur um unterhalten zu werden. Es gibt immer etwas zu tun, jemanden zum Mitmachen und eine gute Zeit, die wartet. Langeweile hat keine Chance.",
         
         // Features Section
         ourFeatures: "Unsere Features",
+        seeWhatsHappening: "Sehen, was passiert",
+        seeWhatsHappeningDesc: "Bleib im Loop mit allem, was um dich herum passiert. Kein FOMO, keine \"Ich wusste nicht, dass das passiert.\"",
+        eventsMadeForYou: "Events für dich",
+        eventsMadeForYouDesc: "Entdecke Treffen, die zu deinem Vibe passen. Ob du in die Kunst, Musik oder etwas dazwischen gehst, deine Stadt hat mehr als du denkst.",
+        startSomething: "Starte etwas",
+        startSomethingDesc: "Erstelle deine eigenen Treffen und bringe Leute zusammen. Es ist einfach, schnell und überraschend erfreulich, zu sehen, wer auftaucht.",
+        realFriendsOnly: "Nur echte Freunde",
+        realFriendsOnlyDesc: "Füge nur die Menschen hinzu, die du persönlich kennst. Verbindungen passieren in der Realität. Wir sind hier nur, um sie fortzuführen.",
+        rememberTogether: "Gedenken zusammen",
+        rememberTogetherDesc: "Fang Momente von Ereignissen auf und teile Erinnerungen mit den Menschen, die sie speziell gemacht haben.",
+        makeItYours: "Mach es zu deinem",
+        makeItYoursDesc: "Stelle dein Profil auf dein Vibe ein: Benutzername, Foto, Statistiken und alles.",
         discoverEvents: "Entdecke & Erstelle Events",
         discoverEventsDesc: "Finde spannende lokale Events oder erstelle deine eigenen Treffen. Von Partys bis zu Buchclubs ist für jeden etwas dabei.",
         authenticConnections: "Authentische Verbindungen",
@@ -184,6 +208,8 @@ function detectBrowserLanguage() {
 
 // Function to set the page language
 function setPageLanguage(lang) {
+    console.log('Setting page language to:', lang);
+    
     // Store the selected language
     localStorage.setItem('preferredLanguage', lang);
     
@@ -206,9 +232,12 @@ function setPageLanguage(lang) {
     
     // Update all translatable elements
     const elements = document.querySelectorAll('[data-i18n]');
+    console.log('Found', elements.length, 'elements with data-i18n');
+    
     elements.forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
+            console.log('Translating', key, 'to:', translations[lang][key]);
             if (element.tagName === 'INPUT' && element.type === 'submit') {
                 element.value = translations[lang][key];
             } else if (element.tagName === 'INPUT' && element.type === 'placeholder') {
@@ -225,15 +254,33 @@ function setPageLanguage(lang) {
                     element.innerHTML = translations[lang][key];
                 }
             }
+        } else {
+            console.warn('Translation not found for key:', key, 'in language:', lang);
         }
     });
 }
 
+// Force refresh translations (can be called from console)
+function forceRefreshTranslations() {
+    console.log('Force refreshing translations...');
+    const currentLang = document.documentElement.lang || 'en';
+    setPageLanguage(currentLang);
+}
+
+// Make it available globally for debugging
+window.forceRefreshTranslations = forceRefreshTranslations;
+
 // Initialize language settings
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('Language.js loaded - DOM ready');
+    
     // Check for stored language preference
     const storedLang = localStorage.getItem('preferredLanguage');
     const initialLang = storedLang || detectBrowserLanguage();
+    
+    console.log('Initial language:', initialLang);
+    console.log('Stored language:', storedLang);
+    console.log('Detected browser language:', detectBrowserLanguage());
     
     // Set initial language
     setPageLanguage(initialLang);
@@ -241,10 +288,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add click handler to language toggle
     const langToggle = document.querySelector('.lang-toggle');
     if (langToggle) {
+        console.log('Language toggle found');
         langToggle.addEventListener('click', () => {
+            console.log('Language toggle clicked');
             const currentLang = document.documentElement.lang;
             const newLang = currentLang === 'en' ? 'de' : 'en';
+            console.log('Switching from', currentLang, 'to', newLang);
             setPageLanguage(newLang);
         });
+    } else {
+        console.error('Language toggle not found!');
     }
+    
+    // Test if translations are working
+    console.log('Available translations:', Object.keys(translations.en));
+    console.log('Sample translation:', translations.en.heroTitle);
 }); 
