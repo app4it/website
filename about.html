@@ -49,89 +49,189 @@
     </div>
 
     <div class="about-container">
-        <div class="about-circle-1"></div>
-        <div class="about-circle-2"></div>
-        
-        <div class="about-header">
-            <h1 class="about-title" data-i18n="aboutTitle">Meet the App4it Team</h1>
-            <p class="about-subtitle" data-i18n="aboutSubtitle">We're a passionate team of four, dedicated to revolutionizing how people connect at events and build lasting friendships.</p>
-        </div>
-
-        <div class="mission-vision-section">
-            <div class="mission-card animate-in">
-                <h2 data-i18n="ourMission">Our Mission</h2>
-                <p data-i18n="missionText">To redefine social connection in the digital age by encouraging authentic, in-person interactions. We're bringing back the magic of real-world connections while embracing modern technology to make it happen.</p>
+        <!-- Creative Hero Section -->
+        <div class="creative-hero">
+            <!-- Diagonal Background Elements -->
+            <div class="diagonal-section diagonal-left">
+                <div class="floating-card card-1">
+                    <div class="card-content">
+                        <h2>We're Building</h2>
+                        <p>Something Different</p>
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-content">
+                        <span class="emoji">🚀</span>
+                        <p>Real Connections</p>
+                    </div>
+                </div>
             </div>
-            <div class="vision-card animate-in" style="animation-delay: 0.2s">
-                <h2 data-i18n="ourVision">Our Vision</h2>
-                <p data-i18n="visionText">A world where technology enhances real-life social experiences instead of replacing them. We believe in creating meaningful friendships that start with shared moments and grow through genuine interactions.</p>
+            
+            <!-- Central Team Showcase -->
+            <div class="central-showcase">
+                <!-- Red dot showing Julia's current position -->
+                <div class="julia-position-marker" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -100%); width: 20px; height: 20px; background: red; border-radius: 50%; z-index: 9999; border: 2px solid white;"></div>
+                
+                <!-- Julia's image positioned 60px to the right from center -->
+                <div class="julia-image-fixed" style="position: absolute; left: 75%; top: 50%; transform: translate(-50%, -100%); width: 110px; height: 110px; border-radius: 50%; overflow: hidden; z-index: 20;">
+                    <img src="assets/images/team/julia.jpeg" alt="Julia" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 3px solid var(--background-color); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                    <div class="member-badge" style="position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); background: var(--background-color); color: var(--primary-color); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; white-space: nowrap; opacity: 0; transition: opacity 0.3s ease; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">Julia</div>
+                </div>
+                
+                <!-- Savo's image -->
+                <div class="savo-image-fixed" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -100%); width: 90px; height: 90px; border-radius: 50%; overflow: hidden; z-index: 20;">
+                    <img src="assets/images/team/savo.jpeg" alt="Savo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 3px solid var(--background-color); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                    <div class="member-badge" style="position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); background: var(--background-color); color: var(--primary-color); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; white-space: nowrap; opacity: 0; transition: opacity 0.3s ease; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">Savo</div>
+                </div>
+                <!-- Sophia's image -->
+                <div class="sophia-image-fixed" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -100%); width: 100px; height: 100px; border-radius: 50%; overflow: hidden; z-index: 20;">
+                    <img src="assets/images/team/sophia.jpeg" alt="Sophia" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 3px solid var(--background-color); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                    <div class="member-badge" style="position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); background: var(--background-color); color: var(--primary-color); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; white-space: nowrap; opacity: 0; transition: opacity 0.3s ease; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">Sophia</div>
+                </div>
+                <!-- Marin's image -->
+                <div class="marin-image-fixed" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -100%); width: 80px; height: 80px; border-radius: 50%; overflow: hidden; z-index: 20;">
+                    <img src="assets/images/team/marin.jpeg" alt="Marin" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 3px solid var(--background-color); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                    <div class="member-badge" style="position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); background: var(--background-color); color: var(--primary-color); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; white-space: nowrap; opacity: 0; transition: opacity 0.3s ease; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">Marin</div>
+                </div>
+                
+                <div class="center-brand">
+                    <div class="brand-circle">
+                        <h1>App4it</h1>
+                        <div class="brand-subtitle">
+                            <span class="typing-text">Connecting People</span>
+                            <span class="cursor">|</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Diagonal Background Elements -->
+            <div class="diagonal-section diagonal-right">
+                <div class="floating-card card-3">
+                    <div class="card-content">
+                        <span class="emoji">💡</span>
+                        <p>Fresh Ideas</p>
+                    </div>
+                </div>
+                <div class="floating-card card-4">
+                    <div class="card-content">
+                        <h2>Small City</h2>
+                        <p>Big Dreams</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Interactive Elements -->
+            <div class="interactive-elements">
+                <div class="scroll-indicator">
+                    <div class="scroll-dot"></div>
+                    <div class="scroll-dot"></div>
+                    <div class="scroll-dot"></div>
+                </div>
+                
+                <div class="floating-cta">
+                    <button class="cta-button">
+                        <span>Discover Our Story</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </div>
             </div>
         </div>
 
-        <div class="motivation-section animate-in" style="animation-delay: 0.4s">
-            <h2 data-i18n="ourMotivation">What Drives Us</h2>
-            <p data-i18n="motivationText">We're passionate about bringing the joy of human connection back into our tech-driven world. By creating a platform that celebrates real-world interactions and makes discovering local events effortless, we're making it easier than ever to build authentic friendships in your community.</p>
+        <!-- What Drives Us - Full Width -->
+        <div class="motivation-hero">
+            <div class="motivation-content">
+                <h2>What Drives Us</h2>
+                <p>
+                    We started App4it in a small city, tired of not knowing what to do, or how to meet new people. We realized something bigger: most platforms make it harder, not easier, to connect in real life.<br><br>
+                    So we decided to build the opposite. A place where you can find real events, meet real people, and create memories offline—not just likes online.<br><br>
+                    We're doing this for fun, for the challenge, and because we genuinely want to make things better.
+                </p>
+            </div>
         </div>
 
-        <div class="team-section">
-            <h2 data-i18n="meetTheTeam">Meet the Team</h2>
-            <div class="team-grid">
-                <div class="team-member animate-in" style="animation-delay: 0.6s">
+        <!-- Mission & Vision Cards -->
+        <div class="mission-vision-grid">
+            <div class="mission-card-large">
+                <div class="card-icon">🎯</div>
+                <h3>Bringing people together in the real world.</h3>
+                <p>App4it connects people through real-life events and shared interests. We help you discover what's happening around you—no more boredom, no more FOMO. It's time to make plans, not scroll endlessly.</p>
+            </div>
+            <div class="vision-card-large">
+                <div class="card-icon">🌟</div>
+                <h3>Reclaiming social. Redefining what it means to connect.</h3>
+                <p>We imagine a world where meeting new people is easy, spontaneous, and fun. Where events are never a mystery. Where technology doesn't distract from real life—it enhances it. We're building the go-to platform for discovering what's on, finding your people, and making small cities feel big with possibility.</p>
+            </div>
+        </div>
+
+        <!-- Team Details Section -->
+        <div class="team-details-section">
+            <h2>Get to Know Us</h2>
+            <div class="team-details-grid">
+                <div class="team-detail-card">
                     <img src="assets/images/team/julia.jpeg" alt="Julia Agüero">
-                    <h3>Julia Agüero</h3>
-                    <p data-i18n="juliaDesc">Frontend developer and JIRA expert. Creating colorful chaos with watercolors and calling it art in my free time.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/aaguueeroo" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/julia-aguero-fraguas/" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://juliaaguero.com/" target="_blank" class="social-link" aria-label="Personal Website">
-                            <i class="fas fa-globe"></i>
-                        </a>
+                    <div class="detail-content">
+                        <h3>Julia Agüero</h3>
+                        <p>Frontend developer and JIRA expert. Creating colorful chaos with watercolors and calling it art in my free time.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/aaguueeroo" target="_blank" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/julia-aguero-fraguas/" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://juliaaguero.com/" target="_blank" class="social-link" aria-label="Personal Website">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member animate-in" style="animation-delay: 0.8s">
+                <div class="team-detail-card">
                     <img src="assets/images/team/savo.jpeg" alt="Savo Simeunović">
-                    <h3>Savo Simeunović</h3>
-                    <p data-i18n="savoDesc">Specializing in AI/ML and databases. Proudly serving my cat's every whim in my free time.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/Rek27" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ssimeunovic/" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+                    <div class="detail-content">
+                        <h3>Savo Simeunović</h3>
+                        <p>Specializing in AI/ML and databases. Proudly serving my cat's every whim in my free time.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/Rek27" target="_blank" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ssimeunovic/" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member animate-in" style="animation-delay: 1s">
+                <div class="team-detail-card">
                     <img src="assets/images/team/sophia.jpeg" alt="Sophia Soares">
-                    <h3>Sophia Soares</h3>
-                    <p data-i18n="sophiaDesc">Frontend developer and UX/UI designer. If you want a knitted plushie, send me a DM.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/sophiasoares" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/sophia-ss/" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+                    <div class="detail-content">
+                        <h3>Sophia Soares</h3>
+                        <p>Frontend developer and UX/UI designer. If you want a knitted plushie, send me a DM.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/sophiasoares" target="_blank" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sophia-ss/" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member animate-in" style="animation-delay: 1.2s">
+                <div class="team-detail-card">
                     <img src="assets/images/team/marin.jpeg" alt="Marin Sušić">
-                    <h3>Marin Sušić</h3>
-                    <p data-i18n="marinDesc">Passionate about security, forced to also do backend development. I like to lie to myself that I am a decent motorcycle rider.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/Sule57" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/marinsusic/" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://susic-security.com/" target="_blank" class="social-link" aria-label="Personal Website">
-                            <i class="fas fa-globe"></i>
-                        </a>
+                    <div class="detail-content">
+                        <h3>Marin Sušić</h3>
+                        <p>Passionate about security, forced to also do backend development. I like to lie to myself that I am a decent motorcycle rider.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/Sule57" target="_blank" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/marinsusic/" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://susic-security.com/" target="_blank" class="social-link" aria-label="Personal Website">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

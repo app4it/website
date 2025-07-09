@@ -11,137 +11,469 @@ body.about-page {
 .about-container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 8rem var(--padding) 2rem;
+    padding: 0;
     min-height: 100vh;
     position: relative;
     z-index: 1;
 }
 
-.about-header {
-    text-align: center;
-    margin-bottom: 4rem;
+/* Creative Hero Section */
+.creative-hero {
+    min-height: 100vh;
     position: relative;
-    z-index: 2;
+    overflow: hidden;
+    background: linear-gradient(135deg, 
+        rgba(var(--primary-color-rgb), 0.05) 0%, 
+        rgba(142, 226, 220, 0.05) 50%, 
+        rgba(var(--secondary-color-rgb), 0.05) 100%);
 }
 
-.about-title {
-    font-size: clamp(2.5rem, 6vw, 4rem);
+/* Diagonal Sections */
+.diagonal-section {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+}
+
+.diagonal-left {
+    left: 0;
+    background: linear-gradient(45deg, 
+        rgba(var(--primary-color-rgb), 0.1) 0%, 
+        transparent 100%);
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+}
+
+.diagonal-right {
+    right: 0;
+    background: linear-gradient(-45deg, 
+        rgba(var(--secondary-color-rgb), 0.1) 0%, 
+        transparent 100%);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Floating Cards */
+.floating-card {
+    position: absolute;
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-card:nth-child(odd) {
+    animation-delay: 0s;
+}
+
+.floating-card:nth-child(even) {
+    animation-delay: 3s;
+}
+
+.card-1 {
+    top: 20%;
+    left: 10%;
+    transform: rotate(-5deg);
+}
+
+.card-2 {
+    top: 60%;
+    left: 15%;
+    transform: rotate(8deg);
+}
+
+.card-3 {
+    top: 25%;
+    right: 15%;
+    transform: rotate(5deg);
+}
+
+.card-4 {
+    top: 65%;
+    right: 10%;
+    transform: rotate(-8deg);
+}
+
+.card-content h2 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+}
+
+.card-content p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.card-content .emoji {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(var(--rotation, 0deg)); }
+    50% { transform: translateY(-20px) rotate(var(--rotation, 0deg)); }
+}
+
+/* Central Showcase */
+.central-showcase {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Team Orbit */
+.team-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 460px;
+    height: 460px;
+    border: 2px dashed rgba(var(--primary-color-rgb), 0.3);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.orbit-member {
+    position: absolute;
+    width: var(--member-size, 80px);
+    height: var(--member-size, 80px);
+    border-radius: 50%;
+    overflow: hidden;
+    /* Each member spins with its own speed, direction, and radius */
+    animation: orbit-spin var(--spin-duration, 20s) linear infinite;
+    animation-direction: var(--spin-direction, normal);
+    /* Place at correct angle and distance */
+    transform: rotate(calc(var(--angle) * -1)) translateX(var(--orbit-radius, 200px)) rotate(var(--angle));
+    transform-origin: calc(230px - var(--orbit-radius, 200px)) center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+@keyframes orbit-spin {
+    from { transform: rotate(0deg) translateX(var(--orbit-radius, 200px)) rotate(var(--angle)); }
+    to { transform: rotate(360deg) translateX(var(--orbit-radius, 200px)) rotate(var(--angle)); }
+}
+
+.orbit-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--background-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.orbit-member:hover {
+    z-index: 20;
+    transform: rotate(calc(var(--angle) * -1)) translateX(var(--orbit-radius, 200px)) rotate(var(--angle)) scale(1.2);
+}
+
+.orbit-member .member-badge {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--background-color);
+    color: var(--primary-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.orbit-member:hover .member-badge {
+    opacity: 1;
+}
+
+/* Center Brand */
+.center-brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+}
+
+.brand-circle {
+    background: var(--background-color);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brand-circle h1 {
+    font-size: 2rem;
     font-weight: 800;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    margin: 0 0 0.5rem 0;
 }
 
-.about-subtitle {
-    font-size: clamp(1.25rem, 4vw, 1.75rem);
+.brand-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.typing-text {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.cursor {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Interactive Elements */
+.interactive-elements {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    z-index: 20;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.scroll-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    opacity: 0.3;
+    animation: scrollPulse 2s infinite;
+}
+
+.scroll-dot:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.scroll-dot:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Floating CTA */
+.floating-cta {
+    animation: float 4s ease-in-out infinite;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--background-color);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button i {
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover i {
+    transform: translateY(2px);
+}
+
+/* Motivation Hero Section */
+.motivation-hero {
+    padding: 6rem 2rem;
+    background: var(--background-color);
+    position: relative;
+}
+
+.motivation-content {
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
+}
+
+.motivation-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
+}
+
+.motivation-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
     color: var(--text-color);
     opacity: 0.9;
 }
 
-.mission-vision-section {
+/* Mission Vision Grid */
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.05), rgba(142, 226, 220, 0.05));
+}
+
+.mission-card-large, .vision-card-large {
+    background: var(--background-color);
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-card-large:hover, .vision-card-large:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.mission-card-large h3, .vision-card-large h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.mission-card-large p, .vision-card-large p {
+    color: var(--text-color);
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Team Details Section */
+.team-details-section {
+    padding: 6rem 2rem;
+    background: var(--background-color);
+}
+
+.team-details-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 4rem;
+}
+
+.team-details-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-bottom: 4rem;
-}
-
-.mission-card, .vision-card, .motivation-section, .team-member {
-    background: var(--background-color);
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--card-shadow);
-    margin-bottom: 2rem;
-}
-
-.mission-card h2, .vision-card h2 {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.mission-card p, .vision-card p {
-    color: var(--text-color);
-}
-
-.motivation-section {
-    text-align: center;
-    margin-bottom: 4rem;
-    padding: 3rem;
-}
-
-.motivation-section h2 {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.motivation-section p {
-    color: var(--text-color);
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.team-section {
-    margin-top: 4rem;
-    margin-bottom: 8rem;
+.team-detail-card {
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
-.team-section h2 {
+.team-detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.team-detail-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.detail-content {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-content h3 {
     color: var(--primary-color);
-    font-size: 1.75rem;
-    text-align: center;
-    margin-bottom: 3rem;
-    position: relative;
-    z-index: 2;
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.team-member {
-    text-align: center;
-}
-
-.team-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
 }
 
-.team-member h3 {
+.detail-content p {
     color: var(--text-color);
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.team-member p {
-    color: var(--text-color);
-    font-size: 0.9rem;
+    line-height: 1.6;
     margin-bottom: 1.5rem;
+    flex: 1;
 }
 
 .social-links {
     display: flex;
-    justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
+    justify-content: center;
 }
 
 .social-link {
@@ -154,68 +486,209 @@ body.about-page {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    opacity: 0.8;
+    transition: all 0.3s ease;
 }
 
-.about-circle-1, .about-circle-2 {
-    position: absolute;
-    border-radius: 50%;
-    z-index: 0;
-}
-
-.about-circle-1 {
-    width: 350px;
-    height: 350px;
-    top: -150px;
-    left: -150px;
+.social-link:hover {
     background: var(--primary-color);
-    opacity: 0.1;
+    color: var(--background-color);
+    transform: translateY(-2px);
 }
 
-.about-circle-2 {
-    width: 250px;
-    height: 250px;
-    bottom: -100px;
-    right: -100px;
-    background: var(--secondary-color);
-    opacity: 0.1;
-}
-
-/* Dark Mode Specific Styles */
-[data-theme="dark"] .mission-card,
-[data-theme="dark"] .vision-card,
-[data-theme="dark"] .motivation-section,
-[data-theme="dark"] .team-member {
+/* Dark Mode Adjustments */
+[data-theme="dark"] .floating-card {
     background: var(--dark-card-background);
-    box-shadow: 0 4px 20px rgba(64, 224, 208, 0.1);
+    box-shadow: 0 8px 30px rgba(64, 224, 208, 0.1);
 }
 
-/* Responsive Styles */
+[data-theme="dark"] .brand-circle {
+    background: var(--dark-card-background);
+    box-shadow: 0 10px 40px rgba(64, 224, 208, 0.1);
+}
+
+[data-theme="dark"] .orbit-member img {
+    border-color: var(--dark-card-background);
+}
+
+[data-theme="dark"] .member-badge {
+    background: var(--dark-card-background);
+}
+
+[data-theme="dark"] .mission-card-large,
+[data-theme="dark"] .vision-card-large,
+[data-theme="dark"] .team-detail-card {
+    background: var(--dark-card-background);
+    box-shadow: 0 8px 30px rgba(64, 224, 208, 0.1);
+}
+
+[data-theme="dark"] .mission-card-large:hover,
+[data-theme="dark"] .vision-card-large:hover,
+[data-theme="dark"] .team-detail-card:hover {
+    box-shadow: 0 15px 40px rgba(64, 224, 208, 0.2);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .about-header {
-        padding-top: 4rem;
+    .team-orbit {
+        width: 320px;
+        height: 320px;
     }
-
-    .mission-vision-section {
+    
+    .orbit-member {
+        width: 60px;
+        height: 60px;
+        transform: rotate(calc(var(--angle) * -1)) translateX(150px) rotate(var(--angle));
+    }
+    
+    .orbit-member:hover {
+        transform: rotate(calc(var(--angle) * -1)) translateX(150px) rotate(var(--angle)) scale(1.2);
+    }
+    
+    .brand-circle {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .brand-circle h1 {
+        font-size: 1.5rem;
+    }
+    
+    .floating-card {
+        padding: 1rem;
+    }
+    
+    .card-1, .card-2, .card-3, .card-4 {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        transform: none;
+        margin: 1rem;
+    }
+    
+    .diagonal-section {
+        position: relative;
+        width: 100%;
+        height: auto;
+        clip-path: none;
+    }
+    
+    .mission-vision-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 4rem 1rem;
     }
-
-    .team-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+    .motivation-content h2,
+    .team-details-section h2 {
+        font-size: 2rem;
     }
-
-    .motivation-section {
-        padding: 2rem;
+    
+    .motivation-content p {
+        font-size: 1rem;
+    }
+    
+    .team-details-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
-    .about-header {
-        padding-top: 3rem;
+    .team-orbit {
+        width: 200px;
+        height: 200px;
     }
+    
+    .orbit-member {
+        width: 50px;
+        height: 50px;
+        transform: rotate(calc(var(--angle) * -1)) translateX(125px) rotate(var(--angle));
+    }
+    
+    .orbit-member:hover {
+        transform: rotate(calc(var(--angle) * -1)) translateX(125px) rotate(var(--angle)) scale(1.2);
+    }
+    
+    .brand-circle {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .brand-circle h1 {
+        font-size: 1.2rem;
+    }
+    
+    .motivation-hero,
+    .mission-vision-grid,
+    .team-details-section {
+        padding: 3rem 1rem;
+    }
+    
+    .mission-card-large,
+    .vision-card-large {
+        padding: 2rem;
+    }
+    
+    .detail-content {
+        padding: 1.5rem;
+    }
+}
 
-    .team-member img {
-        width: 100px;
-        height: 100px;
+.static-julia {
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -100%) !important;
+    animation: none !important;
+    z-index: 20;
+}
+
+/* Julia's orbital animation */
+@keyframes julia-orbit {
+    from {
+        transform: translate(-325%, -50%) rotate(0deg) translateX(calc(350% - 50%)) rotate(0deg);
     }
+    to {
+        transform: translate(-325%, -50%) rotate(360deg) translateX(calc(350% - 50%)) rotate(-360deg);
+    }
+}
+
+.julia-image-fixed {
+    animation: julia-orbit 20s linear infinite;
+}
+
+@keyframes savo-orbit {
+    from {
+        transform: translate(-325%, -50%) rotate(0deg) translateX(calc(350% - 50%)) rotate(0deg);
+    }
+    to {
+        transform: translate(-325%, -50%) rotate(-360deg) translateX(calc(350% - 50%)) rotate(360deg);
+    }
+}
+.savo-image-fixed {
+    animation: savo-orbit 16s linear infinite;
+}
+
+@keyframes sophia-orbit {
+    from {
+        transform: translate(-325%, -50%) rotate(0deg) translateX(calc(350% - 50%)) rotate(0deg);
+    }
+    to {
+        transform: translate(-325%, -50%) rotate(360deg) translateX(calc(350% - 50%)) rotate(-360deg);
+    }
+}
+.sophia-image-fixed {
+    animation: sophia-orbit 24s linear infinite;
+}
+
+@keyframes marin-orbit {
+    from {
+        transform: translate(-325%, -50%) rotate(0deg) translateX(calc(350% - 50%)) rotate(0deg);
+    }
+    to {
+        transform: translate(-325%, -50%) rotate(-360deg) translateX(calc(350% - 50%)) rotate(360deg);
+    }
+}
+.marin-image-fixed {
+    animation: marin-orbit 12s linear infinite;
 } 
