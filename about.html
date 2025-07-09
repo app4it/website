@@ -1,152 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>
+  <script>
     // Check localStorage first, then system theme preference
-    const savedTheme = localStorage.getItem('theme');
+    const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.setAttribute('data-theme', 'dark');
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    } else if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.documentElement.setAttribute("data-theme", "dark");
     } else {
-        document.documentElement.setAttribute('data-theme', 'light');
+      document.documentElement.setAttribute("data-theme", "light");
     }
-</script>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
+  </script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
     <title>App4it - About Us</title>
     <!-- Favicons -->
-    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_light.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon_light.png">
-    <link rel="mask-icon" href="./assets/icons/favicon_light.png" color="#000000">
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon_light.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/favicon_light.png"
+    />
+    <link
+      rel="mask-icon"
+      href="./assets/icons/favicon_light.png"
+      color="#000000"
+    />
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="CSS/index.css">
-    <link rel="stylesheet" type="text/css" href="CSS/about.css">
-    <link rel="stylesheet" type="text/css" href="CSS/impressum.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body class="about-page">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/about.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/impressum.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="about-page">
     <div class="nav-container">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link active" data-i18n="aboutUs">About Us</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active" data-i18n="aboutUs"
+        >About Us</a
+      >
     </div>
 
     <div class="settings-container">
-        <div class="toggle-container">
-            <button class="theme-toggle" aria-label="Toggle dark mode">
-                <i class="fas fa-moon" aria-hidden="true"></i>
-            </button>
-            <button class="lang-toggle" aria-label="Toggle language">
-                <span class="flag-icon flag-en" aria-hidden="true">🇬🇧</span>
-                <span class="flag-icon flag-de" aria-hidden="true" style="display: none;">🇩🇪</span>
-            </button>
-        </div>
+      <div class="toggle-container">
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="lang-toggle" aria-label="Toggle language">
+          <span class="flag-icon flag-en" aria-hidden="true">🇬🇧</span>
+          <span
+            class="flag-icon flag-de"
+            aria-hidden="true"
+            style="display: none"
+            >🇩🇪</span
+          >
+        </button>
+      </div>
     </div>
 
     <div class="about-container">
-        <div class="about-circle-1"></div>
-        <div class="about-circle-2"></div>
-        
-        <div class="about-header">
-            <h1 class="about-title" data-i18n="aboutTitle">Meet the App4it Team</h1>
-            <p class="about-subtitle" data-i18n="aboutSubtitle">We're a passionate team of four, dedicated to revolutionizing how people connect at events and build lasting friendships.</p>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="hero-content">
+          <h1 class="hero-title">
+            About <span class="app4it-highlight">app4it</span>
+          </h1>
+          <p class="hero-subtitle">
+            Four founders, one mission: to make connections easier, also
+            offline.
+          </p>
         </div>
+      </section>
 
-        <div class="mission-vision-section">
-            <div class="mission-card animate-in">
-                <h2 data-i18n="ourMission">Our Mission</h2>
-                <p data-i18n="missionText">To redefine social connection in the digital age by encouraging authentic, in-person interactions. We're bringing back the magic of real-world connections while embracing modern technology to make it happen.</p>
+      <!-- Mission, Vision, Why Section -->
+      <section class="mission-vision-why-section">
+        <div class="mvw-grid">
+          <div class="mvw-card animate-in">
+            <div class="mvw-icon">
+              <i class="fas fa-bullseye"></i>
             </div>
-            <div class="vision-card animate-in" style="animation-delay: 0.2s">
-                <h2 data-i18n="ourVision">Our Vision</h2>
-                <p data-i18n="visionText">A world where technology enhances real-life social experiences instead of replacing them. We believe in creating meaningful friendships that start with shared moments and grow through genuine interactions.</p>
+            <h3 class="mvw-title">Bringing people together</h3>
+            <p class="mvw-text">
+              App4it connects people through real-life events and shared
+              interests. We help you discover what’s happening around you—no
+              more boredom, no more FOMO. It’s time to make plans, not scroll
+              endlessly.
+            </p>
+          </div>
+          <div class="mvw-card animate-in" style="animation-delay: 0.2s">
+            <div class="mvw-icon">
+              <i class="fas fa-eye"></i>
             </div>
+            <h3 class="mvw-title">Reinventing social media</h3>
+            <p class="mvw-text">
+              We imagine a world where meeting new people is easy, spontaneous,
+              and fun. Where events are never a mystery. Where technology
+              doesn’t distract from real life—it enhances it. We’re building the
+              go-to platform for discovering what’s on, finding your people, and
+              making small cities feel big with possibility.
+            </p>
+          </div>
         </div>
+      </section>
 
-        <div class="motivation-section animate-in" style="animation-delay: 0.4s">
-            <h2 data-i18n="ourMotivation">What Drives Us</h2>
-            <p data-i18n="motivationText">We're passionate about bringing the joy of human connection back into our tech-driven world. By creating a platform that celebrates real-world interactions and makes discovering local events effortless, we're making it easier than ever to build authentic friendships in your community.</p>
-        </div>
-
-        <div class="team-section">
-            <h2 data-i18n="meetTheTeam">Meet the Team</h2>
-            <div class="team-grid">
-                <div class="team-member animate-in" style="animation-delay: 0.6s">
-                    <img src="assets/images/team/julia.jpeg" alt="Julia Agüero">
-                    <h3>Julia Agüero</h3>
-                    <p data-i18n="juliaDesc">Frontend developer and JIRA expert. Creating colorful chaos with watercolors and calling it art in my free time.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/aaguueeroo" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/julia-aguero-fraguas/" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://juliaaguero.com/" target="_blank" class="social-link" aria-label="Personal Website">
-                            <i class="fas fa-globe"></i>
-                        </a>
-                    </div>
+      <!-- Meet the Team Section -->
+      <div class="team-section">
+        <h2 data-i18n="meetTheTeam">Our team</h2>
+        <p class="team-intro">
+          We’re a small team with big energy. Each of us bringing a different
+          strength to the table. What unites us is the drive to turn tech into
+          real-life moments that actually matter.
+        </p>
+        <div class="team-grid">
+          <div class="team-card animate-in" style="animation-delay: 0.6s">
+            <div class="card-overview">
+              <div class="profile-section">
+                <div class="profile-image-wrapper">
+                  <img src="assets/images/team/julia.jpeg" alt="Julia Agüero" />
+                  <div class="online-indicator"></div>
                 </div>
-                <div class="team-member animate-in" style="animation-delay: 0.8s">
-                    <img src="assets/images/team/savo.jpeg" alt="Savo Simeunović">
-                    <h3>Savo Simeunović</h3>
-                    <p data-i18n="savoDesc">Specializing in AI/ML and databases. Proudly serving my cat's every whim in my free time.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/Rek27" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ssimeunovic/" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
+                <div class="profile-info">
+                  <h3 class="profile-name">Julia Agüero</h3>
+                  <p class="profile-title">Frontend Developer & JIRA Expert</p>
+                  <div class="social-links">
+                    <a
+                      href="https://github.com/aaguueeroo"
+                      target="_blank"
+                      class="social-link"
+                      aria-label="GitHub"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/julia-aguero-fraguas/"
+                      target="_blank"
+                      class="social-link"
+                      aria-label="LinkedIn"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a
+                      href="https://juliaaguero.com/"
+                      target="_blank"
+                      class="social-link"
+                      aria-label="Personal Website"
+                    >
+                      <i class="fas fa-globe"></i>
+                    </a>
+                  </div>
                 </div>
-                <div class="team-member animate-in" style="animation-delay: 1s">
-                    <img src="assets/images/team/sophia.jpeg" alt="Sophia Soares">
-                    <h3>Sophia Soares</h3>
-                    <p data-i18n="sophiaDesc">Frontend developer and UX/UI designer. If you want a knitted plushie, send me a DM.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/sophiasoares" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/sophia-ss/" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="team-member animate-in" style="animation-delay: 1.2s">
-                    <img src="assets/images/team/marin.jpeg" alt="Marin Sušić">
-                    <h3>Marin Sušić</h3>
-                    <p data-i18n="marinDesc">Passionate about security, forced to also do backend development. I like to lie to myself that I am a decent motorcycle rider.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/Sule57" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/marinsusic/" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://susic-security.com/" target="_blank" class="social-link" aria-label="Personal Website">
-                            <i class="fas fa-globe"></i>
-                        </a>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="card-details">
+              <p class="member-description" data-i18n="juliaDesc">
+                Frontend developer and JIRA expert. Creating colorful chaos with
+                watercolors and calling it art in my free time.
+              </p>
+              <div class="card-fun-fact">
+                <div class="fun-fact-content">
+                  <div class="fun-fact-icon"></div>
+                  <div class="fun-fact-text">
+                    <h4>Fun Fact</h4>
+                    <p>
+                      I can paint a masterpiece while debugging CSS -
+                      multitasking at its finest!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card animate-in" style="animation-delay: 0.8s">
+            <div class="card-overview">
+              <div class="profile-section">
+                <div class="profile-image-wrapper">
+                  <img
+                    src="assets/images/team/savo.jpeg"
+                    alt="Savo Simeunović"
+                  />
+                  <div class="online-indicator"></div>
+                </div>
+                <div class="profile-info">
+                  <h3 class="profile-name">Savo Simeunović</h3>
+                  <p class="profile-title">
+                    AI/ML Specialist & Database Expert
+                  </p>
+                  <div class="social-links">
+                    <a
+                      href="https://github.com/Rek27"
+                      target="_blank"
+                      class="social-link"
+                      aria-label="GitHub"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/ssimeunovic/"
+                      target="_blank"
+                      class="social-link"
+                      aria-label="LinkedIn"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-details">
+              <p class="member-description" data-i18n="savoDesc">
+                Specializing in AI/ML and databases. Proudly serving my cat's
+                every whim in my free time.
+              </p>
+              <div class="card-fun-fact">
+                <div class="fun-fact-content">
+                  <div class="fun-fact-icon"></div>
+                  <div class="fun-fact-text">
+                    <h4>Fun Fact</h4>
+                    <p>
+                      My cat has better debugging skills than most developers I
+                      know!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card animate-in" style="animation-delay: 1s">
+            <div class="card-overview">
+              <div class="profile-section">
+                <div class="profile-image-wrapper">
+                  <img
+                    src="assets/images/team/sophia.jpeg"
+                    alt="Sophia Soares"
+                  />
+                  <div class="online-indicator"></div>
+                </div>
+                <div class="profile-info">
+                  <h3 class="profile-name">Sophia Soares</h3>
+                  <p class="profile-title">
+                    Frontend Developer & UX/UI Designer
+                  </p>
+                  <div class="social-links">
+                    <a
+                      href="https://github.com/sophiasoares"
+                      target="_blank"
+                      class="social-link"
+                      aria-label="GitHub"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/sophia-ss/"
+                      target="_blank"
+                      class="social-link"
+                      aria-label="LinkedIn"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-details">
+              <p class="member-description" data-i18n="sophiaDesc">
+                Frontend developer and UX/UI designer. If you want a knitted
+                plushie, send me a DM.
+              </p>
+              <div class="card-fun-fact">
+                <div class="fun-fact-content">
+                  <div class="fun-fact-icon"></div>
+                  <div class="fun-fact-text">
+                    <h4>Fun Fact</h4>
+                    <p>
+                      I can knit a sweater faster than I can debug a React
+                      component!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card animate-in" style="animation-delay: 1.2s">
+            <div class="card-overview">
+              <div class="profile-section">
+                <div class="profile-image-wrapper">
+                  <img src="assets/images/team/marin.jpeg" alt="Marin Sušić" />
+                  <div class="online-indicator"></div>
+                </div>
+                <div class="profile-info">
+                  <h3 class="profile-name">Marin Sušić</h3>
+                  <p class="profile-title">
+                    Security Specialist & Backend Developer
+                  </p>
+                  <div class="social-links">
+                    <a
+                      href="https://github.com/Sule57"
+                      target="_blank"
+                      class="social-link"
+                      aria-label="GitHub"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/marinsusic/"
+                      target="_blank"
+                      class="social-link"
+                      aria-label="LinkedIn"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a
+                      href="https://susic-security.com/"
+                      target="_blank"
+                      class="social-link"
+                      aria-label="Personal Website"
+                    >
+                      <i class="fas fa-globe"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-details">
+              <p class="member-description" data-i18n="marinDesc">
+                Passionate about security, forced to also do backend
+                development. I like to lie to myself that I am a decent
+                motorcycle rider.
+              </p>
+              <div class="card-fun-fact">
+                <div class="fun-fact-content">
+                  <div class="fun-fact-icon"></div>
+                  <div class="fun-fact-text">
+                    <h4>Fun Fact</h4>
+                    <p>
+                      I can hack into systems but still can't figure out my
+                      motorcycle's fuel gauge!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Our Story Section -->
+    <div class="story-section-container">
+      <section class="story-section">
+        <div class="story-content">
+          <h2 class="story-title animate-in" style="animation-delay: 0.2s">
+            Our Story
+          </h2>
+          <p class="story-text animate-in" style="animation-delay: 0.4s">
+            App4it was born from a simple frustration: despite all the
+            technology at our fingertips, making real connections and finding
+            local events still felt hard. We wanted to change that. Our journey
+            began in a small city, where we saw firsthand how easy it is to feel
+            isolated—even when surrounded by people.
+          </p>
+          <p class="story-text animate-in" style="animation-delay: 0.6s">
+            We’re four developers with different backgrounds—frontend, backend,
+            AI, UX—but one shared goal: to build something that brings people
+            together in the real world. We believe that technology should help
+            you get out, not keep you glued to your screen. That’s why we’re
+            focused on making it effortless to discover what’s happening around
+            you and to meet new people who share your interests.
+          </p>
+          <p class="story-text animate-in" style="animation-delay: 0.8s">
+            This isn’t just an app for us—it’s a mission. We’re building App4it
+            for anyone who wants more from their city, more from their social
+            life, and more from technology. We hope you’ll join us in creating a
+            community where authentic human connection comes first.
+          </p>
+          <a
+            href="early-access.html"
+            class="story-button animate-in"
+            style="animation-delay: 1s"
+            >Join our mission</a
+          >
+        </div>
+      </section>
     </div>
 
     <footer class="footer">
-        <p>
-            <span data-i18n="copyright">© 2025 App4it Project Team. All rights reserved.</span>
-            <span class="footer-separator">|</span>
-            <a href="impressum.html" class="footer-link" data-i18n="impressum">Impressum</a>
-        </p>
+      <p>
+        <span data-i18n="copyright"
+          >© 2025 App4it Project Team. All rights reserved.</span
+        >
+        <span class="footer-separator">|</span>
+        <a href="impressum.html" class="footer-link" data-i18n="impressum"
+          >Impressum</a
+        >
+      </p>
     </footer>
 
     <script src="JS/index.js"></script>
     <script src="JS/language.js"></script>
-</body>
-</html> 
+  </body>
+</html>

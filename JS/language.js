@@ -91,7 +91,7 @@ const translations = {
         visionText: "A world where technology enhances real-life social experiences instead of replacing them. We believe in creating meaningful friendships that start with shared moments and grow through genuine interactions.",
         ourMotivation: "What Drives Us",
         motivationText: "We're passionate about bringing the joy of human connection back into our tech-driven world. By creating a platform that celebrates real-world interactions and makes discovering local events effortless, we're making it easier than ever to build authentic friendships in your community.",
-        meetTheTeam: "Meet the Team",
+        meetTheTeam: "Our team",
         
         // Team Descriptions
         juliaDesc: "Frontend developer and JIRA expert. Creating colorful chaos with watercolors and calling it art in my free time.",
