@@ -98,6 +98,13 @@ const translations = {
         savoDesc: "Specializing in AI/ML and databases. Proudly serving my cat's every whim in my free time.",
         sophiaDesc: "Frontend developer and UX/UI designer. If you want a knitted plushie, send me a DM.",
         marinDesc: "Passionate about security, forced to also do backend development. I like to lie to myself that I am a decent motorcycle rider.",
+        
+        // Team Fun Facts
+        funFact: "Fun Fact",
+        juliaFunFact: "I can finish the expert level on Guitar Hero without breaking a sweat!",
+        savoFunFact: "My cat is a better programmer than me, even though he always finds time to lay on top of my laptop and mess with my settings.",
+        sophiaFunFact: "I love crocheting, so if App4it ever needs a plushy mascot, I'll be the one making it!",
+        marinFunFact: "My dev journey started with a Minecraft plugin and hacking info systems",
     },
     de: {
         // Hero Section
@@ -197,6 +204,13 @@ const translations = {
         savoDesc: "Spezialisiert auf KI/ML und Datenbanken. In meiner Freizeit erfülle ich stolz jeden Wunsch meiner Katze.",
         sophiaDesc: "Frontend-Entwicklerin und UX/UI-Designerin. Wenn du ein gestricktes Plüschtier möchtest, schick mir eine DM.",
         marinDesc: "Leidenschaftlich in Sicherheit, zwangsweise auch Backend-Entwickler. Ich belüge mich gerne selbst damit, dass ich ein anständiger Motorradfahrer bin.",
+        
+        // Team Fun Facts
+        funFact: "Fun Fact",
+        juliaFunFact: "Ich kann das Experten-Level bei Guitar Hero ohne Anstrengung meistern!",
+        savoFunFact: "Meine Katze ist eine bessere Programmiererin als ich, obwohl sie immer Zeit findet, sich auf meinen Laptop zu legen und mit meinen Einstellungen zu spielen.",
+        sophiaFunFact: "Ich liebe das Häkeln, also falls App4it jemals ein Plüsch-Maskottchen braucht, werde ich es herstellen!",
+        marinFunFact: "Meine Entwickler-Reise begann mit einem Minecraft-Plugin und dem Hacken von Informationssystemen",
     }
 };
 
