@@ -49,6 +49,16 @@ const translations = {
         // Experience Section
         experienceTitle: "Experience Real Connections",
         
+        // Event Image Alt Texts
+        eventImageAlt1: "Food gathering at home",
+        eventImageAlt2: "Sports event",
+        eventImageAlt3: "Street art exhibition with murals and graffiti",
+        eventImageAlt4: "Concert event",
+        eventImageAlt5: "Conference",
+        eventImageAlt6: "Group of people walking their dogs in a park",
+        eventImageAlt7: "Book club",
+        eventImageAlt8: "Installation art exhibition with interactive pieces",
+        
         // Privacy and Form
         viewPrivacy: "View Privacy Details",
         privacyText: "We use Brevo as our marketing platform. By submitting this form you agree that the personal data you provided will be transferred to Brevo for processing in accordance with",
@@ -80,18 +90,41 @@ const translations = {
         projectDisclaimerText: "App4it is currently a pre-launch project developed by a team of four individuals. This website serves to provide information about our upcoming service.",
         
         // Navigation
+        home: "Home",
         aboutUs: "About Us",
         
         // About Page
         aboutTitle: "Meet the App4it Team",
         aboutSubtitle: "We're a passionate team of four, dedicated to revolutionizing how people connect at events and build lasting friendships.",
-        ourMission: "Our Mission",
-        missionText: "To redefine social connection in the digital age by encouraging authentic, in-person interactions. We're bringing back the magic of real-world connections while embracing modern technology to make it happen.",
-        ourVision: "Our Vision",
-        visionText: "A world where technology enhances real-life social experiences instead of replacing them. We believe in creating meaningful friendships that start with shared moments and grow through genuine interactions.",
-        ourMotivation: "What Drives Us",
-        motivationText: "We're passionate about bringing the joy of human connection back into our tech-driven world. By creating a platform that celebrates real-world interactions and makes discovering local events effortless, we're making it easier than ever to build authentic friendships in your community.",
+        aboutHeroTitle: "About app4it",
+        aboutHeroSubtitle: "Four founders, one mission: to make connections easier, also offline.",
+        
+        // Mission Vision Section
+        bringingPeopleTogether: "Bringing people together",
+        bringingPeopleTogetherText: "App4it connects people through real-life events and shared interests. We help you discover what's happening around you—no more boredom, no more FOMO. It's time to make plans, not scroll endlessly.",
+        reinventingSocialMedia: "Reinventing social media",
+        reinventingSocialMediaText: "We imagine a world where meeting new people is easy, spontaneous, and fun. Where events are never a mystery. Where technology doesn't distract from real life—it enhances it. We're building the go-to platform for discovering what's on, finding your people, and making small cities feel big with possibility.",
+        
+        // Team Section
         meetTheTeam: "Our team",
+        teamIntro: "We're a small team with big energy. Each of us bringing a different strength to the table. What unites us is the drive to turn tech into real-life moments that actually matter.",
+        
+        // Team Member Names and Titles
+        juliaName: "Julia Agüero",
+        juliaTitle: "Frontend Developer & JIRA Expert",
+        savoName: "Savo Simeunović",
+        savoTitle: "AI/ML Specialist & Database Expert",
+        sophiaName: "Sophia Soares",
+        sophiaTitle: "Frontend Developer & UX/UI Designer",
+        marinName: "Marin Sušić",
+        marinTitle: "Security Specialist & Backend Developer",
+        
+        // Our Story Section
+        ourStory: "Our Story",
+        storyText1: "App4it was born from a simple frustration: despite all the technology at our fingertips, making real connections and finding local events still felt hard. We wanted to change that. Our journey began in a small city, where we saw firsthand how easy it is to feel isolated—even when surrounded by people.",
+        storyText2: "We're four developers with different backgrounds—frontend, backend, AI, UX—but one shared goal: to build something that brings people together in the real world. We believe that technology should help you get out, not keep you glued to your screen. That's why we're focused on making it effortless to discover what's happening around you and to meet new people who share your interests.",
+        storyText3: "This isn't just an app for us—it's a mission. We're building App4it for anyone who wants more from their city, more from their social life, and more from technology. We hope you'll join us in creating a community where authentic human connection comes first.",
+        joinOurMission: "Join our mission",
         
         // Team Descriptions
         juliaDesc: "Frontend developer and JIRA expert. Creating colorful chaos with watercolors and calling it art in my free time.",
@@ -155,6 +188,16 @@ const translations = {
         // Experience Section
         experienceTitle: "Erlebe Echte Verbindungen",
         
+        // Event Image Alt Texts
+        eventImageAlt1: "Essensrunde zu Hause",
+        eventImageAlt2: "Sportveranstaltung",
+        eventImageAlt3: "Street-Art-Ausstellung mit Wandgemälden und Graffiti",
+        eventImageAlt4: "Konzertveranstaltung",
+        eventImageAlt5: "Konferenz",
+        eventImageAlt6: "Gruppe von Menschen, die ihre Hunde in einem Park spazieren führen",
+        eventImageAlt7: "Buchclub",
+        eventImageAlt8: "Installationskunst-Ausstellung mit interaktiven Stücken",
+        
         // Privacy and Form
         viewPrivacy: "Datenschutzdetails Anzeigen",
         privacyText: "Wir nutzen Brevo als unsere Marketing-Plattform. Durch das Absenden dieses Formulars erklären Sie sich damit einverstanden, dass die von Ihnen angegebenen personenbezogenen Daten zur Verarbeitung an Brevo übermittelt werden gemäß",
@@ -186,18 +229,41 @@ const translations = {
         projectDisclaimerText: "App4it ist derzeit ein Vorstart-Projekt, das von einem Team aus vier Personen entwickelt wird. Diese Website dient dazu, Informationen über unseren kommenden Service bereitzustellen.",
         
         // Navigation
+        home: "Startseite",
         aboutUs: "Über Uns",
         
         // About Page
         aboutTitle: "Das App4it Team",
         aboutSubtitle: "Wir sind ein engagiertes Team von vier Personen, das sich der Revolution der Art und Weise verschrieben hat, wie Menschen bei Veranstaltungen Kontakte knüpfen und dauerhafte Freundschaften aufbauen.",
-        ourMission: "Unsere Mission",
-        missionText: "Die soziale Verbindung im digitalen Zeitalter neu zu definieren, indem wir authentische persönliche Interaktionen fördern. Wir bringen die Magie echter Begegnungen zurück und nutzen moderne Technologie, um dies zu ermöglichen.",
-        ourVision: "Unsere Vision",
-        visionText: "Eine Welt, in der Technologie echte soziale Erfahrungen bereichert, anstatt sie zu ersetzen. Wir glauben an bedeutungsvolle Freundschaften, die durch gemeinsame Momente entstehen und durch echte Interaktionen wachsen.",
-        ourMotivation: "Was uns antreibt",
-        motivationText: "Wir setzen uns leidenschaftlich dafür ein, die Freude an menschlicher Verbindung in unsere technologiegetriebene Welt zurückzubringen. Durch eine Plattform, die echte Interaktionen feiert und das Entdecken lokaler Events mühelos macht, erleichtern wir es mehr denn je, authentische Freundschaften in deiner Community aufzubauen.",
+        aboutHeroTitle: "Über app4it",
+        aboutHeroSubtitle: "Vier Gründer, eine Mission: Verbindungen einfacher zu machen, auch offline.",
+        
+        // Mission Vision Section
+        bringingPeopleTogether: "Menschen zusammenbringen",
+        bringingPeopleTogetherText: "App4it verbindet Menschen durch reale Events und gemeinsame Interessen. Wir helfen dir dabei, zu entdecken, was um dich herum passiert—keine Langeweile mehr, kein FOMO mehr. Es ist Zeit, Pläne zu machen, nicht endlos zu scrollen.",
+        reinventingSocialMedia: "Social Media neu erfinden",
+        reinventingSocialMediaText: "Wir stellen uns eine Welt vor, in der es einfach, spontan und lustig ist, neue Menschen kennenzulernen. Wo Events nie ein Rätsel sind. Wo Technologie nicht vom echten Leben ablenkt—sondern es bereichert. Wir bauen die Go-to-Plattform für die Entdeckung dessen, was los ist, das Finden deiner Leute und das Gefühl, dass kleine Städte groß mit Möglichkeiten sind.",
+        
+        // Team Section
         meetTheTeam: "Das Team",
+        teamIntro: "Wir sind ein kleines Team mit großer Energie. Jeder von uns bringt eine andere Stärke an den Tisch. Was uns vereint, ist der Antrieb, Technik in echte Momente zu verwandeln, die wirklich wichtig sind.",
+        
+        // Team Member Names and Titles
+        juliaName: "Julia Agüero",
+        juliaTitle: "Frontend-Entwicklerin & JIRA-Expertin",
+        savoName: "Savo Simeunović",
+        savoTitle: "KI/ML-Spezialist & Datenbankexperte",
+        sophiaName: "Sophia Soares",
+        sophiaTitle: "Frontend-Entwicklerin & UX/UI-Designerin",
+        marinName: "Marin Sušić",
+        marinTitle: "Sicherheitsspezialist & Backend-Entwickler",
+        
+        // Our Story Section
+        ourStory: "Unsere Geschichte",
+        storyText1: "App4it wurde aus einer einfachen Frustration geboren: Trotz all der Technologie, die uns zur Verfügung steht, fühlte es sich immer noch schwer an, echte Verbindungen zu knüpfen und lokale Events zu finden. Das wollten wir ändern. Unsere Reise begann in einer kleinen Stadt, wo wir aus erster Hand sahen, wie einfach es ist, sich isoliert zu fühlen—selbst wenn man von Menschen umgeben ist.",
+        storyText2: "Wir sind vier Entwickler mit unterschiedlichen Hintergründen—Frontend, Backend, KI, UX—aber einem gemeinsamen Ziel: Etwas zu bauen, das Menschen in der realen Welt zusammenbringt. Wir glauben, dass Technologie dir dabei helfen sollte, rauszugehen, nicht dich an deinen Bildschirm zu kleben. Deshalb konzentrieren wir uns darauf, es mühelos zu machen, zu entdecken, was um dich herum passiert, und neue Menschen zu treffen, die deine Interessen teilen.",
+        storyText3: "Das ist für uns nicht nur eine App—es ist eine Mission. Wir bauen App4it für jeden, der mehr von seiner Stadt, mehr von seinem sozialen Leben und mehr von Technologie will. Wir hoffen, dass du uns dabei begleitest, eine Community zu schaffen, in der authentische menschliche Verbindung an erster Stelle steht.",
+        joinOurMission: "Unserer Mission beitreten",
         
         // Team Descriptions
         juliaDesc: "Frontend-Entwicklerin und JIRA-Expertin. In meiner Freizeit erschaffe ich buntes Chaos mit Aquarellfarben und nenne es Kunst.",
@@ -264,6 +330,9 @@ function setPageLanguage(lang) {
                         element.innerHTML = translations[lang][key];
                         privacyLink.innerHTML = translations[lang][privacyLink.getAttribute('data-i18n')];
                     }
+                } else if (element.tagName === 'IMG' && key.startsWith('eventImageAlt')) {
+                    // Handle image alt text translations
+                    element.alt = translations[lang][key];
                 } else {
                     element.innerHTML = translations[lang][key];
                 }
