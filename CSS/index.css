@@ -185,17 +185,12 @@ body {
     background: var(--secondary-color);
 }
 
-.flag-icon {
-    font-size: 1.2rem;
-    line-height: 1;
-}
-
-.flag-en {
-    color: #ffffff;
-}
-
-.flag-de {
-    color: #ffffff;
+/* Flag Icons using flag-icons library */
+.fi {
+    width: 1.4rem;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .decorative-circle {

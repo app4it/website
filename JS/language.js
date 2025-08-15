@@ -299,8 +299,8 @@ function setPageLanguage(lang) {
     // Update flag visibility - show the opposite flag of current language
     const langToggle = document.querySelector('.lang-toggle');
     if (langToggle) {
-        const enFlag = langToggle.querySelector('.flag-en');
-        const deFlag = langToggle.querySelector('.flag-de');
+        const enFlag = langToggle.querySelector('.fi-gb');
+        const deFlag = langToggle.querySelector('.fi-de');
         if (lang === 'en') {
             enFlag.style.display = 'none';
             deFlag.style.display = 'block';
