@@ -140,6 +140,7 @@ body.about-page {
     -webkit-background-clip: initial !important;
     -webkit-text-fill-color: #def5f3 !important;
     background-clip: initial !important;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
 }
 
 .hero-subtitle {
@@ -147,6 +148,7 @@ body.about-page {
     max-width: 600px;
     margin: 0 auto;
     font-weight: 400;
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
 }
 
 .app4it-highlight {

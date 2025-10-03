@@ -301,8 +301,6 @@ function detectBrowserLanguage() {
 
 // Function to set the page language
 function setPageLanguage(lang) {
-    console.log('Setting page language to:', lang);
-    
     // Store the selected language
     localStorage.setItem('preferredLanguage', lang);
     
@@ -325,12 +323,10 @@ function setPageLanguage(lang) {
     
     // Update all translatable elements
     const elements = document.querySelectorAll('[data-i18n]');
-    console.log('Found', elements.length, 'elements with data-i18n');
     
     elements.forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
-            console.log('Translating', key, 'to:', translations[lang][key]);
             if (element.tagName === 'INPUT' && element.type === 'submit') {
                 element.value = translations[lang][key];
             } else if (element.tagName === 'INPUT' && element.type === 'placeholder') {
@@ -368,15 +364,9 @@ window.forceRefreshTranslations = forceRefreshTranslations;
 
 // Initialize language settings
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Language.js loaded - DOM ready');
-    
     // Check for stored language preference
     const storedLang = localStorage.getItem('preferredLanguage');
     const initialLang = storedLang || detectBrowserLanguage();
-    
-    console.log('Initial language:', initialLang);
-    console.log('Stored language:', storedLang);
-    console.log('Detected browser language:', detectBrowserLanguage());
     
     // Set initial language
     setPageLanguage(initialLang);
@@ -384,9 +374,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add click handler to language toggle
     const langToggle = document.querySelector('.lang-toggle');
     if (langToggle) {
-        console.log('Language toggle found');
         langToggle.addEventListener('click', () => {
-            console.log('Language toggle clicked');
             const currentLang = document.documentElement.lang;
             const newLang = currentLang === 'en' ? 'de' : 'en';
             console.log('Switching from', currentLang, 'to', newLang);
@@ -395,8 +383,4 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.error('Language toggle not found!');
     }
-    
-    // Test if translations are working
-    console.log('Available translations:', Object.keys(translations.en));
-    console.log('Sample translation:', translations.en.heroTitle);
 }); 
