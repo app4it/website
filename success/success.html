@@ -4,22 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to App4it!</title>
-    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/global-styles.css">
     <link rel="icon" type="image/svg+xml" href="../assets/icons/app_icon_light.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="toggle-container">
-        <button class="theme-toggle" aria-label="Toggle dark mode">
+    <div class="settings-container">
+        <div class="toggle-container">
+          <button class="theme-toggle" aria-label="Toggle dark mode">
             <i class="fas fa-moon" aria-hidden="true"></i>
-        </button>
-        <button class="lang-toggle" aria-label="Toggle language">
-            <span class="flag-icon flag-en" aria-hidden="true">🇬🇧</span>
-            <span class="flag-icon flag-de" aria-hidden="true" style="display: none;">🇩🇪</span>
-        </button>
+          </button>
+          <button class="lang-toggle" aria-label="Toggle language">
+            <span class="fi fi-gb" aria-hidden="true"></span>
+            <span
+              class="fi fi-de"
+              aria-hidden="true"
+              style="display: none"
+              ></span>
+          </button>
+        </div>
     </div>
 
     <main class="hero">
@@ -35,8 +42,8 @@
                 High five! ✋ You're officially on the waitlist for the coolest way to meet new friends. 
                 Get ready for adventures that are way better than scrolling! Are you App4it?
             </p>
-            <a href="../index.html" class="back-button animate-in" style="animation-delay: 0.4s" data-i18n="backToHome">
-                Back to homepage
+            <a href="../index.html" class="cta-button animate-in" style="animation-delay: 0.4s" data-i18n="backToHome">
+                Back to Homepage
             </a>
         </div>
     </main>

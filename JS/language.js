@@ -74,7 +74,9 @@ const translations = {
         // Success Page
         successTitle: "Woohoo! You're in! 🎉",
         successSubtitle: "High five! ✋ You're officially on the waitlist for the coolest way to meet new friends. Get ready for adventures that are way better than scrolling! Are you App4it?",
-        backToHome: "Back to homepage",
+        backToHome: "Back to Homepage",
+        confirmationEmailSent: "A confirmation email has been sent. Please check your inbox (and spam folder if not found). If you don't receive it within a few minutes, try submitting again.",
+        subscriptionSuccessful: "Your subscription to the app4it early access has been successful.",
         
         // Impressum Page
         impressumTitle: "Imprint",
@@ -138,6 +140,11 @@ const translations = {
         savoFunFact: "My cat is a better programmer than me, even though he always finds time to lay on top of my laptop and mess with my settings.",
         sophiaFunFact: "I love crocheting, so if App4it ever needs a plushy mascot, I'll be the one making it!",
         marinFunFact: "My dev journey started with a Minecraft plugin and hacking info systems",
+   
+   
+        // Email change page
+        emailUpdateTitle: "All Set!",
+        emailUpdateMessage: "Your email has been updated successfully. Discover more amazing events and make new friends. Are you App4it?",
     },
     de: {
         // Hero Section
@@ -153,13 +160,13 @@ const translations = {
         
         // Values Section
         ourValues: "Unsere Werte",
-        keepItReal: "Keep It Real",
+        keepItReal: "Bleib echt",
         keepItRealDesc: "Wir feiern Authentizität. Echte Menschen, echte Interessen und echte Verbindungen. Keine Filter, keine Fakes. Nur ehrliche Erfahrungen, die dir gefallen.",
-        safetyFirst: "Safety First, Always",
+        safetyFirst: "Sicherheit geht vor, immer",
         safetyFirstDesc: "Von wem du kennst bis zu dem, was du teilst, alles ist darauf ausgelegt, dich zu sichern. Vertrauen ist die Grundlage für großartige Zeiten, also nehmen wir es ernst.",
-        connectWithPurpose: "Connect With Purpose",
+        connectWithPurpose: "Verbinden mit Sinn",
         connectWithPurposeDesc: "Es geht nicht darum, jeden zu treffen, sondern darum, die richtigen zu finden. Sei bereit, echte Verbindungen zu entfachen und Gemeinschaften um das zu schaffen, was dich am meisten liebt.",
-        poweredByJoy: "Powered by Joy",
+        poweredByJoy: "Mit Freude im Tank",
         poweredByJoyDesc: "Kein endloses Scrollen mehr, nur um unterhalten zu werden. Es gibt immer etwas zu tun, jemanden zum Mitmachen und eine gute Zeit, die wartet. Langeweile hat keine Chance.",
         
         // Features Section
@@ -214,6 +221,8 @@ const translations = {
         successTitle: "Juhu! Du bist dabei! 🎉",
         successSubtitle: "High five! ✋ Du bist jetzt offiziell auf der Warteliste für die coolste Art, neue Freunde zu finden. Mach dich bereit für Abenteuer, die viel besser sind als Scrollen! Bist du App4it?",
         backToHome: "Zurück zur Startseite",
+        confirmationEmailSent: "Eine Bestätigungs-E-Mail wurde gesendet. Bitte überprüfe deinen Posteingang (und Spam-Ordner, falls nicht gefunden). Wenn du sie nicht innerhalb weniger Minuten erhalten, versuche es erneut.",
+        subscriptionSuccessful: "Dein Abonnement für den frühen Zugang zu app4it war erfolgreich.",
         
         // Impressum Page
         impressumTitle: "Impressum",
@@ -277,6 +286,10 @@ const translations = {
         savoFunFact: "Meine Katze ist eine bessere Programmiererin als ich, obwohl sie immer Zeit findet, sich auf meinen Laptop zu legen und mit meinen Einstellungen zu spielen.",
         sophiaFunFact: "Ich liebe das Häkeln, also falls App4it jemals ein Plüsch-Maskottchen braucht, werde ich es herstellen!",
         marinFunFact: "Meine Entwickler-Reise begann mit einem Minecraft-Plugin und dem Hacken von Informationssystemen",
+    
+        // Email change page
+        emailUpdateTitle: "Alles erledigt!",
+        emailUpdateMessage: "Deine E-Mail-Adresse wurde erfolgreich aktualisiert. Entdecke noch mehr spannende Veranstaltungen und treffe neue Freunde. Bist du App4it?",
     }
 };
 

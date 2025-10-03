@@ -4,17 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Updated - App4it</title>
-    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/global-styles.css">
     <link rel="icon" type="image/svg+xml" href="../assets/icons/app_icon_light.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" rel="stylesheet" />
 </head>
 <body>
-    <button class="theme-toggle" aria-label="Toggle dark mode">
-        <i class="fas fa-moon" aria-hidden="true"></i>
-    </button>
+    <div class="settings-container">
+        <div class="toggle-container">
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </button>
+          <button class="lang-toggle" aria-label="Toggle language">
+            <span class="fi fi-gb" aria-hidden="true"></span>
+            <span
+              class="fi fi-de"
+              aria-hidden="true"
+              style="display: none"
+              ></span>
+          </button>
+        </div>
+    </div>
 
     <main class="hero">
         <div class="decorative-circle circle-1"></div>
@@ -24,17 +37,21 @@
             <div class="success-icon animate-in">
                 <i class="fas fa-envelope-circle-check"></i>
             </div>
-            <h1 class="hero-title animate-in">All Set!</h1>
-            <p class="hero-subtitle animate-in" style="animation-delay: 0.2s">
+            <h1 class="hero-title animate-in" data-i18n="emailUpdateTitle">All Set!</h1>
+            <p class="hero-subtitle animate-in" style="animation-delay: 0.2s" data-i18n="emailUpdateMessage">
                 Your email has beenupdated successfully. Discover more amazing events and make new friends. Are you App4it?
             </p>
+            <a href="../index.html" class="cta-button animate-in" style="animation-delay: 0.4s" data-i18n="backToHome">
+                Back to Homepage
+            </a>
         </div>
     </main>
 
     <footer class="footer">
-        <p>© 2025 App4it GmbH. All rights reserved.</p>
+        <p data-i18n="copyright">© 2025 App4it GmbH. All rights reserved.</p>
     </footer>
 
     <script src="../JS/index.js"></script>
+    <script src="../JS/language.js"></script>
 </body>
 </html> 

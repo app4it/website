@@ -309,3 +309,94 @@ body {
         padding: 0;
     }
 }
+
+/* Decorative Circles */
+.decorative-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--primary-color);
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.circle-1 {
+    width: 350px;
+    height: 350px;
+    top: -150px;
+    left: -150px;
+}
+
+.circle-2 {
+    width: 250px;
+    height: 250px;
+    bottom: -100px;
+    right: -100px;
+    background: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(rgba(23, 155, 149, 0.1), rgba(142, 226, 220, 0.1));
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 1200px;
+    padding: var(--padding);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: fadeInUp 1s ease forwards;
+    padding-bottom: 0.2em;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    margin-bottom: 1.5rem !important;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-color);
+    opacity: 0.9;
+    padding: 0;
+}
+
+[data-theme="dark"] .hero-subtitle {
+    color: white;
+    opacity: 0.95;
+}
+
+/* Success Icon styles */
+.success-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.success-icon i {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

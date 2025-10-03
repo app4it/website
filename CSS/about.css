@@ -135,18 +135,15 @@ body.about-page {
 }
 
 .hero-title {
-    font-size: clamp(3rem, 8vw, 5rem);
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    line-height: 1.1;
-    color: #def5f3;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #def5f3 !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: #def5f3 !important;
+    background-clip: initial !important;
 }
 
 .hero-subtitle {
-    font-size: clamp(1.25rem, 4vw, 1.75rem);
     color: #def5f3;
-    line-height: 1.5;
     max-width: 600px;
     margin: 0 auto;
     font-weight: 400;
