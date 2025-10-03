@@ -38,10 +38,8 @@
       color="#000000"
     />
     <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="CSS/global-styles.css" />
     <link rel="stylesheet" type="text/css" href="CSS/index.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/about.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/impressum.css" />
-    <link rel="stylesheet" type="text/css" href="CSS/brevo-form.css" />
     <link
       rel="stylesheet"
       href="https://sibforms.com/forms/end-form/build/sib-styles.css"
@@ -193,55 +191,115 @@
     <!-- Features Section -->
     <section class="features-section">
       <h2 class="section-title" data-i18n="ourFeatures">Our Features</h2>
-      <div class="features-grid">
-        <div class="feature-card animate-in">
-          <i class="fas fa-eye feature-icon"></i>
-          <h3 data-i18n="seeWhatsHappening">See What's Happening</h3>
-          <p data-i18n="seeWhatsHappeningDesc">
-            Stay in the loop with everything going on around you. No more FOMO,
-            no more "I didn't know that was happening."
-          </p>
+      <!-- Carousel -->
+      <div class="mockup-carousel">
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <!-- Feature 1 -->
+            <div class="carousel-slide">
+              <div class="mockup-feature">
+                <div class="mockup-image">
+                  <img src="./assets/images/mockups/feed-1.png" alt="See What's Happening">
+                </div>
+                <div class="mockup-content">
+                  <h3 data-i18n="seeWhatsHappening">See What's Happening</h3>
+                  <p data-i18n="seeWhatsHappeningDesc">
+                    Stay in the loop with everything going on around you. No more FOMO,
+                    no more "I didn't know that was happening."
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="carousel-slide">
+              <div class="mockup-feature">
+                <div class="mockup-image">
+                  <img src="./assets/images/mockups/discovery.png" alt="Events Made for You">
+                </div>
+                <div class="mockup-content">
+                  <h3 data-i18n="eventsMadeForYou">Events Made for You</h3>
+                  <p data-i18n="eventsMadeForYouDesc">
+                    Explore gatherings that match your vibe. Whether you're into art,
+                    music, or something in between, your city has more than you think.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="carousel-slide">
+              <div class="mockup-feature">
+                <div class="mockup-image">
+                  <img src="./assets/images/mockups/create-event.png" alt="Start Something">
+                </div>
+                <div class="mockup-content">
+                  <h3 data-i18n="startSomething">Start Something</h3>
+                  <p data-i18n="startSomethingDesc">
+                    Create your own events and bring people together. It's easy, fast,
+                    and surprisingly fun to see who shows up.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="carousel-slide">
+              <div class="mockup-feature">
+                <div class="mockup-image">
+                  <img src="./assets/images/mockups/scanning.png" alt="Real Friends Only">
+                </div>
+                <div class="mockup-content">
+                  <h3 data-i18n="realFriendsOnly">Real Friends Only</h3>
+                  <p data-i18n="realFriendsOnlyDesc">
+                    Add only the people you've met in person. Connections happen in real
+                    life. We're just here to keep them going.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 5 -->
+            <div class="carousel-slide">
+              <div class="mockup-feature">
+                <div class="mockup-image">
+                  <img src="./assets/images/mockups/memory-details.png" alt="Remember Together">
+                </div>
+                <div class="mockup-content">
+                  <h3 data-i18n="rememberTogether">Remember Together</h3>
+                  <p data-i18n="rememberTogetherDesc">
+                    Capture moments from the events you attend and share memories with
+                    the people who made them special.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 6 -->
+            <div class="carousel-slide">
+              <div class="mockup-feature">
+                <div class="mockup-image">
+                  <img src="./assets/images/mockups/profile.png" alt="Make It Yours">
+                </div>
+                <div class="mockup-content">
+                  <h3 data-i18n="makeItYours">Make It Yours</h3>
+                  <p data-i18n="makeItYoursDesc">
+                    Customize your profile to reflect your vibe: username, photo, stats
+                    and all.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="feature-card animate-in" style="animation-delay: 0.2s">
-          <i class="fas fa-magic feature-icon"></i>
-          <h3 data-i18n="eventsMadeForYou">Events Made for You</h3>
-          <p data-i18n="eventsMadeForYouDesc">
-            Explore gatherings that match your vibe. Whether you're into art,
-            music, or something in between, your city has more than you think.
-          </p>
-        </div>
-        <div class="feature-card animate-in" style="animation-delay: 0.4s">
-          <i class="fas fa-rocket feature-icon"></i>
-          <h3 data-i18n="startSomething">Start Something</h3>
-          <p data-i18n="startSomethingDesc">
-            Create your own events and bring people together. It's easy, fast,
-            and surprisingly fun to see who shows up.
-          </p>
-        </div>
-        <div class="feature-card animate-in" style="animation-delay: 0.6s">
-          <i class="fas fa-handshake feature-icon"></i>
-          <h3 data-i18n="realFriendsOnly">Real Friends Only</h3>
-          <p data-i18n="realFriendsOnlyDesc">
-            Add only the people you've met in person. Connections happen in real
-            life. We're just here to keep them going.
-          </p>
-        </div>
-        <div class="feature-card animate-in" style="animation-delay: 0.8s">
-          <i class="fas fa-camera feature-icon"></i>
-          <h3 data-i18n="rememberTogether">Remember Together</h3>
-          <p data-i18n="rememberTogetherDesc">
-            Capture moments from the events you attend and share memories with
-            the people who made them special.
-          </p>
-        </div>
-        <div class="feature-card animate-in" style="animation-delay: 1s">
-          <i class="fas fa-user-edit feature-icon"></i>
-          <h3 data-i18n="makeItYours">Make It Yours</h3>
-          <p data-i18n="makeItYoursDesc">
-            Customize your profile to reflect your vibe: username, photo, stats
-            and all.
-          </p>
-        </div>
+        
+        <!-- Navigation Arrows -->
+        <button class="carousel-btn prev" aria-label="Previous features">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next" aria-label="Next features">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
     </section>
 

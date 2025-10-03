@@ -139,4 +139,109 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Carousel functionality
+    const track = document.querySelector('.carousel-track');
+    const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+    const nextButton = document.querySelector('.carousel-btn.next');
+    const prevButton = document.querySelector('.carousel-btn.prev');
+    
+    if (track && slides.length && nextButton && prevButton) {
+        let currentIndex = 0;
+        const slideWidth = 100; // percentage
+        const totalSlides = slides.length;
+        
+        // Determine how many slides to show at once based on screen width
+        function getSlidesPerView() {
+            return window.innerWidth >= 992 ? 2 : 1;
+        }
+        
+        let slidesPerView = getSlidesPerView();
+        
+        // Update slidesPerView on window resize
+        window.addEventListener('resize', () => {
+            slidesPerView = getSlidesPerView();
+            updateCarousel();
+        });
+        
+        // Set initial position
+        updateCarousel();
+        
+        // Next slide
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < totalSlides - slidesPerView) {
+                currentIndex++;
+                updateCarousel();
+            } else {
+                // Loop back to the beginning with animation
+                animateCarouselReset('next');
+            }
+        });
+        
+        // Previous slide
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            } else {
+                // Loop to the end with animation
+                animateCarouselReset('prev');
+            }
+        });
+        
+        // Update carousel position
+        function updateCarousel() {
+            const offset = -currentIndex * (slideWidth / slidesPerView);
+            track.style.transform = `translateX(${offset}%)`;
+        }
+        
+        // Animate carousel reset when reaching the end/beginning
+        function animateCarouselReset(direction) {
+            // First, determine the positions
+            const startPos = direction === 'next' ? 
+                -(totalSlides - slidesPerView) * (slideWidth / slidesPerView) : 
+                0;
+            const endPos = direction === 'next' ? 
+                0 : 
+                -(totalSlides - slidesPerView) * (slideWidth / slidesPerView);
+            
+            // Use a smoother transition
+            track.style.transition = 'transform 0.5s cubic-bezier(0.33, 1, 0.68, 1)';
+            
+            if (direction === 'next') {
+            // Going from last to first
+            currentIndex = 0;
+            } else {
+            // Going from first to last
+            currentIndex = totalSlides - slidesPerView;
+            }
+            
+            // Apply the new position directly
+            updateCarousel();
+        }
+        
+        // Touch support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        track.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+        
+        track.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            if (touchStartX - touchEndX > swipeThreshold) {
+                // Swipe left, go to next slide
+                nextButton.click();
+            } else if (touchEndX - touchStartX > swipeThreshold) {
+                // Swipe right, go to previous slide
+                prevButton.click();
+            }
+        }
+    }
 });

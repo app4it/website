@@ -5,7 +5,7 @@ body.about-page {
 }
 
 [data-theme="dark"] body.about-page {
-    background-color: #1a1a1a;
+    background: linear-gradient(rgba(var(--primary-color-rgb), 0.1), rgba(142, 226, 220, 0.1));
 }
 
 .about-container {
@@ -139,13 +139,13 @@ body.about-page {
     font-weight: 700;
     margin-bottom: 1.5rem;
     line-height: 1.1;
-    color: #0b2925;
+    color: #def5f3;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-subtitle {
     font-size: clamp(1.25rem, 4vw, 1.75rem);
-    color: #0b2925;
+    color: #def5f3;
     line-height: 1.5;
     max-width: 600px;
     margin: 0 auto;
@@ -155,6 +155,14 @@ body.about-page {
 .app4it-highlight {
     color: #0b2925;
     font-weight: 800;
+}
+
+.nav-link {
+    color: #def5f3;
+}
+
+[data-theme="dark"] body.about-page .nav-container {
+    background-color: rgba(234, 251, 251, 0.2);
 }
 
 /* Our Story Section */
@@ -183,24 +191,6 @@ body.about-page {
     color: var(--text-color);
     margin-bottom: 2rem;
     text-align: center;
-}
-
-.story-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: var(--primary-color);
-    color: var(--background-color);
-    text-decoration: none;
-    border-radius: var(--border-radius);
-    font-weight: 600;
-    font-size: clamp(1rem, 2vw, 1.1rem);
-    transition: all 0.3s ease;
-    margin: 2.5rem auto 0 auto;
-}
-
-.story-button:hover {
-    background: var(--secondary-color);
-    transform: translateY(-2px);
 }
 
 /* Mission, Vision, Why Section */
@@ -284,7 +274,7 @@ body.about-page {
 
 /* Team Section Styles */
 .team-section {
-    padding: 6rem var(--padding);
+    padding: 8rem var(--padding);
     position: relative;
     z-index: 1;
 }
@@ -679,20 +669,6 @@ body.about-page {
     }
 }
 
-/* Animation classes */
-.animate-in {
-    animation: fadeInUp 0.8s ease-out forwards;
-    opacity: 0;
-    transform: translateY(30px);
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-} 
-
 .team-intro {
     text-align: center;
     color: var(--text-color);
@@ -701,4 +677,8 @@ body.about-page {
     margin: 0 auto 2.5rem auto;
     opacity: 0.85;
     line-height: 1.5;
-} 
+}
+
+.cta-button {
+    margin-top: 2rem;
+}
