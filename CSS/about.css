@@ -144,7 +144,7 @@ body.about-page {
 }
 
 .hero-subtitle {
-    color: #def5f3;
+    color: #def5f3 !important;
     max-width: 600px;
     margin: 0 auto;
     font-weight: 400;
@@ -157,7 +157,11 @@ body.about-page {
 }
 
 .nav-link {
-    color: #def5f3;
+    color: #def5f3 !important;
+}
+
+.nav-container {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
 [data-theme="dark"] body.about-page .nav-container {
