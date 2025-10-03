@@ -291,11 +291,11 @@
 /* Dark mode adjustments */
 [data-theme="dark"] .mockup-feature {
     background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 4px 20px rgba(64, 224, 208, 0.1);
+    box-shadow: 0 4px 15px rgba(64, 224, 208, 0.1);
 }
   
 [data-theme="dark"] .mockup-feature:hover {
-    box-shadow: 0 8px 30px rgba(23, 155, 149, 0.65);
+    box-shadow: 0 6px 18px rgba(9, 125, 119, 0.65);
 }
 
 /* Dark mode adjustments */
