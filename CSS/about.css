@@ -58,6 +58,12 @@ body.about-page {
     animation: gentle-pulse 8s ease-in-out infinite;
 }
 
+@media (max-width: 768px) {
+    .hero-content {
+        margin-top: 80px !important; 
+    }
+}
+
 /* Floating blobs */
 .hero-section .blob {
     position: absolute;
