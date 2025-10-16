@@ -5,7 +5,7 @@ const translations = {
         heroTitle: "Real Events. Real People.<br>Right Here.",
         heroSubtitle: "Built around in-person moments, not endless feeds. Discover what's happening nearby, make plans with friends, and turn shared experiences into lasting connections.",
         requestAccess: "Request Early Access",
-        submit: "SUBMIT",
+        submit: "Submit",
         
         // Early Access Page
         earlyAccessTitle: "Request Early Access",
@@ -151,7 +151,7 @@ const translations = {
         heroTitle: "Echte Events. Echte Menschen.<br>Genau Hier.",
         heroSubtitle: "Jedes Event ist eine Chance, jemand Besonderes kennenzulernen. App4it hilft dir, diese persönlichen Begegnungen durch gemeinsame Erlebnisse in dauerhafte Freundschaften zu verwandeln.",
         requestAccess: "Frühen Zugang Anfragen",
-        submit: "ABSENDEN",
+        submit: "Absenden",
         
         // Early Access Page
         earlyAccessTitle: "Frühen Zugang Anfragen",
