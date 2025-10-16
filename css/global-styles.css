@@ -243,22 +243,57 @@ body {
     }
 }
 
-/* Call to Action Button */
-.cta-button {
+/* Primary Button Styles */
+.cta-button,
+.sib-form-block__button {
     display: inline-block;
-    padding: 1rem 2rem;
-    background: var(--primary-color);
-    color: var(--background-color);
+    padding: 1rem 2rem !important;
+    background: var(--primary-color) !important;
+    color: var(--background-color) !important;
     text-decoration: none;
-    border-radius: var(--border-radius);
-    font-weight: 600;
-    font-size: clamp(1rem, 2vw, 1.1rem);
-    transition: all 0.3s ease;
+    border: none !important;
+    border-radius: var(--border-radius) !important;
+    font-weight: 600 !important;
+    font-size: clamp(1rem, 2vw, 1.1rem) !important;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(23, 155, 149, 0.2);
 }
 
-.cta-button:hover {
-    background: var(--secondary-color);
-    transform: translateY(-2px);
+.cta-button:hover,
+.sib-form-block__button:hover {
+    background: var(--secondary-color) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(225, 203, 54, 0.3);
+}
+
+/* Ripple Effect */
+.cta-button::before,
+.sib-form-block__button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.cta-button:active::before,
+.sib-form-block__button:active::before {
+    width: 300px;
+    height: 300px;
+    transition: width 0s, height 0s;
+}
+
+.cta-button:active,
+.sib-form-block__button:active {
+    transform: translateY(0) !important;
 }
 
 /* Dark mode adjustments for nav */

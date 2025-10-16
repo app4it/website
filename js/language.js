@@ -126,7 +126,7 @@ const translations = {
         storyText1: "App4it was born from a simple frustration: despite all the technology at our fingertips, making real connections and finding local events still felt hard. We wanted to change that. Our journey began in a small city, where we saw firsthand how easy it is to feel isolated—even when surrounded by people.",
         storyText2: "We're four developers with different backgrounds—frontend, backend, AI, UX—but one shared goal: to build something that brings people together in the real world. We believe that technology should help you get out, not keep you glued to your screen. That's why we're focused on making it effortless to discover what's happening around you and to meet new people who share your interests.",
         storyText3: "This isn't just an app for us—it's a mission. We're building App4it for anyone who wants more from their city, more from their social life, and more from technology. We hope you'll join us in creating a community where authentic human connection comes first.",
-        joinOurMission: "Join our mission",
+        joinOurMission: "Join our Mission",
         
         // Team Descriptions
         juliaDesc: "Frontend developer and JIRA expert. Creating colorful chaos with watercolors and calling it art in my free time.",
