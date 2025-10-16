@@ -164,6 +164,15 @@ document.addEventListener('DOMContentLoaded', function() {
             // Create form data
             const formData = new FormData(form);
             
+            // Track form submission in Google Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_submit', {
+                    'event_category': 'Early Access',
+                    'event_label': 'Waitlist Signup',
+                    'value': 1
+                });
+            }
+
             // Submit the form using fetch
             fetch(form.action, {
                 method: 'POST',

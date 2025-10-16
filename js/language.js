@@ -108,7 +108,7 @@ const translations = {
         reinventingSocialMediaText: "We imagine a world where meeting new people is easy, spontaneous, and fun. Where events are never a mystery. Where technology doesn't distract from real life—it enhances it. We're building the go-to platform for discovering what's on, finding your people, and making small cities feel big with possibility.",
         
         // Team Section
-        meetTheTeam: "Our team",
+        meetTheTeam: "Our Team",
         teamIntro: "We're a small team with big energy. Each of us bringing a different strength to the table. What unites us is the drive to turn tech into real-life moments that actually matter.",
         
         // Team Member Names and Titles
@@ -379,6 +379,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const newLang = currentLang === 'en' ? 'de' : 'en';
             console.log('Switching from', currentLang, 'to', newLang);
             setPageLanguage(newLang);
+            
+            // Track language change in Google Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'language_change', {
+                    'event_category': 'User Interaction',
+                    'event_label': `Changed to ${newLang.toUpperCase()}`,
+                    'language_from': currentLang,
+                    'language_to': newLang
+                });
+            }
         });
     } else {
         console.error('Language toggle not found!');
