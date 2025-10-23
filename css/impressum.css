@@ -17,7 +17,6 @@ body.impressum-page {
     display: flex;
     flex-direction: column;
     position: relative;
-    z-index: 1;
 }
 
 .impressum-header {
@@ -90,30 +89,6 @@ body.impressum-page {
 [data-theme="dark"] .impressum-content {
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 4px 20px rgba(64, 224, 208, 0.1);
-}
-
-.impressum-circle-1 {
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    top: -150px;
-    left: -150px;
-    background: var(--primary-color);
-    opacity: 0.1;
-    border-radius: 50%;
-    z-index: 0;
-}
-
-.impressum-circle-2 {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    bottom: -100px;
-    right: -100px;
-    background: var(--secondary-color);
-    opacity: 0.1;
-    border-radius: 50%;
-    z-index: 0;
 }
 
 /* Responsive Styles */

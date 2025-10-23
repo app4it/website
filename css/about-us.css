@@ -69,7 +69,7 @@ body.about-page {
     position: absolute;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    animation: blob-float 15s ease-in-out infinite;
+    animation: blob-float 10s ease-in-out infinite;
 }
 
 .hero-section .blob:nth-child(1) {
@@ -85,7 +85,7 @@ body.about-page {
     height: 80px;
     top: 60%;
     right: 15%;
-    animation-delay: 3s;
+    animation-delay: 1s;
 }
 
 .hero-section .blob:nth-child(3) {
@@ -93,7 +93,7 @@ body.about-page {
     height: 100px;
     bottom: 20%;
     left: 20%;
-    animation-delay: 6s;
+    animation-delay: 2s;
 }
 
 @keyframes float {

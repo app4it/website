@@ -17,7 +17,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    z-index: 1;
 }
 
 .early-access-content {
@@ -25,7 +24,6 @@
     margin: 0 auto;
     text-align: center;
     position: relative;
-    z-index: 2;
 }
 
 .early-access-title {
@@ -37,32 +35,8 @@
 .early-access-subtitle {
     font-size: clamp(1rem, 2vw, 1.25rem);
     color: var(--light-text);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     line-height: 1.6;
-}
-
-/* Decorative Circles */
-.decorative-circle {
-    position: absolute;
-    border-radius: 50%;
-    background: var(--primary-color);
-    opacity: 0.1;
-    z-index: 0;
-}
-
-.circle-1 {
-    width: 350px;
-    height: 350px;
-    top: -150px;
-    left: -150px;
-}
-
-.circle-2 {
-    width: 250px;
-    height: 250px;
-    bottom: -100px;
-    right: -100px;
-    background: var(--secondary-color);
 }
 
 /* Responsive Styles */
@@ -70,11 +44,20 @@
     .early-access-container {
         padding-top: 7rem;
     }
+
+    .early-access-subtitle {
+        margin-bottom: 0rem;
+    }
 }
 
 @media (max-width: 480px) {
     .early-access-container {
         padding-top: 6rem;
+    }
+
+    .early-access-title {
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -125,7 +108,7 @@
 .input {
     flex: 1;
     min-width: 250px;
-    padding: 1rem 1.5rem !important;
+    padding: 0.5rem 1rem !important;
     border: 2px solid var(--primary-color) !important;
     border-radius: var(--border-radius) !important;
     font-size: clamp(0.875rem, 2vw, 1rem) !important;
