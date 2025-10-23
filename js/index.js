@@ -244,4 +244,24 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     }
+
+    // Scroll-to-top button
+    const scrollTopBtn = document.querySelector('.scroll-top');
+    if (scrollTopBtn) {
+        const toggleScrollTop = () => {
+            const y = window.scrollY || document.documentElement.scrollTop || 0;
+            if (y > 300) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        };
+
+        window.addEventListener('scroll', toggleScrollTop, { passive: true });
+        toggleScrollTop();
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 });
