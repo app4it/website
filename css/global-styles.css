@@ -23,6 +23,14 @@
     --card-shadow: 0 4px 20px rgba(23, 155, 149, 0.08);
     --max-width: 1200px;
     --padding: 2rem;
+
+    /* How It Works shared sizes */
+    --hiw-line-thickness: 4px;            /* repeated line thickness */
+    --hiw-seg-length: 32px;               /* repeated segment length */
+    --hiw-central-horizontal-inset: 25%;  /* left/right inset for central horizontals */
+    --hiw-container-height: 70px;         /* container height */
+    --hiw-split-horizontal-top: 32px;     /* top offset of split central horizontal */
+    --hiw-merge-horizontal-top: 28px;     /* top offset of merge central horizontal */
 }
 
 [data-theme="dark"] {
