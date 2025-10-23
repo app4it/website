@@ -69,15 +69,15 @@
     </script>
   </head>
   <body class="about-page">
-    <div class="nav-container">
+    <div class="nav-container" role="navigation" aria-label="Primary">
       <a href="index.html" class="nav-link" data-i18n="home">Home</a>
-      <a href="about-us.html" class="nav-link active" data-i18n="aboutUs"
+      <a href="about-us.html" class="nav-link active" data-i18n="aboutUs" aria-current="page"
         >About Us</a
       >
     </div>
 
     <div class="settings-container">
-      <div class="toggle-container">
+      <div class="toggle-container" role="group" aria-label="Settings">
         <button class="theme-toggle" aria-label="Toggle dark mode">
           <i class="fas fa-moon" aria-hidden="true"></i>
         </button>
@@ -94,12 +94,12 @@
 
     <div class="about-container">
       <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="blob"></div>
-        <div class="blob"></div>
-        <div class="blob"></div>
+      <section class="hero-section" aria-labelledby="about-hero-title">
+        <div class="blob" aria-hidden="true"></div>
+        <div class="blob" aria-hidden="true"></div>
+        <div class="blob" aria-hidden="true"></div>
         <div class="hero-content">
-          <h1 class="hero-title animate-in" data-i18n="aboutHeroTitle">
+          <h1 id="about-hero-title" class="hero-title animate-in" data-i18n="aboutHeroTitle">
             About app4it
           </h1>
           <p class="hero-subtitle animate-in" data-i18n="aboutHeroSubtitle">
@@ -110,7 +110,7 @@
       </section>
 
       <!-- Mission, Vision, Why Section -->
-      <section class="mission-vision-why-section">
+      <section class="mission-vision-why-section" aria-label="Mission, Vision and Why">
         <div class="mvw-grid">
           <div class="mvw-card animate-in">
             <div class="mvw-icon">
@@ -141,8 +141,8 @@
       </section>
 
       <!-- Meet the Team Section -->
-      <div class="team-section">
-        <h2 data-i18n="meetTheTeam">Our team</h2>
+      <div class="team-section" role="region" aria-labelledby="team-title">
+        <h2 id="team-title" data-i18n="meetTheTeam">Our team</h2>
         <p class="team-intro" data-i18n="teamIntro">
           We’re a small team with big energy. Each of us bringing a different
           strength to the table. What unites us is the drive to turn tech into
@@ -166,7 +166,7 @@
                       class="social-link"
                       aria-label="GitHub"
                     >
-                      <i class="fab fa-github"></i>
+                      <i class="fab fa-github" aria-hidden="true"></i>
                     </a>
                     <a
                       href="https://www.linkedin.com/in/julia-aguero-fraguas/"
@@ -174,7 +174,7 @@
                       class="social-link"
                       aria-label="LinkedIn"
                     >
-                      <i class="fab fa-linkedin-in"></i>
+                      <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                     </a>
                     <a
                       href="https://juliaaguero.com/"
@@ -182,7 +182,7 @@
                       class="social-link"
                       aria-label="Personal Website"
                     >
-                      <i class="fas fa-globe"></i>
+                      <i class="fas fa-globe" aria-hidden="true"></i>
                     </a>
                   </div>
                 </div>
@@ -229,7 +229,7 @@
                       class="social-link"
                       aria-label="GitHub"
                     >
-                      <i class="fab fa-github"></i>
+                      <i class="fab fa-github" aria-hidden="true"></i>
                     </a>
                     <a
                       href="https://www.linkedin.com/in/ssimeunovic/"
@@ -237,7 +237,7 @@
                       class="social-link"
                       aria-label="LinkedIn"
                     >
-                      <i class="fab fa-linkedin-in"></i>
+                      <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                     </a>
                   </div>
                 </div>
@@ -284,7 +284,7 @@
                       class="social-link"
                       aria-label="GitHub"
                     >
-                      <i class="fab fa-github"></i>
+                      <i class="fab fa-github" aria-hidden="true"></i>
                     </a>
                     <a
                       href="https://www.linkedin.com/in/sophia-ss/"
@@ -292,7 +292,7 @@
                       class="social-link"
                       aria-label="LinkedIn"
                     >
-                      <i class="fab fa-linkedin-in"></i>
+                      <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                     </a>
                     <a
                       href="https://sophiasoares.com/"
@@ -300,7 +300,7 @@
                       class="social-link"
                       aria-label="Personal Website"
                     >
-                      <i class="fas fa-globe"></i>
+                      <i class="fas fa-globe" aria-hidden="true"></i>
                     </a>
                   </div>
                 </div>
@@ -344,7 +344,7 @@
                       class="social-link"
                       aria-label="GitHub"
                     >
-                      <i class="fab fa-github"></i>
+                      <i class="fab fa-github" aria-hidden="true"></i>
                     </a>
                     <a
                       href="https://www.linkedin.com/in/marinsusic/"
@@ -352,7 +352,7 @@
                       class="social-link"
                       aria-label="LinkedIn"
                     >
-                      <i class="fab fa-linkedin-in"></i>
+                      <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                     </a>
                     <a
                       href="https://susic-security.com/"
@@ -360,7 +360,7 @@
                       class="social-link"
                       aria-label="Personal Website"
                     >
-                      <i class="fas fa-globe"></i>
+                      <i class="fas fa-globe" aria-hidden="true"></i>
                     </a>
                   </div>
                 </div>
@@ -391,9 +391,9 @@
 
     <!-- Our Story Section -->
     <div class="story-section-container">
-      <section class="story-section">
+      <section class="story-section" aria-labelledby="our-story-title">
         <div class="story-content">
-          <h2 class="story-title animate-in" style="animation-delay: 0.2s" data-i18n="ourStory">
+          <h2 id="our-story-title" class="story-title animate-in" style="animation-delay: 0.2s" data-i18n="ourStory">
             Our Story
           </h2>
           <p class="story-text animate-in" style="animation-delay: 0.4s" data-i18n="storyText1">

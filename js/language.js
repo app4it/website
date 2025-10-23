@@ -66,6 +66,7 @@ const translations = {
         agreeText: "I agree to receive news and updates provided by App4it and accept the data privacy statement.",
         unsubscribeText: "You may unsubscribe at any time using the link in our e-mail updates.",
         acceptPrivacy: "Please accept the privacy policy to continue.",
+        emailHelp: "Enter a valid email address to join the waitlist. This field is required.",
         
         // Footer
         copyright: "© 2025 App4it Project Team. All rights reserved.",
@@ -212,6 +213,7 @@ const translations = {
         agreeText: "Ich stimme zu, Neuigkeiten und Updates von App4it zu erhalten und akzeptiere die Datenschutzerklärung.",
         unsubscribeText: "Sie können sich jederzeit über den Link in unseren E-Mail-Updates abmelden.",
         acceptPrivacy: "Bitte akzeptieren Sie die Datenschutzerklärung, um fortzufahren.",
+        emailHelp: "Gib eine gültige E-Mail-Adresse ein, um dich in die Warteliste einzutragen. Dieses Feld ist erforderlich.",
         
         // Footer
         copyright: "© 2025 App4it Projektteam. Alle Rechte vorbehalten.",

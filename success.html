@@ -27,7 +27,7 @@
 </head>
 <body>
     <div class="settings-container">
-        <div class="toggle-container">
+        <div class="toggle-container" role="group" aria-label="Settings">
           <button class="theme-toggle" aria-label="Toggle dark mode">
             <i class="fas fa-moon" aria-hidden="true"></i>
           </button>
@@ -42,15 +42,15 @@
         </div>
     </div>
 
-    <main class="hero" style="padding-top: 0rem;">
-        <div class="decorative-circle circle-1"></div>
-        <div class="decorative-circle circle-2"></div>
+    <main class="hero" style="padding-top: 0rem;" aria-labelledby="success-title">
+        <div class="decorative-circle circle-1" aria-hidden="true"></div>
+        <div class="decorative-circle circle-2" aria-hidden="true"></div>
         
         <div class="hero-content">
             <div class="success-icon animate-in">
-                <i class="fas fa-star"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
             </div>
-            <h1 class="hero-title animate-in" data-i18n="successTitle">Woohoo! You're in! 🎉</h1>
+            <h1 id="success-title" class="hero-title animate-in" data-i18n="successTitle">Woohoo! You're in! 🎉</h1>
             <p class="hero-subtitle animate-in" style="animation-delay: 0.2s" data-i18n="successSubtitle">
                 High five! ✋ You're officially on the waitlist for the coolest way to meet new friends. 
                 Get ready for adventures that are way better than scrolling! Are you App4it?

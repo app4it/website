@@ -45,13 +45,13 @@
     </script>
 </head>
 <body class="early-access-page">
-    <div class="nav-container">
+    <div class="nav-container" role="navigation" aria-label="Primary">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about-us.html" class="nav-link" data-i18n="aboutUs">About Us</a>
     </div>
 
     <div class="settings-container">
-        <div class="toggle-container">
+        <div class="toggle-container" role="group" aria-label="Settings">
             <button class="theme-toggle" aria-label="Toggle dark mode">
                 <i class="fas fa-moon" aria-hidden="true"></i>
             </button>
@@ -63,17 +63,17 @@
     </div>
 
     <main class="early-access-container">
-        <div class="decorative-circle circle-1"></div>
-        <div class="decorative-circle circle-2"></div>
+        <div class="decorative-circle circle-1" aria-hidden="true"></div>
+        <div class="decorative-circle circle-2" aria-hidden="true"></div>
         
         <div class="early-access-content">
-            <h1 class="early-access-title" data-i18n="earlyAccessTitle">Request Early Access</h1>
+            <h1 class="early-access-title" id="early-access-title" data-i18n="earlyAccessTitle">Request Early Access</h1>
             <p class="early-access-subtitle" data-i18n="earlyAccessSubtitle">Be among the first to experience a new way of connecting at events. Join our waitlist today!</p>
             
             <!-- Brevo Form -->
-            <div class="sib-form">
+            <div class="sib-form" role="region" aria-labelledby="early-access-title">
                 <div id="sib-form-container" class="sib-form-container">
-                    <div id="error-message" class="sib-form-message-panel">
+                    <div id="error-message" class="sib-form-message-panel" role="status" aria-live="polite">
                         <div class="sib-form-message-panel__text-center">
                             <span class="sib-form-message-panel__inner-text" data-i18n="confirmationEmailSent">
                                 A confirmation email has been sent. Please check your inbox (and spam folder if not found). If you don't receive it within a few minutes, try submitting again.
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                     <div></div>
-                    <div id="success-message" class="sib-form-message-panel">
+                    <div id="success-message" class="sib-form-message-panel" role="status" aria-live="polite">
                         <div class="sib-form-message-panel__text-center">
                             <span class="sib-form-message-panel__inner-text" data-i18n="subscriptionSuccessful">
                                 Your subscription to the app4it early access has been successful.
@@ -94,13 +94,14 @@
                             <div class="form__entry entry_block">
                                 <div class="form__label-row">
                                     <div class="entry__field">
-                                        <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="your@email.com" data-required="true" required />
+                                        <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="your@email.com" aria-label="Email address" aria-describedby="emailHelp" data-required="true" required />
+                                        <span id="emailHelp" class="visually-hidden" data-i18n="emailHelp">Enter a valid email address to join the waitlist. This field is required.</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="sib-form__declaration">
                                 <button type="button" class="privacy-toggle" aria-expanded="false" aria-controls="privacy-details" data-i18n="viewPrivacy">
-                                    View Privacy Details <i class="fas fa-chevron-down"></i>
+                                    View Privacy Details <i class="fas fa-chevron-down" aria-hidden="true"></i>
                                 </button>
                                 <div id="privacy-details" class="privacy-details" hidden>
                                     <div style="font-size:14px; color: var(--light-text);">
