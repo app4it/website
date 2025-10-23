@@ -244,33 +244,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     }
-
-    // Parallax fallback for Safari: move circles and background on scroll
-    (function() {
-        const hero = document.querySelector('.hero');
-        const circles1 = document.querySelectorAll('.decorative-circle.circle-1');
-        const circles2 = document.querySelectorAll('.decorative-circle.circle-2');
-        if (!hero && !circles1.length && !circles2.length) return;
-
-        const base = { c1Top: -150, c2Bottom: -90 };
-
-        const onScroll = () => {
-            const y = window.scrollY || window.pageYOffset || 0;
-
-            // Parallax for circles without interfering with CSS transform animations
-            circles1.forEach(el => { el.style.top = `${base.c1Top + y * 0.12}px`; });
-            circles2.forEach(el => { el.style.bottom = `${base.c2Bottom + y * 0.18}px`; });
-
-            // Background parallax via background-position (robust across Safari versions)
-            if (hero) {
-                const p1 = `left -150px top ${-150 + y * 0.15}px`;
-                const p2 = `right -100px bottom ${-90 + y * 0.25}px`;
-                const p3 = 'center';
-                hero.style.backgroundPosition = `${p1}, ${p2}, ${p3}`;
-            }
-        };
-
-        window.addEventListener('scroll', onScroll, { passive: true });
-        onScroll();
-    })();
 });

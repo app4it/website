@@ -189,6 +189,58 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(rgba(23, 155, 149, 0.1), rgba(142, 226, 220, 0.1));
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 1200px;
+    padding: var(--padding);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: fadeInUp 1s ease forwards;
+    padding-bottom: 0.2em;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    margin-bottom: 1.5rem !important;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-color);
+    opacity: 0.9;
+    padding: 0;
+}
+
+[data-theme="dark"] .hero-subtitle {
+    color: white;
+    opacity: 0.95;
+}
+
 /* Section Titles */
 .section-title {
     text-align: center;
@@ -307,12 +359,6 @@ body {
 }
 
 /* Media queries for mobile responsiveness */
-@media (max-width: 768px) {
-  .hero {
-    background-attachment: scroll, scroll, scroll;
-  }
-}
-
 @media (max-width: 480px) {
     .header-container {
         padding: 0 1rem;
@@ -376,64 +422,6 @@ body {
     animation-duration: 4s;
     animation-delay: 1s;
     z-index: -1;
-}
-
-/* Hero Section */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding-top: 6rem;
-    padding-bottom: 2rem;
-    background-image: radial-gradient(600px 600px at -150px -150px, rgba(var(--primary-color-rgb), 0.25), rgba(0, 0, 0, 0) 60%),
-                  radial-gradient(400px 400px at 110% 110%, rgba(var(--secondary-color-rgb), 0.18), rgba(0, 0, 0, 0) 60%),
-                  linear-gradient(rgba(23, 155, 149, 0.1), rgba(142, 226, 220, 0.1));
-    background-attachment: fixed, fixed, scroll;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: left -150px top -150px, right -100px bottom -90px, center;
-    background-size: auto, auto, cover;
-    overflow: hidden;
-}
-
-.hero-content {
-    max-width: 1200px;
-    padding: var(--padding);
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    margin: 0 auto;
-}
-
-.hero-title {
-    font-size: clamp(2.5rem, 8vw, 4.5rem);
-    font-weight: 800;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    animation: fadeInUp 1s ease forwards;
-    padding-bottom: 0.2em;
-}
-
-.hero-subtitle {
-    font-size: clamp(1.25rem, 4vw, 1.75rem);
-    margin-bottom: 1.5rem !important;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--text-color);
-    opacity: 0.9;
-    padding: 0;
-}
-
-[data-theme="dark"] .hero-subtitle {
-    color: white;
-    opacity: 0.95;
 }
 
 /* Success Icon styles */
