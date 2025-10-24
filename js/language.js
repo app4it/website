@@ -68,7 +68,7 @@ const translations = {
         findEvents: "Find Events",
         findEventsDesc: "Discover what's happening around you.",
         connectPeople: "Connect with People",
-        connectPeopleDesc: "Meet IRL and grow your circle.",
+        connectPeopleDesc: "Meet in real life and grow your circle.",
         createEvents: "Create Events",
         createEventsDesc: "Start something and bring people together.",
         shareWithFriends: "Share with Friends",
