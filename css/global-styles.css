@@ -473,9 +473,13 @@ body {
     position: absolute;
     border-radius: 50%;
     background: var(--primary-color);
-    opacity: 0.1;
+    opacity: 0.2;
     z-index: 0;
     animation: floatUpDown 10s ease-in-out infinite;
+}
+
+[data-theme="dark"] .decorative-circle {
+    opacity: 0.1;
 }
 
 .circle-1 {
