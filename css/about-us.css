@@ -1,6 +1,5 @@
 /* About Page Styles */
 body.about-page {
-    background-color: var(--background-color);
     color: var(--text-color);
 }
 
@@ -229,7 +228,6 @@ body.about-page {
 /* Mission, Vision, Why Section */
 .mission-vision-why-section {
     padding: var(--space-6) var(--space-2);
-    background: transparent;
     padding-bottom: var(--space-2);
 }
 
