@@ -33,7 +33,7 @@ body.impressum-page {
 }
 
 .impressum-content {
-    background: var(--card-background);
+    background: var(--card-color);
     border-radius: var(--border-radius);
     padding: 2rem;
     margin-bottom: 2rem;

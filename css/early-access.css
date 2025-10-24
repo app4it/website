@@ -62,19 +62,6 @@
 }
 
 /* Brevo Form Styles */
-.brevo-form-container {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.brevo-form {
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-}
-
 #sib-container {
     background: transparent !important;
     border: none !important;
@@ -166,10 +153,6 @@
 }
 
 .sib-hide-loader-icon {
-    display: none !important;
-}
-
-.brevo-form .declaration-block-icon {
     display: none !important;
 }
 
