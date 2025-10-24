@@ -46,30 +46,17 @@ const translations = {
         stayConnected: "Stay Connected",
         stayConnectedDesc: "Chat with your connections, comment on memories, and plan future meetups together.",
         
-        // Experience Section
-        experienceTitle: "Experience Real Connections",
-        
-        // Personas Section
-        personasTitle: "For Every Kind of You",
-        personasSubtitle: "Whether you're the life of the party or prefer quiet moments, our app adapts to your vibe.",
-        personaSocialTitle: "The Social Butterfly",
-        personaSocialDesc: "You thrive in the energy of crowds. Parties, concerts, sports events—you're always where the action is. Find your next adventure and meet people who match your energy.",
-        personaThoughtfulTitle: "The Thoughtful Explorer",
-        personaThoughtfulDesc: "You find joy in quiet moments and meaningful experiences. Art exhibitions, book clubs, board game nights—discover gatherings that feed your soul.",
-        personaAmbitiousTitle: "The Ambitious Networker",
-        personaAmbitiousDesc: "Work hard, play harder. Conferences by day, karaoke by night. Connect with driven professionals who know how to balance ambition with fun.",
-        personaCommunityTitle: "The Community Builder",
-        personaCommunityDesc: "You bring people together. Study groups, theater workshops, book clubs—you create spaces where connections flourish and communities grow.",
-        
-        // Event Image Alt Texts
-        eventImageAlt1: "Food gathering at home",
-        eventImageAlt2: "Sports event",
-        eventImageAlt3: "Street art exhibition with murals and graffiti",
-        eventImageAlt4: "Concert event",
-        eventImageAlt5: "Conference",
-        eventImageAlt6: "Group of people walking their dogs in a park",
-        eventImageAlt7: "Book club",
-        eventImageAlt8: "Installation art exhibition with interactive pieces",
+        // Personality Section
+        personalitiesTitle: "For Every Kind of You",
+        personalitiesSubtitle: "Whether you're the life of the party or prefer quiet moments, our app adapts to your vibe.",
+        personalitySocialTitle: "The Social Butterfly",
+        personalitySocialDesc: "You thrive in the energy of crowds. Parties, concerts, sports events—you're always where the action is. Find your next adventure and meet people who match your energy.",
+        personalityThoughtfulTitle: "The Thoughtful Explorer",
+        personalityThoughtfulDesc: "You find joy in quiet moments and meaningful experiences. Art exhibitions, book clubs, board game nights—discover gatherings that feed your soul.",
+        personalityAmbitiousTitle: "The Ambitious Networker",
+        personalityAmbitiousDesc: "Work hard, play harder. Conferences by day, karaoke by night. Connect with driven professionals who know how to balance ambition with fun.",
+        personalityCommunityTitle: "The Community Builder",
+        personalityCommunityDesc: "You bring people together. Study groups, theater workshops, book clubs—you create spaces where connections flourish and communities grow.",
         
         // How It Works Section
         howItWorks: "How It's Gonna Work",
@@ -83,7 +70,7 @@ const translations = {
         connectPeopleDesc: "Meet in real life and grow your circle.",
         createEvents: "Create Events",
         createEventsDesc: "Start something and bring people together.",
-        tellFriends: "Tell Friends",
+        tellFriends: "Tell your Friends",
         tellFriendsDesc: "Invite your crew and spread the word.",
         
         // Privacy and Form
@@ -223,17 +210,17 @@ const translations = {
         // Experience Section
         experienceTitle: "Erlebe Echte Verbindungen",
         
-        // Personas Section
-        personasTitle: "Für Jede Art von Dir",
-        personasSubtitle: "Ob du das Leben der Party bist oder ruhige Momente bevorzugst, unsere App passt sich deinem Vibe an.",
-        personaSocialTitle: "Der Soziale Schmetterling",
-        personaSocialDesc: "Du blühst in der Energie von Menschenmengen auf. Partys, Konzerte, Sportveranstaltungen—du bist immer dort, wo die Action ist. Finde dein nächstes Abenteuer und triff Menschen, die zu deiner Energie passen.",
-        personaThoughtfulTitle: "Der Nachdenkliche Entdecker",
-        personaThoughtfulDesc: "Du findest Freude in ruhigen Momenten und bedeutungsvollen Erfahrungen. Kunstausstellungen, Buchclubs, Brettspielabende—entdecke Treffen, die deine Seele nähren.",
-        personaAmbitiousTitle: "Der Ehrgeizige Netzwerker",
-        personaAmbitiousDesc: "Hart arbeiten, härter feiern. Konferenzen am Tag, Karaoke in der Nacht. Verbinde dich mit ambitionierten Profis, die wissen, wie man Ehrgeiz mit Spaß ausbalanciert.",
-        personaCommunityTitle: "Der Community-Builder",
-        personaCommunityDesc: "Du bringst Menschen zusammen. Lerngruppen, Theaterworkshops, Buchclubs—du schaffst Räume, in denen Verbindungen gedeihen und Gemeinschaften wachsen.",
+        // Personality Section
+        personalitiesTitle: "Für Jede Art von Dir",
+        personalitiesSubtitle: "Ob du das Leben der Party bist oder ruhige Momente bevorzugst, unsere App passt sich deinem Vibe an.",
+        personalitySocialTitle: "Der Soziale Schmetterling",
+        personalitySocialDesc: "Du blühst in der Energie von Menschenmengen auf. Partys, Konzerte, Sportveranstaltungen—du bist immer dort, wo die Action ist. Finde dein nächstes Abenteuer und triff Menschen, die zu deiner Energie passen.",
+        personalityThoughtfulTitle: "Der Nachdenkliche Entdecker",
+        personalityThoughtfulDesc: "Du findest Freude in ruhigen Momenten und bedeutungsvollen Erfahrungen. Kunstausstellungen, Buchclubs, Brettspielabende—entdecke Treffen, die deine Seele nähren.",
+        personalityAmbitiousTitle: "Der Ehrgeizige Netzwerker",
+        personalityAmbitiousDesc: "Hart arbeiten, härter feiern. Konferenzen am Tag, Karaoke in der Nacht. Verbinde dich mit ambitionierten Profis, die wissen, wie man Ehrgeiz mit Spaß ausbalanciert.",
+        personalityCommunityTitle: "Der Community-Builder",
+        personalityCommunityDesc: "Du bringst Menschen zusammen. Lerngruppen, Theaterworkshops, Buchclubs—du schaffst Räume, in denen Verbindungen gedeihen und Gemeinschaften wachsen.",
         
         // Event Image Alt Texts
         eventImageAlt1: "Essensrunde zu Hause",
