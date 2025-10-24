@@ -499,13 +499,13 @@
 
 /* From left branch toward center: down (inner edge), to central horizontal, then down at center seam */
 .elbow-inward-left .seg { position: absolute; background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); border-radius: 2px; }
-.elbow-inward-left .seg.v { width: 4px; }
+.elbow-inward-left .seg.v { width: var(--hiw-line-thickness); }
 .elbow-inward-left .seg.v.top { right: 50%; top: 0; height: var(--hiw-seg-length); }
 .elbow-inward-left .seg.v.bottom { right: 0; top: calc(var(--hiw-merge-horizontal-top) + var(--hiw-line-thickness)); height: var(--hiw-seg-length); }
 
 /* From right branch toward center: down (inner edge), to central horizontal, then down at center seam */
 .elbow-inward-right .seg { position: absolute; background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); border-radius: 2px; }
-.elbow-inward-right .seg.v { width: 4px; }
+.elbow-inward-right .seg.v { width: var(--hiw-line-thickness); }
 .elbow-inward-right .seg.v.top { left: 50%; top: 0; height: var(--hiw-seg-length); }
 .elbow-inward-right .seg.v.bottom { left: 0; top: calc(var(--hiw-merge-horizontal-top) + var(--hiw-line-thickness)); height: var(--hiw-seg-length); }
 
