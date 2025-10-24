@@ -58,7 +58,9 @@ const translations = {
         eventImageAlt6: "Group of people walking their dogs in a park",
         eventImageAlt7: "Book club",
         eventImageAlt8: "Installation art exhibition with interactive pieces",
-        howItWorks: "How It Works",
+        
+        // How It Works Section
+        howItWorks: "How It Will Work",
         downloadApp: "Download",
         downloadAppDesc: "Get the app for iOS or Android.",
         signUp: "Sign Up",
@@ -218,7 +220,9 @@ const translations = {
         eventImageAlt6: "Gruppe von Menschen, die ihre Hunde in einem Park spazieren führen",
         eventImageAlt7: "Buchclub",
         eventImageAlt8: "Installationskunst-Ausstellung mit interaktiven Stücken",
-        howItWorks: "So funktioniert's",
+        
+        // How It Works Section
+        howItWorks: "So wird es funktionieren",
         downloadApp: "App herunterladen",
         downloadAppDesc: "Hol dir die App für iOS oder Android.",
         signUp: "Registrieren",

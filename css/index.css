@@ -1,260 +1,12 @@
 /* index.css - Specific styles for the home page */
 
-/* Values Section */
-.values-section {
-    padding: 8rem var(--padding);
-    background: white;
-}
-
-/* How It Works Section */
-.howitworks-section {
-    padding: 8rem var(--padding);
-    background: white;
-}
-
-.hiw-container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-
-.hiw-common-stack {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    justify-items: center;
-    gap: .25rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Match widths of the top two cards to branch card width */
-.hiw-common-stack .hiw-step {
-    width: calc((100% - 1.5rem) / 2);
-}
-
-/* Add breathing room for the connector between Download and Sign Up */
-.hiw-common-stack .hiw-connector.vertical {
-    height: var(--hiw-seg-length);
-    margin: 0.5rem 0;
-}
-
-.hiw-row {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    gap: 1.25rem;
-    margin-bottom: 2rem;
-}
-
-.hiw-common {
-    margin-bottom: 3rem;
-}
-
-.hiw-step {
-    background: var(--background-color);
-    border-radius: var(--border-radius);
-    padding: 1.25rem;
-    box-shadow: 0 4px 20px rgba(var(--primary-color-rgb), 0.08);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hiw-step:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 38px rgba(var(--primary-color-rgb), 0.15);
-}
-
-.hiw-icon {
-    width: 70px;
-    height: 70px;
-    border-radius: 0;
-    background: transparent;
-    color: var(--primary-color);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    margin: 0 auto;
-    box-shadow: none;
-}
-
-.hiw-icon i {
-    color: var(--primary-color);
-    display: inline-block;
-    line-height: 1;
-    padding-inline: 0.15em;
-}
-
-/* Gradient on hover */
-.hiw-step:hover .hiw-icon i {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-
-.hiw-title {
-    margin: 0.25rem 0 0.5rem;
-    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-    color: var(--text-color);
-}
-
-.hiw-text {
-    margin: 0;
-    color: var(--light-text);
-    font-size: clamp(0.9rem, 2vw, 1rem);
-}
-
-.hiw-connector {
-    width: var(--hiw-seg-length);
-    height: var(--hiw-line-thickness);
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    border-radius: 2px;
-}
-
-.hiw-connector.vertical {
-    width: var(--hiw-line-thickness);
-    height: var(--hiw-seg-length);
-    margin: 10px auto;
-    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
-}
-
-.hiw-branches {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-}
-
-/* Elbow connectors between Sign Up and branches */
-.hiw-connectors {
-    position: relative;
-    height: var(--hiw-container-height);
-    max-width: var(--max-width);
-    margin: 0.5rem auto;
-}
-
-/* Single central horizontal for top split */
-.hiw-connectors .seg.h.central {
-    position: absolute;
-    left: var(--hiw-central-horizontal-inset);
-    right: var(--hiw-central-horizontal-inset);
-    top: var(--hiw-split-horizontal-top);
-    height: var(--hiw-line-thickness);
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    border-radius: 2px;
-}
-
-.elbow { position: absolute; top: 0; height: var(--hiw-container-height); width: 50%; }
-.elbow-left { left: 0; }
-.elbow-right { right: 0; }
-
-.elbow .seg { position: absolute; background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); border-radius: 2px; }
-.elbow .seg.v { width: var(--hiw-line-thickness); }
-.elbow .seg.h { height: var(--hiw-line-thickness); }
-
-/* Branch split: one central vertical, one long horizontal, extremity bottom verticals */
-/* Left half draws the central top vertical at the seam, the left half of the horizontal, and the left extremity bottom vertical */
-.elbow-left .seg.v.top { right: 0; top: 0; height: var(--hiw-seg-length); }
-.elbow-left .seg.h { left: 0; right: 0; top: var(--hiw-split-horizontal-top); }
-.elbow-left .seg.v.bottom { left: 50%; top: calc(var(--hiw-split-horizontal-top) + var(--hiw-line-thickness)); height: var(--hiw-seg-length); }
-
-/* Right half hides the top vertical (we only want one central), draws the right extremity bottom vertical */
-.elbow-right .seg.v.top { display: none; }
-.elbow-right .seg.v.bottom { right: 50%; top: calc(var(--hiw-split-horizontal-top) + var(--hiw-line-thickness)); height: var(--hiw-seg-length); }
-
-/* Merge elbows from branches to final */
-.hiw-merge-connectors {
-    position: relative;
-    height: var(--hiw-container-height);
-    max-width: var(--max-width);
-    margin: 0.5rem auto;
-}
-
-/* Single central horizontal for bottom merge */
-.hiw-merge-connectors .seg.h.central {
-    position: absolute;
-    left: var(--hiw-central-horizontal-inset);
-    right: var(--hiw-central-horizontal-inset);
-    top: var(--hiw-merge-horizontal-top);
-    height: var(--hiw-line-thickness);
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    border-radius: 2px;
-}
-
-.elbow-inward-left { position: absolute; top: 0; left: 0; width: 50%; height: var(--hiw-container-height); }
-.elbow-inward-right { position: absolute; top: 0; right: 0; width: 50%; height: var(--hiw-container-height); }
-
-/* From left branch toward center: down (inner edge), to central horizontal, then down at center seam */
-.elbow-inward-left .seg { position: absolute; background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); border-radius: 2px; }
-.elbow-inward-left .seg.v { width: 4px; }
-.elbow-inward-left .seg.v.top { right: 50%; top: 0; height: var(--hiw-seg-length); }
-.elbow-inward-left .seg.v.bottom { right: 0; top: calc(var(--hiw-merge-horizontal-top) + var(--hiw-line-thickness)); height: var(--hiw-seg-length); }
-
-/* From right branch toward center: down (inner edge), to central horizontal, then down at center seam */
-.elbow-inward-right .seg { position: absolute; background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); border-radius: 2px; }
-.elbow-inward-right .seg.v { width: 4px; }
-.elbow-inward-right .seg.v.top { left: 50%; top: 0; height: var(--hiw-seg-length); }
-.elbow-inward-right .seg.v.bottom { left: 0; top: calc(var(--hiw-merge-horizontal-top) + var(--hiw-line-thickness)); height: var(--hiw-seg-length); }
-
-/* Subtle flowing animation along connectors */
-.elbow .seg,
-.elbow-inward-left .seg,
-.elbow-inward-right .seg {
-    background-size: 200% 200%;
-    animation: hiwFlow 3s linear infinite;
-}
-
-@keyframes hiwFlow {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-
-.hiw-final { display: grid; justify-items: center; }
-
-@media (max-width: 900px) {
-    .hiw-row {
-        grid-template-columns: 1fr;
-    }
-    .hiw-common-stack .hiw-step { width: 100%; }
-    .hiw-connector {
-        width: 4px;
-        height: 36px;
-        margin: 0.5rem auto;
-        background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
-    }
-    .hiw-branches {
-        grid-template-columns: 1fr;
-    }
-    .hiw-connectors,
-    .hiw-merge-connectors { display: none; }
-}
-
-.values-section .section-title {
-    color: var(--text-color);
-}
-
-[data-theme="dark"] .values-section .section-title {
-    color: #001716;
-}
-
-[data-theme="dark"] .howitworks-section .section-title {
-    color: #001716 !important; 
-}
-
-.values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    width: 100%;
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0;
-}
-
-.value-card {
+/* Reusable App Cards */
+.app-card {
     width: 100%;
     padding: clamp(1.5rem, 3vw, 2rem);
     background: var(--background-color);
     border-radius: var(--border-radius);
+    border: 1px solid var(--primary-color);
     text-align: center;
     position: relative;
     box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08); 
@@ -263,7 +15,7 @@
     overflow: hidden;
 }
 
-.value-card::before {
+.app-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -275,19 +27,19 @@
     transition: transform 0.3s ease;
 }
 
-.value-card:hover {
+.app-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 40px rgba(var(--primary-color-rgb), 0.15);
 }
 
-.value-card:hover::before {
+.app-card:hover::before {
     transform: scaleX(1);
 }
 
-.value-card .feature-icon {
+.app-card .feature-icon {
     font-size: 3rem;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin: 0 auto 1.5rem;
     display: flex;
     align-items: center;
@@ -296,23 +48,47 @@
     transition: all 0.3s ease;
 }
 
-.value-card:hover .feature-icon {
+.app-card:hover .feature-icon {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.value-card h3 {
+.app-card h3 {
     font-size: clamp(1.25rem, 2.5vw, 1.5rem);
     margin-bottom: 1rem;
     color: var(--text-color);
 }
 
-.value-card p {
+.app-card p {
     font-size: clamp(0.9rem, 2vw, 1rem);
     color: var(--light-text);
     line-height: 1.6;
+}
+
+/* Values Section */
+.values-section {
+    padding: 8rem var(--padding);
+    background: rgb(255, 255, 255);
+}
+
+.values-section .section-title {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .values-section .section-title {
+    color: #001716;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0;
 }
 
 /* Features Section */
@@ -525,16 +301,242 @@
 }
 
 /* Dark mode adjustments */
-[data-theme="dark"] .value-card {
+[data-theme="dark"] .app-card {
     box-shadow: 0 4px 20px rgba(23, 155, 149, 0.4);
+    border: none;
 }
 
-[data-theme="dark"] .value-card:hover {
+[data-theme="dark"] .app-card:hover {
     box-shadow: 0 8px 30px rgba(23, 155, 149, 0.65);
 }
 
 [data-theme="dark"] .features-section {
     background: linear-gradient(to bottom, var(--background-color), rgba(23, 155, 149, 0.1));
+}
+
+/* How It Works Section */
+.howitworks-section {
+    padding: 8rem var(--padding);
+    background: white;
+}
+
+.hiw-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.hiw-common-stack {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    gap: .25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Match widths of the top two cards to branch card width */
+.hiw-common-stack .hiw-step {
+    width: calc((100% - 1.5rem) / 2);
+}
+
+/* Add breathing room for the connector between Download and Sign Up */
+.hiw-common-stack .hiw-connector.vertical {
+    height: var(--hiw-seg-length);
+    margin: 0.5rem 0;
+}
+
+.hiw-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hiw-common {
+    margin-bottom: 3rem;
+}
+
+.hiw-step {
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    box-shadow: 0 4px 20px rgba(var(--primary-color-rgb), 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hiw-step:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 38px rgba(var(--primary-color-rgb), 0.15);
+}
+
+.hiw-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    box-shadow: none;
+}
+
+.hiw-icon i {
+    color: var(--primary-color);
+    display: inline-block;
+    line-height: 1;
+    padding-inline: 0.15em;
+}
+
+/* Gradient on hover */
+.hiw-step:hover .hiw-icon i {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.hiw-title {
+    margin: 0.25rem 0 0.5rem;
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    color: var(--text-color);
+}
+
+.hiw-text {
+    margin: 0;
+    color: var(--light-text);
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.hiw-connector {
+    width: var(--hiw-seg-length);
+    height: var(--hiw-line-thickness);
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+}
+
+.hiw-connector.vertical {
+    width: var(--hiw-line-thickness);
+    height: var(--hiw-seg-length);
+    margin: 10px auto;
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+}
+
+.hiw-branches {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+/* Elbow connectors between Sign Up and branches */
+.hiw-connectors {
+    position: relative;
+    height: var(--hiw-container-height);
+    max-width: var(--max-width);
+    margin: 0.5rem auto;
+}
+
+/* Single central horizontal for top split */
+.hiw-connectors .seg.h.central {
+    position: absolute;
+    left: var(--hiw-central-horizontal-inset);
+    right: var(--hiw-central-horizontal-inset);
+    top: var(--hiw-split-horizontal-top);
+    height: var(--hiw-line-thickness);
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+}
+
+.elbow { position: absolute; top: 0; height: var(--hiw-container-height); width: 50%; }
+.elbow-left { left: 0; }
+.elbow-right { right: 0; }
+
+.elbow .seg { position: absolute; background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); border-radius: 2px; }
+.elbow .seg.v { width: var(--hiw-line-thickness); }
+.elbow .seg.h { height: var(--hiw-line-thickness); }
+
+/* Branch split: one central vertical, one long horizontal, extremity bottom verticals */
+/* Left half draws the central top vertical at the seam, the left half of the horizontal, and the left extremity bottom vertical */
+.elbow-left .seg.v.top { right: 0; top: 0; height: var(--hiw-seg-length); }
+.elbow-left .seg.h { left: 0; right: 0; top: var(--hiw-split-horizontal-top); }
+.elbow-left .seg.v.bottom { left: 50%; top: calc(var(--hiw-split-horizontal-top) + var(--hiw-line-thickness)); height: var(--hiw-seg-length); }
+
+/* Right half hides the top vertical (we only want one central), draws the right extremity bottom vertical */
+.elbow-right .seg.v.top { display: none; }
+.elbow-right .seg.v.bottom { right: 50%; top: calc(var(--hiw-split-horizontal-top) + var(--hiw-line-thickness)); height: var(--hiw-seg-length); }
+
+/* Merge elbows from branches to final */
+.hiw-merge-connectors {
+    position: relative;
+    height: calc(var(--hiw-container-height) - 4px);
+    max-width: var(--max-width);
+    margin: 0.5rem auto;
+}
+
+/* Single central horizontal for bottom merge */
+.hiw-merge-connectors .seg.h.central {
+    position: absolute;
+    left: var(--hiw-central-horizontal-inset);
+    right: var(--hiw-central-horizontal-inset);
+    top: var(--hiw-merge-horizontal-top);
+    height: var(--hiw-line-thickness);
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 2px;
+}
+
+.elbow-inward-left { position: absolute; top: 0; left: 0; width: 50%; height: var(--hiw-container-height); }
+.elbow-inward-right { position: absolute; top: 0; right: 0; width: 50%; height: var(--hiw-container-height); }
+
+/* From left branch toward center: down (inner edge), to central horizontal, then down at center seam */
+.elbow-inward-left .seg { position: absolute; background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); border-radius: 2px; }
+.elbow-inward-left .seg.v { width: 4px; }
+.elbow-inward-left .seg.v.top { right: 50%; top: 0; height: var(--hiw-seg-length); }
+.elbow-inward-left .seg.v.bottom { right: 0; top: calc(var(--hiw-merge-horizontal-top) + var(--hiw-line-thickness)); height: var(--hiw-seg-length); }
+
+/* From right branch toward center: down (inner edge), to central horizontal, then down at center seam */
+.elbow-inward-right .seg { position: absolute; background: linear-gradient(90deg, var(--primary-color), var(--secondary-color)); border-radius: 2px; }
+.elbow-inward-right .seg.v { width: 4px; }
+.elbow-inward-right .seg.v.top { left: 50%; top: 0; height: var(--hiw-seg-length); }
+.elbow-inward-right .seg.v.bottom { left: 0; top: calc(var(--hiw-merge-horizontal-top) + var(--hiw-line-thickness)); height: var(--hiw-seg-length); }
+
+/* Subtle flowing animation along connectors */
+.elbow .seg,
+.elbow-inward-left .seg,
+.elbow-inward-right .seg {
+    background-size: 200% 200%;
+    animation: hiwFlow 3s linear infinite;
+}
+
+@keyframes hiwFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.hiw-final { 
+    display: grid; 
+    justify-items: center;
+    width: calc((100% - 1.5rem) / 2);
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .hiw-row {
+        grid-template-columns: 1fr;
+    }
+    .hiw-common-stack .hiw-step { width: 100%; }
+    .hiw-connector {
+        width: 4px;
+        height: 36px;
+        margin: 0.5rem auto;
+        background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+    }
+    .hiw-branches {
+        grid-template-columns: 1fr;
+    }
+    .hiw-connectors,
+    .hiw-merge-connectors { display: none; }
+}
+
+[data-theme="dark"] .howitworks-section .section-title {
+    color: #001716 !important; 
 }
 
 /* Event Images Grid */
