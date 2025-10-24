@@ -12,7 +12,7 @@ body.impressum-page {
 .impressum-container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 8rem var(--padding) 2rem;
+    padding: 8rem var(--space-2) 2rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

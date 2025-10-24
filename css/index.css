@@ -1,10 +1,18 @@
 /* index.css - Specific styles for the home page */
 
+body {
+    background-color: white;
+}
+
+[data-theme="dark"] body {
+    /* background-color: linear-gradient(rgba(23, 155, 149, 0.1), rgba(142, 226, 220, 0.1)); */
+    background: linear-gradient(to bottom, var(--background-color), rgba(23, 155, 149, 0.1));
+}
+
 /* Features Section */
 .features-section {
     position: relative;
-    padding: 8rem 3.5rem;
-    background: rgba(23, 155, 149, 0.1);
+    padding: var(--space-8) var(--space-2) var(--space-3);
 }
 
 /* Mockup Carousel */
@@ -35,8 +43,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--card-color);
     border-radius: var(--border-radius);
+    border: 1px solid var(--primary-color);
     padding: 1.5rem 2rem;
     box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08);
     height: 100%;
@@ -54,6 +63,16 @@
 .mockup-feature:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 40px rgba(var(--primary-color-rgb), 0.15);
+}
+
+[data-theme="dark"] .mockup-feature {
+    background: var(--background-color);
+    box-shadow: 0 4px 15px rgba(64, 224, 208, 0.1);
+    border: none;
+}
+  
+[data-theme="dark"] .mockup-feature:hover {
+    box-shadow: 0 6px 18px rgba(9, 125, 119, 0.65);
 }
   
 .mockup-image {
@@ -198,25 +217,10 @@
         width: 100%; /* Full width for the content */
     }
 }
-  
-/* Dark mode adjustments */
-[data-theme="dark"] .mockup-feature {
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 4px 15px rgba(64, 224, 208, 0.1);
-}
-  
-[data-theme="dark"] .mockup-feature:hover {
-    box-shadow: 0 6px 18px rgba(9, 125, 119, 0.65);
-}
-
-[data-theme="dark"] .features-section {
-    background: linear-gradient(to bottom, var(--background-color), rgba(23, 155, 149, 0.1));
-}
 
 /* How It Works Section */
 .howitworks-section {
-    padding: 8rem var(--padding);
-    background: white;
+    padding: var(--space-8) var(--space-2) var(--space-3);
 }
 
 .hiw-container {
@@ -437,10 +441,6 @@
     .hiw-common-stack .hiw-step { width: calc(100% - 1rem); }
 }
 
-[data-theme="dark"] .howitworks-section .section-title {
-    color: #001716 !important; 
-}
-
 /* Event Images Grid */
 .events-grid {
     display: grid;
@@ -485,7 +485,7 @@
 }
 
 .events-section {
-    padding: 6rem var(--padding);
+    padding: var(--space-8) var(--space-2) var(--space-3);
 }
 
 /* Add a loading placeholder */

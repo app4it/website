@@ -60,7 +60,7 @@ const translations = {
         eventImageAlt8: "Installation art exhibition with interactive pieces",
         
         // How It Works Section
-        howItWorks: "How It Will Work",
+        howItWorks: "How It's Gonna Work",
         downloadApp: "Download",
         downloadAppDesc: "Get the app for iOS or Android.",
         signUp: "Sign Up",

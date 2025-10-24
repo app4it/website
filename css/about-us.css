@@ -8,19 +8,6 @@ body.about-page {
     background: linear-gradient(rgba(var(--primary-color-rgb), 0.1), rgba(142, 226, 220, 0.1));
 }
 
-:root {
-    --space-8: 8rem;
-    --space-6: 6rem;
-    --space-4: 4rem;
-    --space-3: 3rem;
-    --space-2-5: 2.5rem;
-    --space-2: 2rem;
-    --space-1-5: 1.5rem;
-    --space-1-25: 1.25rem;
-    --space-1: 1rem;
-    --space-0-75: 0.75rem;
-}
-
 .about-container {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -175,12 +162,16 @@ body.about-page {
     font-weight: 800;
 }
 
-.nav-link {
+.nav-link, .nav-link:hover {
     color: #def5f3 !important;
 }
 
 .nav-container {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.nav-link.active::after, .nav-link:hover::after {
+    background-color: #def5f3 !important;
 }
 
 [data-theme="dark"] body.about-page .nav-container {
@@ -251,7 +242,7 @@ body.about-page {
 }
 
 .mvw-card {
-    background: transparent;
+    background: var(--card-color);
     padding: var(--space-3) var(--space-2);
     border-radius: var(--border-radius);
     border: 1px solid var(--primary-color);
@@ -340,7 +331,7 @@ body.about-page {
 
 /* Business Card Layout */
 .team-card {
-    background: transparent;
+    background: var(--card-color);
     border-radius: 16px;
     border: 1px solid var(--primary-color);
     padding: var(--space-2);
@@ -598,7 +589,6 @@ body.about-page {
 /* Dark Mode Specific Styles */
 [data-theme="dark"] .mvw-card,
 [data-theme="dark"] .team-card {
-    background: #1a1a1a;
     box-shadow: var(--card-shadow-dark);
     border: none;
 }
