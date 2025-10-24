@@ -67,7 +67,7 @@ body {
 }
 
 [data-theme="dark"] .mockup-feature {
-    background: var(--background-color);
+    background: var(--card-color);
     box-shadow: 0 4px 15px rgba(64, 224, 208, 0.1);
     border: none;
 }

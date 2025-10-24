@@ -83,8 +83,8 @@ const translations = {
         connectPeopleDesc: "Meet in real life and grow your circle.",
         createEvents: "Create Events",
         createEventsDesc: "Start something and bring people together.",
-        shareWithFriends: "Share with Friends",
-        shareWithFriendsDesc: "Invite your crew and spread the word.",
+        tellFriends: "Tell Friends",
+        tellFriendsDesc: "Invite your crew and spread the word.",
         
         // Privacy and Form
         viewPrivacy: "View Privacy Details",
@@ -257,8 +257,8 @@ const translations = {
         connectPeopleDesc: "Triff dich im echten Leben und erweitere deinen Kreis.",
         createEvents: "Events erstellen",
         createEventsDesc: "Starte etwas und bringe Leute zusammen.",
-        shareWithFriends: "Mit Freunden teilen",
-        shareWithFriendsDesc: "Lade deine Freunde ein und verbreite die Nachricht.",
+        tellFriends: "Mit Freunden teilen",
+        tellFriendsDesc: "Lade deine Freunde ein und verbreite die Nachricht.",
         
         // Privacy and Form
         viewPrivacy: "Datenschutzdetails Anzeigen",

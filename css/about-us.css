@@ -251,44 +251,9 @@ body.about-page {
     overflow: hidden;
 }
 
-.mvw-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
 .mvw-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--card-shadow-hover);
-}
-
-.mvw-card:hover .mvw-icon {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.mvw-card:hover::before {
-    transform: scaleX(1);
-}
-
-.mvw-icon {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 2rem;
-    font-size: 3rem;
-    color: var(--primary-color);
-    transition: all 0.3s ease;
 }
 
 .mvw-title {
@@ -302,6 +267,19 @@ body.about-page {
     color: var(--text-color);
     line-height: 1.6;
     font-size: 1rem;
+}
+
+/* Ensure mvw title/text keep appearance when using app-card */
+.app-card .mvw-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.app-card .mvw-text {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Team Section Styles */
@@ -641,12 +619,6 @@ body.about-page {
         font-size: 0.85rem;
     }
 
-    .mvw-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 1.5rem;
-    }
-
     .team-grid, .values-grid, .mvw-grid {
         grid-template-columns: 1fr;
         gap: var(--space-1);
@@ -673,7 +645,6 @@ body.about-page {
         font-size: 0.9rem;
     }
 }
-
 .team-intro {
     text-align: center;
     color: var(--text-color);
