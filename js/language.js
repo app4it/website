@@ -24,7 +24,8 @@ const translations = {
         poweredByJoyDesc: "No more endless scrolling just to feel entertained. There's always something to do, someone to join, and a good time waiting. Boredom doesn't stand a chance.",
         
         // Features Section
-        ourFeatures: "Our Features",
+        ourFeatures: "The Tools for Real Connections",
+        ourFeaturesSubtitle: "Everything you need to discover events, meet real people, and create memories that last.",
         seeWhatsHappening: "See What's Happening",
         seeWhatsHappeningDesc: "Stay in the loop with everything going on around you. No more FOMO, no more \"I didn't know that was happening.\"",
         eventsMadeForYou: "Events Made for You",
@@ -60,6 +61,7 @@ const translations = {
         
         // How It Works Section
         howItWorks: "How It's Gonna Work",
+        howItWorksSubtitle: "Simple steps to go from download to your first real-life meetup.",
         downloadApp: "Download",
         downloadAppDesc: "Get the app for iOS or Android.",
         signUp: "Sign Up",
@@ -85,6 +87,7 @@ const translations = {
         // Footer
         copyright: "© 2025 App4it Project Team. All rights reserved.",
         impressum: "Imprint",
+        connectWithUs: "Connect with us!",
         
         // Success Page
         successTitle: "Woohoo! You're in! 🎉",
@@ -185,7 +188,8 @@ const translations = {
         poweredByJoyDesc: "Kein endloses Scrollen mehr, nur um unterhalten zu werden. Es gibt immer etwas zu tun, jemanden zum Mitmachen und eine gute Zeit, die wartet. Langeweile hat keine Chance.",
         
         // Features Section
-        ourFeatures: "Unsere Features",
+        ourFeatures: "Werkzeuge für echte Verbindungen",
+        ourFeaturesSubtitle: "Alles, was du brauchst, um Events zu entdecken, echte Leute zu treffen und Erinnerungen zu schaffen, die bleiben.",
         seeWhatsHappening: "Sehen, was passiert",
         seeWhatsHappeningDesc: "Bleib im Loop mit allem, was um dich herum passiert. Kein FOMO, keine \"Ich wusste nicht, dass das passiert.\"",
         eventsMadeForYou: "Events für dich",
@@ -234,6 +238,7 @@ const translations = {
         
         // How It Works Section
         howItWorks: "So wird es funktionieren",
+        howItWorksSubtitle: "Einfache Schritte vom Download bis zu deinem ersten echten Treffen.",
         downloadApp: "App herunterladen",
         downloadAppDesc: "Hol dir die App für iOS oder Android.",
         signUp: "Registrieren",
@@ -259,6 +264,7 @@ const translations = {
         // Footer
         copyright: "© 2025 App4it Projektteam. Alle Rechte vorbehalten.",
         impressum: "Impressum",
+        connectWithUs: "Verbinde dich mit uns!",
         
         // Success Page
         successTitle: "Juhu! Du bist dabei! 🎉",

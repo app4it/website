@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://app4it.de/sitemap.xml
+
+# Block common non-content paths
+Disallow: /js/
+Disallow: /css/
+Disallow: /assets/icons/
+Disallow: /*.json$
+Disallow: /email-change.html
+Disallow: /success.html
+
+# Allow important assets
+Allow: /assets/images/
+Allow: /assets/mockups/
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1

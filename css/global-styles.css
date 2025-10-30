@@ -281,8 +281,21 @@ body {
 .section-title {
     text-align: center;
     font-size: clamp(2rem, 5vw, 3rem);
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     color: var(--text-color);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    margin-bottom: 3rem;
+    color: var(--light-text);
+    line-height: 1.6;
+}
+
+[data-theme="dark"] .section-subtitle {
+    color: #cccccc;
+    opacity: 0.9;
 }
 
 /* Footer */
@@ -313,6 +326,15 @@ body {
 
 .footer-link:hover {
     color: var(--secondary-color);
+}
+
+/* Ensure Font Awesome icons are loaded */
+.fab, .fas {
+    display: inline-block !important;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
 }
 
 .scroll-top {
@@ -465,6 +487,25 @@ body {
         width: 2.25rem;
         height: 2.25rem;
         padding: 0;
+    }
+
+    /* Footer responsive adjustments */
+    .footer p {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .footer-separator {
+        display: none;
+    }
+
+    .footer-social {
+        margin-left: 0;
+    }
+
+    .social-link {
+        padding: 0.5rem 1rem;
     }
 }
 

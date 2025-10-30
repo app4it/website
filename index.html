@@ -19,6 +19,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
     <meta name="supported-color-schemes" content="light dark" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="App4it - Discover real events and meet real people in your area. The authentic social app for genuine connections, memorable experiences, and local community building. Join the waitlist today!" />
+    <meta name="keywords" content="events app, social connections, local events, meet people, community app, authentic social, real events, local gatherings" />
+    <link rel="canonical" href="https://app4it.de/" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="App4it - Real Events. Real People. Right Here." />
+    <meta property="og:description" content="Discover authentic local events and connect with real people in your area. Join the waitlist for genuine social experiences." />
+    <meta property="og:image" content="https://app4it.de/assets/icons/app_icon_light.png" />
+    <meta property="og:url" content="https://app4it.de/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="App4it" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="App4it - Real Events. Real People. Right Here." />
+    <meta name="twitter:description" content="Discover authentic local events and connect with real people. Join the waitlist for genuine social experiences." />
+    <meta name="twitter:image" content="https://app4it.de/assets/icons/app_icon_light.png" />
+    
     <title>App4it - Real Events. Real People. Right Here.</title>
     <!-- Favicons -->
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_light.png" />
@@ -31,7 +52,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" rel="stylesheet" />
     <!-- Theme change listener -->
     <script>
@@ -57,6 +78,35 @@
       }
       gtag("js", new Date());
       gtag("config", "G-SJTXC37LXF");
+    </script>
+    
+    <!-- Structured Data (JSON-LD) - Schema.org markup for search engines -->
+    <!-- This helps Google understand the business information and display rich snippets in search results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "App4it",
+      "url": "https://app4it.de",
+      "logo": "https://app4it.de/assets/icons/app_icon_light.png",
+      "description": "App4it is an authentic social events app that helps people discover real events and connect with genuine people in their area.",
+      "sameAs": [
+        "https://x.com/AreYouApp4it",
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "German"]
+      },
+      "potentialAction": {
+        "@type": "SubscribeAction",
+        "target": "https://app4it.de/early-access.html",
+        "object": {
+          "@type": "WebPage",
+          "name": "Request Early Access"
+        }
+      }
+    }
     </script>
     <!-- Brevo Form Scripts -->
     <script type="text/javascript">
@@ -142,7 +192,8 @@
 
     <!-- Features Section -->
     <section class="features-section" aria-labelledby="features-title">
-      <h2 class="section-title" id="features-title" data-i18n="ourFeatures">Our Features</h2>
+      <h2 class="section-title" id="features-title" data-i18n="ourFeatures">The Tools for Real Connections</h2>
+      <p class="section-subtitle" data-i18n="ourFeaturesSubtitle">Everything you need to discover events, meet real people, and create memories that last.</p>
       <!-- Carousel -->
       <div class="mockup-carousel" role="region" aria-roledescription="carousel" aria-label="App features">
         <div class="carousel-container">
@@ -258,6 +309,7 @@
     <!-- How It Works Section -->
     <section class="howitworks-section" aria-labelledby="howitworks-title">
       <h2 id="howitworks-title" class="section-title" data-i18n="howItWorks">How It's Gonna Work</h2>
+      <p class="section-subtitle" data-i18n="howItWorksSubtitle">Simple steps to go from download to your first real-life meetup.</p>
       <div class="hiw-container">
         <!-- Common steps stacked -->
         <div class="hiw-common-stack" role="group" aria-label="Download and Sign Up">
@@ -411,13 +463,14 @@
 
     <footer class="footer">
       <p>
-        <span data-i18n="copyright"
-          >© 2025 App4it Project Team. All rights reserved.</span
-        >
+        <span data-i18n="copyright">© 2025 App4it Project Team. All rights reserved.</span>
         <span class="footer-separator">|</span>
-        <a href="impressum.html" class="footer-link" data-i18n="impressum"
-          >Impressum</a
-        >
+        <a href="impressum.html" class="footer-link" data-i18n="impressum">Impressum</a>
+        <span class="footer-separator">|</span>
+        <a href="https://x.com/AreYouApp4it" target="_blank" rel="noopener" class="footer-link" aria-label="Follow us on X">
+          <i class="fab fa-x-twitter"></i>
+          <span class="footer-text" data-i18n="connectWithUs">Connect with us!</span>
+        </a>
       </p>
     </footer>
 
