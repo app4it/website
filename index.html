@@ -140,95 +140,8 @@
     </script>
   </head>
   <body>
-    <div class="nav-container" role="navigation" aria-label="Primary">
-      <a href="index.html" class="nav-link active" data-i18n="home" aria-current="page">Home</a>
-      <a href="about-us.html" class="nav-link" data-i18n="aboutUs">About Us</a>
-    </div>
-
-    <div class="settings-container">
-      <!-- Desktop View -->
-      <div class="toggle-container desktop-settings" role="group" aria-label="Settings">
-        <button class="theme-toggle" aria-label="Toggle dark mode">
-          <i class="fas fa-moon" aria-hidden="true"></i>
-        </button>
-        <div class="lang-toggle">
-          <button class="lang-toggle-button" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
-            <span class="lang-current">
-              <span class="fi fi-gb" id="current-flag"></span>
-              <span id="current-lang">English</span>
-            </span>
-            <span class="lang-arrow">▼</span>
-          </button>
-          <div class="lang-dropdown" role="menu">
-            <div class="lang-option" data-lang="en" role="menuitem">
-              <span class="fi fi-gb"></span>
-              <span>English</span>
-            </div>
-            <div class="lang-option" data-lang="de" role="menuitem">
-              <span class="fi fi-de"></span>
-              <span>Deutsch</span>
-            </div>
-            <div class="lang-option" data-lang="es" role="menuitem">
-              <span class="fi fi-es"></span>
-              <span>Español</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Mobile View -->
-      <button class="mobile-settings-trigger" aria-label="Open settings" aria-haspopup="true" aria-expanded="false">
-        <i class="fas fa-ellipsis-vertical"></i>
-      </button>
-    </div>
-    
-    <!-- Settings Popup (Mobile) -->
-    <div class="settings-popup" role="dialog" aria-labelledby="settings-title" aria-modal="true">
-      <div class="settings-popup-content">
-        <h3 id="settings-title" class="settings-popup-title" data-i18n="settings">Settings</h3>
-        
-        <!-- Theme Toggle -->
-        <div class="settings-section">
-          <label class="settings-label" data-i18n="theme">Theme</label>
-          <div class="theme-switch-container">
-            <button class="theme-switch" role="switch" aria-checked="false" aria-label="Toggle theme">
-              <span class="theme-switch-option theme-light" data-i18n="lightTheme">Light Theme</span>
-              <span class="theme-switch-option theme-dark" data-i18n="darkTheme">Dark Theme</span>
-              <span class="theme-switch-slider"></span>
-            </button>
-          </div>
-        </div>
-        
-        <!-- Language Selector -->
-        <div class="settings-section">
-          <label class="settings-label" data-i18n="language">Language</label>
-          <div class="lang-toggle mobile-lang-toggle">
-            <button class="lang-toggle-button" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
-              <span class="lang-current">
-                <span class="fi fi-gb" id="mobile-current-flag"></span>
-                <span id="mobile-current-lang">English</span>
-              </span>
-              <span class="lang-arrow">▼</span>
-            </button>
-            <div class="lang-dropdown" role="menu">
-              <div class="lang-option" data-lang="en" role="menuitem">
-                <span class="fi fi-gb"></span>
-                <span>English</span>
-              </div>
-              <div class="lang-option" data-lang="de" role="menuitem">
-                <span class="fi fi-de"></span>
-                <span>Deutsch</span>
-              </div>
-              <div class="lang-option" data-lang="es" role="menuitem">
-                <span class="fi fi-es"></span>
-                <span>Español</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="settings-popup-overlay"></div>
-    </div>
+    <div id="nav-placeholder" data-active="home"></div>
+    <div id="settings-placeholder"></div>
 
     <!-- Hero Section -->
     <main class="hero">
@@ -530,19 +443,9 @@
 
     <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
 
-    <footer class="footer">
-      <p>
-        <span data-i18n="copyright">© 2025 App4it Project Team. All rights reserved.</span>
-        <span class="footer-separator">|</span>
-        <a href="impressum.html" class="footer-link" data-i18n="impressum">Impressum</a>
-        <span class="footer-separator">|</span>
-        <a href="https://x.com/AreYouApp4it" target="_blank" rel="noopener" class="footer-link" aria-label="Follow us on X">
-          <i class="fab fa-x-twitter"></i>
-          <span class="footer-text" data-i18n="connectWithUs">Connect with us!</span>
-        </a>
-      </p>
-    </footer>
+    <div id="footer-placeholder"></div>
 
+    <script src="js/components.js"></script>
     <script src="js/index.js"></script>
     <script src="js/language.js"></script>
     <script

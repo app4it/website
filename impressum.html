@@ -65,41 +65,8 @@
     </script>
 </head>
 <body class="impressum-page">
-    <div class="nav-container" role="navigation" aria-label="Primary">
-        <a href="index.html" class="nav-link" data-i18n="home">Home</a>
-        <a href="about-us.html" class="nav-link" data-i18n="aboutUs">About Us</a>
-    </div>
-
-    <div class="settings-container">
-        <div class="toggle-container" role="group" aria-label="Settings">
-          <button class="theme-toggle" aria-label="Toggle dark mode">
-            <i class="fas fa-moon" aria-hidden="true"></i>
-          </button>
-          <div class="lang-toggle">
-            <button class="lang-toggle-button" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
-              <span class="lang-current">
-                <span class="fi fi-gb" id="current-flag"></span>
-                <span id="current-lang">English</span>
-              </span>
-              <span class="lang-arrow">▼</span>
-            </button>
-            <div class="lang-dropdown" role="menu">
-              <div class="lang-option" data-lang="en" role="menuitem">
-                <span class="fi fi-gb"></span>
-                <span>English</span>
-              </div>
-              <div class="lang-option" data-lang="de" role="menuitem">
-                <span class="fi fi-de"></span>
-                <span>Deutsch</span>
-              </div>
-              <div class="lang-option" data-lang="es" role="menuitem">
-                <span class="fi fi-es"></span>
-                <span>Español</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="nav-placeholder"></div>
+    <div id="settings-placeholder"></div>
 
     <div class="impressum-container" role="main" aria-labelledby="impressum-title">
         <div class="decorative-circle circle-1" aria-hidden="true"></div>
@@ -138,17 +105,9 @@
         </a>
     </div>
 
-    <footer class="footer">
-        <p>
-            <span data-i18n="copyright">© 2025 App4it Project Team. All rights reserved.</span>
-            <span class="footer-separator">|</span>
-            <a href="https://x.com/AreYouApp4it" target="_blank" rel="noopener" class="footer-link" aria-label="Follow us on X">
-                <i class="fab fa-x-twitter"></i>
-                <span class="footer-text" data-i18n="connectWithUs">Connect with us!</span>
-            </a>
-        </p>
-    </footer>
+    <div id="footer-placeholder"></div>
 
+    <script src="js/components.js"></script>
     <script src="js/index.js"></script>
     <script src="js/language.js"></script>
 </body>

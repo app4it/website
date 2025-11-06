@@ -737,14 +737,8 @@ body {
     .nav-container {
         padding: 0.5rem 1rem;
         gap: 1rem;
-        height: 2.25rem;
         display: flex;
         align-items: center;
-    }
-    
-    .nav-link {
-        padding: 0.4rem 0.6rem;
-        font-size: 0.8rem;
     }
     
     .settings-container {
