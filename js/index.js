@@ -63,6 +63,62 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // Mobile settings popup functionality
+    const mobileSettingsTrigger = document.querySelector('.mobile-settings-trigger');
+    const settingsPopup = document.querySelector('.settings-popup');
+    const settingsOverlay = document.querySelector('.settings-popup-overlay');
+    const themeSwitch = document.querySelector('.theme-switch');
+
+    // Function to update theme switch state
+    function updateThemeSwitch(theme) {
+        if (themeSwitch) {
+            themeSwitch.setAttribute('aria-checked', theme === 'dark' ? 'true' : 'false');
+        }
+    }
+
+    // Initialize theme switch state
+    updateThemeSwitch(initialTheme);
+
+    // Open mobile settings popup
+    if (mobileSettingsTrigger) {
+        mobileSettingsTrigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            settingsPopup.classList.add('active');
+            mobileSettingsTrigger.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        });
+    }
+
+    // Close popup when clicking overlay
+    if (settingsOverlay) {
+        settingsOverlay.addEventListener('click', () => {
+            settingsPopup.classList.remove('active');
+            mobileSettingsTrigger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        });
+    }
+
+    // Theme switch toggle
+    if (themeSwitch) {
+        themeSwitch.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            setTheme(newTheme);
+            updateThemeSwitch(newTheme);
+        });
+    }
+
+    // Close popup on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && settingsPopup && settingsPopup.classList.contains('active')) {
+            settingsPopup.classList.remove('active');
+            if (mobileSettingsTrigger) {
+                mobileSettingsTrigger.setAttribute('aria-expanded', 'false');
+            }
+            document.body.style.overflow = '';
+        }
+    });
+
     // Initialize animation observers
     const animateElements = document.querySelectorAll('.animate-in');
     

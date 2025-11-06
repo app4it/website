@@ -52,14 +52,29 @@
           <button class="theme-toggle" aria-label="Toggle dark mode">
             <i class="fas fa-moon" aria-hidden="true"></i>
           </button>
-          <button class="lang-toggle" aria-label="Toggle language">
-            <span class="fi fi-gb" aria-hidden="true"></span>
-            <span
-              class="fi fi-de"
-              aria-hidden="true"
-              style="display: none"
-              ></span>
-          </button>
+          <div class="lang-toggle">
+            <button class="lang-toggle-button" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
+              <span class="lang-current">
+                <span class="fi fi-gb" id="current-flag"></span>
+                <span id="current-lang">English</span>
+              </span>
+              <span class="lang-arrow">▼</span>
+            </button>
+            <div class="lang-dropdown" role="menu">
+              <div class="lang-option" data-lang="en" role="menuitem">
+                <span class="fi fi-gb"></span>
+                <span>English</span>
+              </div>
+              <div class="lang-option" data-lang="de" role="menuitem">
+                <span class="fi fi-de"></span>
+                <span>Deutsch</span>
+              </div>
+              <div class="lang-option" data-lang="es" role="menuitem">
+                <span class="fi fi-es"></span>
+                <span>Español</span>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
 

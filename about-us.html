@@ -98,19 +98,88 @@
     </div>
 
     <div class="settings-container">
-      <div class="toggle-container" role="group" aria-label="Settings">
+      <!-- Desktop View -->
+      <div class="toggle-container desktop-settings" role="group" aria-label="Settings">
         <button class="theme-toggle" aria-label="Toggle dark mode">
           <i class="fas fa-moon" aria-hidden="true"></i>
         </button>
-        <button class="lang-toggle" aria-label="Toggle language">
-          <span class="fi fi-gb" aria-hidden="true"></span>
-          <span
-            class="fi fi-de"
-            aria-hidden="true"
-            style="display: none"
-            ></span>
-        </button>
+        <div class="lang-toggle">
+          <button class="lang-toggle-button" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
+            <span class="lang-current">
+              <span class="fi fi-gb" id="current-flag"></span>
+              <span id="current-lang">English</span>
+            </span>
+            <span class="lang-arrow">▼</span>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <div class="lang-option" data-lang="en" role="menuitem">
+              <span class="fi fi-gb"></span>
+              <span>English</span>
+            </div>
+            <div class="lang-option" data-lang="de" role="menuitem">
+              <span class="fi fi-de"></span>
+              <span>Deutsch</span>
+            </div>
+            <div class="lang-option" data-lang="es" role="menuitem">
+              <span class="fi fi-es"></span>
+              <span>Español</span>
+            </div>
+          </div>
+        </div>
       </div>
+      
+      <!-- Mobile View -->
+      <button class="mobile-settings-trigger" aria-label="Open settings" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-ellipsis-vertical"></i>
+      </button>
+    </div>
+    
+    <!-- Settings Popup (Mobile) -->
+    <div class="settings-popup" role="dialog" aria-labelledby="settings-title" aria-modal="true">
+      <div class="settings-popup-content">
+        <h3 id="settings-title" class="settings-popup-title" data-i18n="settings">Settings</h3>
+        
+        <!-- Theme Toggle -->
+        <div class="settings-section">
+          <label class="settings-label" data-i18n="theme">Theme</label>
+          <div class="theme-switch-container">
+            <button class="theme-switch" role="switch" aria-checked="false" aria-label="Toggle theme">
+              <span class="theme-switch-option theme-light" data-i18n="lightTheme">Light Theme</span>
+              <span class="theme-switch-option theme-dark" data-i18n="darkTheme">Dark Theme</span>
+              <span class="theme-switch-slider"></span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Language Selector -->
+        <div class="settings-section">
+          <label class="settings-label" data-i18n="language">Language</label>
+          <div class="lang-toggle mobile-lang-toggle">
+            <button class="lang-toggle-button" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
+              <span class="lang-current">
+                <span class="fi fi-gb" id="mobile-current-flag"></span>
+                <span id="mobile-current-lang">English</span>
+              </span>
+              <span class="lang-arrow">▼</span>
+            </button>
+            <div class="lang-dropdown" role="menu">
+              <div class="lang-option" data-lang="en" role="menuitem">
+                <span class="fi fi-gb"></span>
+                <span>English</span>
+              </div>
+              <div class="lang-option" data-lang="de" role="menuitem">
+                <span class="fi fi-de"></span>
+                <span>Deutsch</span>
+              </div>
+              <div class="lang-option" data-lang="es" role="menuitem">
+                <span class="fi fi-es"></span>
+                <span>Español</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="settings-popup-overlay"></div>
     </div>
 
     <div class="about-container">

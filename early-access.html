@@ -67,7 +67,7 @@
 </head>
 <body class="early-access-page">
     <div class="nav-container" role="navigation" aria-label="Primary">
-        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html" class="nav-link" data-i18n="home">Home</a>
         <a href="about-us.html" class="nav-link" data-i18n="aboutUs">About Us</a>
     </div>
 
@@ -76,10 +76,29 @@
             <button class="theme-toggle" aria-label="Toggle dark mode">
                 <i class="fas fa-moon" aria-hidden="true"></i>
             </button>
-                    <button class="lang-toggle" aria-label="Toggle language">
-            <span class="fi fi-gb" aria-hidden="true"></span>
-            <span class="fi fi-de" aria-hidden="true" style="display: none;"></span>
-        </button>
+            <div class="lang-toggle">
+                <button class="lang-toggle-button" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
+                    <span class="lang-current">
+                        <span class="fi fi-gb" id="current-flag"></span>
+                        <span id="current-lang">English</span>
+                    </span>
+                    <span class="lang-arrow">▼</span>
+                </button>
+                <div class="lang-dropdown" role="menu">
+                    <div class="lang-option" data-lang="en" role="menuitem">
+                        <span class="fi fi-gb"></span>
+                        <span>English</span>
+                    </div>
+                    <div class="lang-option" data-lang="de" role="menuitem">
+                        <span class="fi fi-de"></span>
+                        <span>Deutsch</span>
+                    </div>
+                    <div class="lang-option" data-lang="es" role="menuitem">
+                        <span class="fi fi-es"></span>
+                        <span>Español</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -115,7 +134,7 @@
                             <div class="form__entry entry_block">
                                 <div class="form__label-row">
                                     <div class="entry__field">
-                                        <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="your@email.com" aria-label="Email address" aria-describedby="emailHelp" data-required="true" required />
+                                        <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="your@email.com" aria-label="Email address" aria-describedby="emailHelp" data-required="true" data-i18n-placeholder="emailPlaceholder" required />
                                         <span id="emailHelp" class="visually-hidden" data-i18n="emailHelp">Enter a valid email address to join the waitlist. This field is required.</span>
                                     </div>
                                 </div>

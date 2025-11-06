@@ -11,6 +11,7 @@ const translations = {
         earlyAccessTitle: "Request Early Access",
         earlyAccessSubtitle: "Be among the first to experience a new way of connecting at events. Join our waitlist today!",
         joinWaitlist: "Join the Waitlist",
+        emailPlaceholder: "your@email.com",
         
         // Values Section
         ourValues: "Our Values",
@@ -113,6 +114,13 @@ const translations = {
         home: "Home",
         aboutUs: "About Us",
         
+        // Settings
+        settings: "Settings",
+        theme: "Theme",
+        darkTheme: "Dark Theme",
+        lightTheme: "Light Theme",
+        language: "Language",
+        
         // About Page
         aboutTitle: "Meet the App4it Team",
         aboutSubtitle: "We're a passionate team of four, dedicated to revolutionizing how people connect at events and build lasting friendships.",
@@ -175,6 +183,7 @@ const translations = {
         earlyAccessTitle: "Frühen Zugang Anfragen",
         earlyAccessSubtitle: "Sei einer der Ersten, die eine neue Art der Verbindung bei Events erleben. Trage dich heute in unsere Warteliste ein!",
         joinWaitlist: "Warteliste Beitreten",
+        emailPlaceholder: "deine@email.com",
         
         // Values Section
         ourValues: "Unsere Werte",
@@ -290,6 +299,13 @@ const translations = {
         home: "Startseite",
         aboutUs: "Über Uns",
         
+        // Settings
+        settings: "Einstellungen",
+        theme: "Design",
+        darkTheme: "Dunkles Design",
+        lightTheme: "Helles Design",
+        language: "Sprache",
+        
         // About Page
         aboutTitle: "Das App4it Team",
         aboutSubtitle: "Wir sind ein engagiertes Team von vier Personen, das sich der Revolution der Art und Weise verschrieben hat, wie Menschen bei Veranstaltungen Kontakte knüpfen und dauerhafte Freundschaften aufbauen.",
@@ -339,14 +355,202 @@ const translations = {
         // Email change page
         emailUpdateTitle: "Alles erledigt!",
         emailUpdateMessage: "Deine E-Mail-Adresse wurde erfolgreich aktualisiert. Entdecke noch mehr spannende Veranstaltungen und treffe neue Freunde. Bist du App4it?",
+    },
+    es: {
+        // Hero Section
+        heroTitle: "Eventos Reales. Personas Reales.<br>Justo Aquí.",
+        heroSubtitle: "Construido en torno a momentos en persona, no feeds interminables. Descubre lo que está pasando cerca, haz planes con amigos y convierte experiencias compartidas en conexiones duraderas.",
+        requestAccess: "Solicitar Acceso Anticipado",
+        submit: "Enviar",
+        
+        // Early Access Page
+        earlyAccessTitle: "Solicitar Acceso Anticipado",
+        earlyAccessSubtitle: "Sé de los primeros en experimentar una nueva forma de conectar en eventos. ¡Únete a nuestra lista de espera hoy!",
+        joinWaitlist: "Unirse a la Lista de Espera",
+        emailPlaceholder: "tu@email.com",
+        
+        // Values Section
+        ourValues: "Nuestros Valores",
+        keepItReal: "Mantenlo Real",
+        keepItRealDesc: "Celebramos la autenticidad. Personas reales, intereses reales y conexiones reales. Sin filtros, sin falsedades. Solo experiencias honestas que se sienten como tú.",
+        safetyFirst: "Seguridad Primero, Siempre",
+        safetyFirstDesc: "Desde quién conoces hasta lo que compartes, todo está diseñado para mantenerte seguro. La confianza es la base para buenos momentos, así que lo tomamos en serio.",
+        connectWithPurpose: "Conectar con Propósito",
+        connectWithPurposeDesc: "No se trata de conocer a todos, sino de encontrar a los correctos. Prepárate para generar conexiones genuinas y construir comunidades en torno a lo que amas.",
+        poweredByJoy: "Impulsado por la Alegría",
+        poweredByJoyDesc: "No más desplazamiento infinito solo para sentirte entretenido. Siempre hay algo que hacer, alguien con quien unirse y un buen momento esperando. El aburrimiento no tiene oportunidad.",
+        
+        // Features Section
+        ourFeatures: "Las Herramientas para Conexiones Reales",
+        ourFeaturesSubtitle: "Todo lo que necesitas para descubrir eventos, conocer personas reales y crear recuerdos que duran.",
+        seeWhatsHappening: "Ver Qué Está Pasando",
+        seeWhatsHappeningDesc: "Mantente al tanto de todo lo que sucede a tu alrededor. No más FOMO, no más \"No sabía que eso estaba pasando.\"",
+        eventsMadeForYou: "Eventos Hechos para Ti",
+        eventsMadeForYouDesc: "Explora reuniones que coincidan con tu vibra. Ya sea que te guste el arte, la música o algo intermedio, tu ciudad tiene más de lo que piensas.",
+        startSomething: "Comienza Algo",
+        startSomethingDesc: "Crea tus propios eventos y reúne a las personas. Es fácil, rápido y sorprendentemente divertido ver quién aparece.",
+        realFriendsOnly: "Solo Amigos Reales",
+        realFriendsOnlyDesc: "Agrega solo a las personas que has conocido en persona. Las conexiones suceden en la vida real. Solo estamos aquí para mantenerlas.",
+        rememberTogether: "Recordar Juntos",
+        rememberTogetherDesc: "Construido para amistades de la vida real. Captura momentos de eventos compartidos y revívelos con las personas que realmente estuvieron allí.",
+        makeItYours: "Hazlo Tuyo",
+        makeItYoursDesc: "Personaliza tu perfil para reflejar tu vibra: nombre de usuario, foto, estadísticas y todo.",
+        discoverEvents: "Descubrir y Crear Eventos",
+        discoverEventsDesc: "Encuentra eventos locales emocionantes o crea tus propias reuniones. Desde fiestas hasta clubes de lectura, hay algo para todos.",
+        authenticConnections: "Conexiones Auténticas",
+        authenticConnectionsDesc: "Conéctate con nuevos amigos escaneando su código QR en persona, asegurando que todas las conexiones sean verdaderas y significativas.",
+        shareMemories: "Compartir Recuerdos",
+        shareMemoriesDesc: "Captura y comparte momentos de eventos, creando recuerdos duraderos con tus nuevos amigos.",
+        stayConnected: "Mantente Conectado",
+        stayConnectedDesc: "Chatea con tus conexiones, comenta recuerdos y planifica futuros encuentros juntos.",
+        
+        // Personality Section
+        personalitiesTitle: "Para Cada Tipo de Ti",
+        personalitiesSubtitle: "Ya seas el alma de la fiesta o prefieras momentos tranquilos, nuestra app se adapta a tu vibra.",
+        personalitySocialTitle: "La Mariposa Social",
+        personalitySocialDesc: "Prosperas en la energía de las multitudes. Fiestas, conciertos, eventos deportivos: siempre estás donde está la acción. Encuentra tu próxima aventura y conoce personas que coincidan con tu energía.",
+        personalityThoughtfulTitle: "El Explorador Reflexivo",
+        personalityThoughtfulDesc: "Encuentras alegría en momentos tranquilos y experiencias significativas. Exposiciones de arte, clubes de lectura, noches de juegos de mesa: descubre reuniones que alimenten tu alma.",
+        personalityAmbitiousTitle: "El Networker Ambicioso",
+        personalityAmbitiousDesc: "Trabaja duro, juega más duro. Conferencias de día, karaoke de noche. Conéctate con profesionales motivados que saben cómo equilibrar la ambición con la diversión.",
+        personalityCommunityTitle: "El Constructor de Comunidad",
+        personalityCommunityDesc: "Reúnes a las personas. Grupos de estudio, talleres de teatro, clubes de lectura: creas espacios donde las conexiones florecen y las comunidades crecen.",
+        
+        // How It Works Section
+        howItWorks: "Cómo Funcionará",
+        howItWorksSubtitle: "Pasos simples desde la descarga hasta tu primer encuentro en la vida real.",
+        downloadApp: "Descargar",
+        downloadAppDesc: "Obtén la app para iOS o Android.",
+        signUp: "Registrarse",
+        signUpDesc: "Crea tu perfil en segundos.",
+        findEvents: "Encontrar Eventos",
+        findEventsDesc: "Descubre lo que está pasando a tu alrededor.",
+        connectPeople: "Conectar con Personas",
+        connectPeopleDesc: "Conoce en la vida real y amplía tu círculo.",
+        createEvents: "Crear Eventos",
+        createEventsDesc: "Comienza algo y reúne a las personas.",
+        tellFriends: "Cuéntales a tus Amigos",
+        tellFriendsDesc: "Invita a tu grupo y corre la voz.",
+        
+        // Privacy and Form
+        viewPrivacy: "Ver Detalles de Privacidad",
+        privacyText: "Utilizamos Brevo como nuestra plataforma de marketing. Al enviar este formulario, aceptas que los datos personales que proporcionaste se transferirán a Brevo para su procesamiento de acuerdo con",
+        privacyPolicy: "Política de Privacidad de Brevo",
+        agreeText: "Acepto recibir noticias y actualizaciones proporcionadas por App4it y acepto la declaración de privacidad de datos.",
+        unsubscribeText: "Puedes darte de baja en cualquier momento usando el enlace en nuestras actualizaciones por correo electrónico.",
+        acceptPrivacy: "Por favor acepta la política de privacidad para continuar.",
+        emailHelp: "Ingresa una dirección de correo electrónico válida para unirte a la lista de espera. Este campo es obligatorio.",
+        
+        // Footer
+        copyright: "© 2025 Equipo del Proyecto App4it. Todos los derechos reservados.",
+        impressum: "Aviso Legal",
+        connectWithUs: "¡Conéctate con nosotros!",
+        
+        // Success Page
+        successTitle: "¡Woohoo! ¡Estás dentro! 🎉",
+        successSubtitle: "¡Choca esos cinco! ✋ Estás oficialmente en la lista de espera para la forma más genial de conocer nuevos amigos. Prepárate para aventuras que son mucho mejores que desplazarse. ¿Eres App4it?",
+        backToHome: "Volver a la Página Principal",
+        confirmationEmailSent: "Se ha enviado un correo electrónico de confirmación. Por favor revisa tu bandeja de entrada (y la carpeta de spam si no lo encuentras). Si no lo recibes en unos minutos, intenta enviarlo nuevamente.",
+        subscriptionSuccessful: "Tu suscripción al acceso anticipado de app4it ha sido exitosa.",
+        
+        // Impressum Page
+        impressumTitle: "Aviso Legal",
+        impressumBackToHome: "Volver a la Página Principal",
+        projectDetails: "Detalles del Proyecto",
+        projectName: "Proyecto App4it",
+        projectTeam: "Equipo del Proyecto",
+        address: "Dirección de Contacto",
+        contact: "Contacto",
+        responsibleContent: "Responsable del Contenido",
+        country: "Alemania",
+        projectDisclaimer: "Estado del Proyecto",
+        projectDisclaimerText: "App4it es actualmente un proyecto previo al lanzamiento desarrollado por un equipo de cuatro personas. Este sitio web sirve para proporcionar información sobre nuestro próximo servicio.",
+        
+        // Navigation
+        home: "Inicio",
+        aboutUs: "Sobre Nosotros",
+        
+        // Settings
+        settings: "Configuración",
+        theme: "Tema",
+        darkTheme: "Tema Oscuro",
+        lightTheme: "Tema Claro",
+        language: "Idioma",
+        
+        // About Page
+        aboutTitle: "Conoce al Equipo de App4it",
+        aboutSubtitle: "Somos un equipo apasionado de cuatro personas, dedicados a revolucionar cómo las personas se conectan en eventos y construyen amistades duraderas.",
+        aboutHeroTitle: "Sobre app4it",
+        aboutHeroSubtitle: "Cuatro fundadores, una misión: hacer que las conexiones sean más fáciles, también fuera de línea.",
+        
+        // Mission Vision Section
+        bringingPeopleTogether: "Reuniendo a las personas",
+        bringingPeopleTogetherText: "App4it conecta a las personas a través de eventos de la vida real e intereses compartidos. Te ayudamos a descubrir lo que está sucediendo a tu alrededor: no más aburrimiento, no más FOMO. Es hora de hacer planes, no desplazarse sin fin.",
+        reinventingSocialMedia: "Reinventando las redes sociales",
+        reinventingSocialMediaText: "Imaginamos un mundo donde conocer gente nueva es fácil, espontáneo y divertido. Donde los eventos nunca son un misterio. Donde la tecnología no distrae de la vida real, la mejora. Estamos construyendo la plataforma de referencia para descubrir qué está pasando, encontrar a tu gente y hacer que las ciudades pequeñas se sientan grandes con posibilidades.",
+        
+        // Team Section
+        meetTheTeam: "Nuestro Equipo",
+        teamIntro: "Somos un equipo pequeño con gran energía. Cada uno de nosotros aporta una fortaleza diferente a la mesa. Lo que nos une es el impulso de convertir la tecnología en momentos de la vida real que realmente importan.",
+        
+        // Team Member Names and Titles
+        juliaName: "Julia Agüero",
+        juliaTitle: "Desarrolladora Frontend y Experta en JIRA",
+        savoName: "Savo Simeunović",
+        savoTitle: "Especialista en IA/ML y Experto en Bases de Datos",
+        sophiaName: "Sophia Soares",
+        sophiaTitle: "Desarrolladora Frontend y Diseñadora UX/UI",
+        marinName: "Marin Sušić",
+        marinTitle: "Especialista en Seguridad y Desarrollador Backend",
+        
+        // Our Story Section
+        ourStory: "Nuestra Historia",
+        storyText1: "App4it nació de una simple frustración: a pesar de toda la tecnología a nuestro alcance, hacer conexiones reales y encontrar eventos locales todavía se sentía difícil. Queríamos cambiar eso. Nuestro viaje comenzó en una ciudad pequeña, donde vimos de primera mano lo fácil que es sentirse aislado, incluso cuando estás rodeado de personas.",
+        storyText2: "Somos cuatro desarrolladores con diferentes antecedentes: frontend, backend, IA, UX, pero con un objetivo compartido: construir algo que reúna a las personas en el mundo real. Creemos que la tecnología debería ayudarte a salir, no mantenerte pegado a tu pantalla. Por eso nos enfocamos en hacer que sea fácil descubrir lo que está sucediendo a tu alrededor y conocer gente nueva que comparta tus intereses.",
+        storyText3: "Esto no es solo una app para nosotros, es una misión. Estamos construyendo App4it para cualquiera que quiera más de su ciudad, más de su vida social y más de la tecnología. Esperamos que te unas a nosotros para crear una comunidad donde la conexión humana auténtica sea lo primero.",
+        joinOurMission: "Únete a nuestra Misión",
+        
+        // Team Descriptions
+        juliaDesc: "Desarrolladora frontend y experta en JIRA. Creando caos colorido con acuarelas y llamándolo arte en mi tiempo libre.",
+        savoDesc: "Especializado en IA/ML y bases de datos. Sirviendo con orgullo cada capricho de mi gato en mi tiempo libre.",
+        sophiaDesc: "Desarrolladora frontend y diseñadora UX/UI. Si quieres un peluche tejido, envíame un DM.",
+        marinDesc: "Apasionado por la seguridad, obligado a hacer también desarrollo backend. Me gusta mentirme a mí mismo de que soy un motociclista decente.",
+        
+        // Team Fun Facts
+        funFact: "Dato Curioso",
+        juliaFunFact: "¡Puedo terminar el nivel experto en Guitar Hero sin despeinarse!",
+        savoFunFact: "Mi gato es mejor programador que yo, aunque siempre encuentra tiempo para acostarse encima de mi laptop y jugar con mi configuración.",
+        sophiaFunFact: "¡Me encanta tejer, así que si App4it alguna vez necesita una mascota de peluche, yo la haré!",
+        marinFunFact: "Mi viaje de desarrollo comenzó con un plugin de Minecraft y hackeando sistemas de información",
+   
+   
+        // Email change page
+        emailUpdateTitle: "¡Todo Listo!",
+        emailUpdateMessage: "Tu correo electrónico se ha actualizado correctamente. Descubre más eventos increíbles y haz nuevos amigos. ¿Eres App4it?",
     }
 };
 
 // Function to detect browser language
 function detectBrowserLanguage() {
     const browserLang = navigator.language.toLowerCase().split('-')[0];
-    return browserLang === 'de' ? 'de' : 'en';
+    if (browserLang === 'de') return 'de';
+    if (browserLang === 'es') return 'es';
+    return 'en';
 }
+
+// Language display names
+const languageNames = {
+    en: 'English',
+    de: 'Deutsch',
+    es: 'Español'
+};
+
+// Language flag classes
+const languageFlags = {
+    en: 'fi-gb',
+    de: 'fi-de',
+    es: 'fi-es'
+};
 
 // Function to set the page language
 function setPageLanguage(lang) {
@@ -356,19 +560,41 @@ function setPageLanguage(lang) {
     // Update HTML lang attribute
     document.documentElement.lang = lang;
     
-    // Update flag visibility - show the opposite flag of current language
-    const langToggle = document.querySelector('.lang-toggle');
-    if (langToggle) {
-        const enFlag = langToggle.querySelector('.fi-gb');
-        const deFlag = langToggle.querySelector('.fi-de');
-        if (lang === 'en') {
-            enFlag.style.display = 'none';
-            deFlag.style.display = 'block';
-        } else {
-            enFlag.style.display = 'block';
-            deFlag.style.display = 'none';
-        }
+    // Update the current language display in the button (desktop)
+    const currentFlag = document.getElementById('current-flag');
+    const currentLang = document.getElementById('current-lang');
+    
+    if (currentFlag && currentLang) {
+        // Remove all flag classes
+        currentFlag.className = 'fi';
+        // Add the correct flag class
+        currentFlag.classList.add(languageFlags[lang]);
+        // Update language name
+        currentLang.textContent = languageNames[lang];
     }
+    
+    // Update the current language display in the mobile popup
+    const mobileCurrentFlag = document.getElementById('mobile-current-flag');
+    const mobileCurrentLang = document.getElementById('mobile-current-lang');
+    
+    if (mobileCurrentFlag && mobileCurrentLang) {
+        // Remove all flag classes
+        mobileCurrentFlag.className = 'fi';
+        // Add the correct flag class
+        mobileCurrentFlag.classList.add(languageFlags[lang]);
+        // Update language name
+        mobileCurrentLang.textContent = languageNames[lang];
+    }
+    
+    // Update active state in dropdown
+    const langOptions = document.querySelectorAll('.lang-option');
+    langOptions.forEach(option => {
+        if (option.dataset.lang === lang) {
+            option.classList.add('active');
+        } else {
+            option.classList.remove('active');
+        }
+    });
     
     // Update all translatable elements
     const elements = document.querySelectorAll('[data-i18n]');
@@ -378,8 +604,6 @@ function setPageLanguage(lang) {
         if (translations[lang][key]) {
             if (element.tagName === 'INPUT' && element.type === 'submit') {
                 element.value = translations[lang][key];
-            } else if (element.tagName === 'INPUT' && element.type === 'placeholder') {
-                element.placeholder = translations[lang][key];
             } else {
                 // Special handling for privacy text that needs concatenation
                 if (key === 'privacyText') {
@@ -397,6 +621,17 @@ function setPageLanguage(lang) {
             }
         } else {
             console.warn('Translation not found for key:', key, 'in language:', lang);
+        }
+    });
+    
+    // Update all placeholder translations
+    const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
+    placeholderElements.forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        if (translations[lang][key]) {
+            element.placeholder = translations[lang][key];
+        } else {
+            console.warn('Placeholder translation not found for key:', key, 'in language:', lang);
         }
     });
 }
@@ -420,26 +655,95 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set initial language
     setPageLanguage(initialLang);
     
-    // Add click handler to language toggle
-    const langToggle = document.querySelector('.lang-toggle');
-    if (langToggle) {
-        langToggle.addEventListener('click', () => {
-            const currentLang = document.documentElement.lang;
-            const newLang = currentLang === 'en' ? 'de' : 'en';
-            console.log('Switching from', currentLang, 'to', newLang);
-            setPageLanguage(newLang);
-            
-            // Track language change in Google Analytics
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'language_change', {
-                    'event_category': 'User Interaction',
-                    'event_label': `Changed to ${newLang.toUpperCase()}`,
-                    'language_from': currentLang,
-                    'language_to': newLang
+    // Setup dropdown functionality for all language toggles (desktop and mobile)
+    const langToggles = document.querySelectorAll('.lang-toggle');
+    
+    langToggles.forEach(langToggle => {
+        const langToggleButton = langToggle.querySelector('.lang-toggle-button');
+        const langDropdown = langToggle.querySelector('.lang-dropdown');
+        const langOptions = langToggle.querySelectorAll('.lang-option');
+        
+        if (langToggleButton && langDropdown) {
+            // Toggle dropdown on button click
+            langToggleButton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isOpen = langToggle.classList.contains('open');
+                
+                // Close all other dropdowns first
+                langToggles.forEach(toggle => {
+                    if (toggle !== langToggle) {
+                        toggle.classList.remove('open');
+                        const btn = toggle.querySelector('.lang-toggle-button');
+                        if (btn) btn.setAttribute('aria-expanded', 'false');
+                    }
                 });
-            }
+                
+                // Toggle current dropdown
+                langToggle.classList.toggle('open');
+                langToggleButton.setAttribute('aria-expanded', !isOpen);
+            });
+            
+            // Handle language option clicks
+            langOptions.forEach(option => {
+                option.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const selectedLang = option.dataset.lang;
+                    const currentLang = document.documentElement.lang;
+                    
+                    if (selectedLang && selectedLang !== currentLang) {
+                        console.log(`Switching to ${languageNames[selectedLang]}`);
+                        setPageLanguage(selectedLang);
+                        trackLanguageChange(currentLang, selectedLang);
+                    }
+                    
+                    // Close all dropdowns
+                    langToggles.forEach(toggle => {
+                        toggle.classList.remove('open');
+                        const btn = toggle.querySelector('.lang-toggle-button');
+                        if (btn) btn.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            });
+        }
+    });
+    
+    // Close all dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        const clickedInsideAnyToggle = Array.from(langToggles).some(toggle => toggle.contains(e.target));
+        if (!clickedInsideAnyToggle) {
+            langToggles.forEach(toggle => {
+                toggle.classList.remove('open');
+                const btn = toggle.querySelector('.lang-toggle-button');
+                if (btn) btn.setAttribute('aria-expanded', 'false');
+            });
+        }
+    });
+    
+    // Close all dropdowns on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            langToggles.forEach(toggle => {
+                if (toggle.classList.contains('open')) {
+                    toggle.classList.remove('open');
+                    const btn = toggle.querySelector('.lang-toggle-button');
+                    if (btn) {
+                        btn.setAttribute('aria-expanded', 'false');
+                        btn.focus();
+                    }
+                }
+            });
+        }
+    });
+});
+
+// Helper function to track language changes for Google Analytics
+function trackLanguageChange(fromLang, toLang) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'language_change', {
+            'event_category': 'User Interaction',
+            'event_label': `Changed to ${toLang.toUpperCase()}`,
+            'language_from': fromLang,
+            'language_to': toLang
         });
-    } else {
-        console.error('Language toggle not found!');
     }
-}); 
+}
