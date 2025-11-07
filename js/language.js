@@ -4,7 +4,6 @@ const translations = {
         // Hero Section
         heroTitle: "Real Events. Real People.<br>Right Here.",
         heroSubtitle: "Built around in-person moments, not endless feeds. Discover what's happening nearby, make plans with friends, and turn shared experiences into lasting connections.",
-        requestAccess: "Request Early Access",
         submit: "Submit",
         
         // Early Access Page
@@ -39,14 +38,6 @@ const translations = {
         rememberTogetherDesc: "Built for real-life friendships. Capture moments from shared events and relive them with the people who were actually there.",
         makeItYours: "Make It Yours",
         makeItYoursDesc: "Customize your profile to reflect your vibe: username, photo, stats and all.",
-        discoverEvents: "Discover & Create Events",
-        discoverEventsDesc: "Find exciting local events or create your own gatherings. From parties to book clubs, there's something for everyone.",
-        authenticConnections: "Authentic Connections",
-        authenticConnectionsDesc: "Connect with new friends by scanning their QR code in person - ensuring all connections are true and meaningful.",
-        shareMemories: "Share Memories",
-        shareMemoriesDesc: "Capture and share moments from events, creating lasting memories with your new friends.",
-        stayConnected: "Stay Connected",
-        stayConnectedDesc: "Chat with your connections, comment on memories, and plan future meetups together.",
         
         // Personality Section
         personalitiesTitle: "For Every Kind of You",
@@ -75,7 +66,9 @@ const translations = {
         createEventsDesc: "Start something and bring people together.",
         tellFriends: "Tell your Friends",
         tellFriendsDesc: "Invite your crew and spread the word.",
-        
+        shareMemories: "Share Memories",
+        shareMemoriesDesc: "Capture and share moments from events, creating lasting memories with your new friends.",
+
         // Privacy and Form
         viewPrivacy: "View Privacy Details",
         privacyText: "We use Brevo as our marketing platform. By submitting this form you agree that the personal data you provided will be transferred to Brevo for processing in accordance with",
@@ -106,7 +99,6 @@ const translations = {
         address: "Contact Address",
         contact: "Contact",
         responsibleContent: "Responsible for Content",
-        country: "Germany",
         projectDisclaimer: "Project Status",
         projectDisclaimerText: "App4it is currently a pre-launch project developed by a team of four individuals. This website serves to provide information about our upcoming service.",
         
@@ -176,7 +168,6 @@ const translations = {
         // Hero Section
         heroTitle: "Echte Events. Echte Menschen.<br>Genau Hier.",
         heroSubtitle: "Jedes Event ist eine Chance, jemand Besonderes kennenzulernen. App4it hilft dir, diese persönlichen Begegnungen durch gemeinsame Erlebnisse in dauerhafte Freundschaften zu verwandeln.",
-        requestAccess: "Frühen Zugang Anfragen",
         submit: "Absenden",
         
         // Early Access Page
@@ -211,14 +202,6 @@ const translations = {
         rememberTogetherDesc: "Fang Momente von Ereignissen auf und teile Erinnerungen mit den Menschen, die sie speziell gemacht haben.",
         makeItYours: "Mach es zu deinem",
         makeItYoursDesc: "Stelle dein Profil auf dein Vibe ein: Benutzername, Foto, Statistiken und alles.",
-        discoverEvents: "Entdecke & Erstelle Events",
-        discoverEventsDesc: "Finde spannende lokale Events oder erstelle deine eigenen Treffen. Von Partys bis zu Buchclubs ist für jeden etwas dabei.",
-        authenticConnections: "Authentische Verbindungen",
-        authenticConnectionsDesc: "Verbinde dich mit neuen Freunden durch Scannen ihres QR-Codes vor Ort - so sind alle Verbindungen echt und bedeutungsvoll.",
-        shareMemories: "Teile Erinnerungen",
-        shareMemoriesDesc: "Halte Momente von Events fest und teile sie mit deinen neuen Freunden.",
-        stayConnected: "Bleib in Verbindung",
-        stayConnectedDesc: "Chatte mit deinen Kontakten, kommentiere Erinnerungen und plane zukünftige Treffen.",
         
         // Experience Section
         experienceTitle: "Erlebe Echte Verbindungen",
@@ -260,7 +243,9 @@ const translations = {
         createEventsDesc: "Starte etwas und bringe Leute zusammen.",
         tellFriends: "Mit Freunden teilen",
         tellFriendsDesc: "Lade deine Freunde ein und verbreite die Nachricht.",
-        
+        shareMemories: "Teile Erinnerungen",
+        shareMemoriesDesc: "Halte Momente von Events fest und teile sie mit deinen neuen Freunden.",
+
         // Privacy and Form
         viewPrivacy: "Datenschutzdetails Anzeigen",
         privacyText: "Wir nutzen Brevo als unsere Marketing-Plattform. Durch das Absenden dieses Formulars erklären Sie sich damit einverstanden, dass die von Ihnen angegebenen personenbezogenen Daten zur Verarbeitung an Brevo übermittelt werden gemäß",
@@ -277,7 +262,7 @@ const translations = {
         
         // Success Page
         successTitle: "Juhu! Du bist dabei! 🎉",
-        successSubtitle: "High five! ✋ Du bist jetzt offiziell auf der Warteliste für die coolste Art, neue Freunde zu finden. Mach dich bereit für Abenteuer, die viel besser sind als Scrollen! Bist du App4it?",
+        successSubtitle: "High five! ✋ Du bist jetzt offiziell auf der Warteliste für die coolste Art, neue Freunde zu finden. Mach dich bereit für Abenteuer, die viel besser sind als Scrollen! Are you App4it?",
         backToHome: "Zurück zur Startseite",
         confirmationEmailSent: "Eine Bestätigungs-E-Mail wurde gesendet. Bitte überprüfe deinen Posteingang (und Spam-Ordner, falls nicht gefunden). Wenn du sie nicht innerhalb weniger Minuten erhalten, versuche es erneut.",
         subscriptionSuccessful: "Dein Abonnement für den frühen Zugang zu app4it war erfolgreich.",
@@ -291,7 +276,6 @@ const translations = {
         address: "Kontaktadresse",
         contact: "Kontakt",
         responsibleContent: "Inhaltlich Verantwortlicher",
-        country: "Deutschland",
         projectDisclaimer: "Projektstatus",
         projectDisclaimerText: "App4it ist derzeit ein Vorstart-Projekt, das von einem Team aus vier Personen entwickelt wird. Diese Website dient dazu, Informationen über unseren kommenden Service bereitzustellen.",
         
@@ -358,175 +342,167 @@ const translations = {
     },
     es: {
         // Hero Section
-        heroTitle: "Eventos Reales. Personas Reales.<br>Justo Aquí.",
-        heroSubtitle: "Construido en torno a momentos en persona, no feeds interminables. Descubre lo que está pasando cerca, haz planes con amigos y convierte experiencias compartidas en conexiones duraderas.",
-        requestAccess: "Solicitar Acceso Anticipado",
+        heroTitle: "El mundo real, más cerca que nunca.",
+        heroSubtitle: "Una aplicación para conectar personas, no perfiles. Descubre lo que pasa cerca de ti, comparte planes y crea recuerdos que duren.",
         submit: "Enviar",
         
         // Early Access Page
-        earlyAccessTitle: "Solicitar Acceso Anticipado",
-        earlyAccessSubtitle: "Sé de los primeros en experimentar una nueva forma de conectar en eventos. ¡Únete a nuestra lista de espera hoy!",
-        joinWaitlist: "Unirse a la Lista de Espera",
+        earlyAccessTitle: "Solicita tu acceso anticipado",
+        earlyAccessSubtitle: "Sé de los primeros en experimentar una nueva forma de conectar en la vida real. ¡Únete a nuestra lista de espera ya!",
+        joinWaitlist: "Sé parte del cambio",
         emailPlaceholder: "tu@email.com",
         
         // Values Section
         ourValues: "Nuestros Valores",
-        keepItReal: "Mantenlo Real",
-        keepItRealDesc: "Celebramos la autenticidad. Personas reales, intereses reales y conexiones reales. Sin filtros, sin falsedades. Solo experiencias honestas que se sienten como tú.",
-        safetyFirst: "Seguridad Primero, Siempre",
+        keepItReal: "Personas que existen",
+        keepItRealDesc: "Celebramos la autenticidad, sin filtros ni apariencias. Conecta con quienes son tal como son. Solo experiencias honestas y ganas de conectar de verdad.",
+        safetyFirst: "La seguridad primero",
         safetyFirstDesc: "Desde quién conoces hasta lo que compartes, todo está diseñado para mantenerte seguro. La confianza es la base para buenos momentos, así que lo tomamos en serio.",
-        connectWithPurpose: "Conectar con Propósito",
-        connectWithPurposeDesc: "No se trata de conocer a todos, sino de encontrar a los correctos. Prepárate para generar conexiones genuinas y construir comunidades en torno a lo que amas.",
-        poweredByJoy: "Impulsado por la Alegría",
-        poweredByJoyDesc: "No más desplazamiento infinito solo para sentirte entretenido. Siempre hay algo que hacer, alguien con quien unirse y un buen momento esperando. El aburrimiento no tiene oportunidad.",
+        connectWithPurpose: "Conecta con propósito",
+        connectWithPurposeDesc: "No se trata de conocer a todos, sino a los que encajan contigo. Haz espacio para conexiones genuinas y construye comunidades en torno a lo que amas.",
+        poweredByJoy: "Disfruta el momento",
+        poweredByJoyDesc: "No más desplazamiento infinito solo para sentirte entretenido. Siempre hay algo que hacer, alguien con quien quedar y un buen momento esperando. El aburrimiento aquí no tiene sitio.",
         
         // Features Section
-        ourFeatures: "Las Herramientas para Conexiones Reales",
-        ourFeaturesSubtitle: "Todo lo que necesitas para descubrir eventos, conocer personas reales y crear recuerdos que duran.",
-        seeWhatsHappening: "Ver Qué Está Pasando",
-        seeWhatsHappeningDesc: "Mantente al tanto de todo lo que sucede a tu alrededor. No más FOMO, no más \"No sabía que eso estaba pasando.\"",
-        eventsMadeForYou: "Eventos Hechos para Ti",
-        eventsMadeForYouDesc: "Explora reuniones que coincidan con tu vibra. Ya sea que te guste el arte, la música o algo intermedio, tu ciudad tiene más de lo que piensas.",
-        startSomething: "Comienza Algo",
-        startSomethingDesc: "Crea tus propios eventos y reúne a las personas. Es fácil, rápido y sorprendentemente divertido ver quién aparece.",
-        realFriendsOnly: "Solo Amigos Reales",
-        realFriendsOnlyDesc: "Agrega solo a las personas que has conocido en persona. Las conexiones suceden en la vida real. Solo estamos aquí para mantenerlas.",
-        rememberTogether: "Recordar Juntos",
-        rememberTogetherDesc: "Construido para amistades de la vida real. Captura momentos de eventos compartidos y revívelos con las personas que realmente estuvieron allí.",
-        makeItYours: "Hazlo Tuyo",
-        makeItYoursDesc: "Personaliza tu perfil para reflejar tu vibra: nombre de usuario, foto, estadísticas y todo.",
-        discoverEvents: "Descubrir y Crear Eventos",
-        discoverEventsDesc: "Encuentra eventos locales emocionantes o crea tus propias reuniones. Desde fiestas hasta clubes de lectura, hay algo para todos.",
-        authenticConnections: "Conexiones Auténticas",
-        authenticConnectionsDesc: "Conéctate con nuevos amigos escaneando su código QR en persona, asegurando que todas las conexiones sean verdaderas y significativas.",
-        shareMemories: "Compartir Recuerdos",
-        shareMemoriesDesc: "Captura y comparte momentos de eventos, creando recuerdos duraderos con tus nuevos amigos.",
-        stayConnected: "Mantente Conectado",
-        stayConnectedDesc: "Chatea con tus conexiones, comenta recuerdos y planifica futuros encuentros juntos.",
+        ourFeatures: "Lo que necesitas para crear conexiones reales",
+        ourFeaturesSubtitle: "Herramientas para descubrir eventos, conocer gente auténtica y crear recuerdos que duren.",
+        seeWhatsHappening: "Lo que pasa, pasa cerca de ti",
+        seeWhatsHappeningDesc: "Mantente al día con todo lo que ocurre cerca de ti. Nada de FOMO, nada de \“no me enteré\”.",
+        eventsMadeForYou: "Eventos hechos para ti",
+        eventsMadeForYouDesc: "Explora planes que encajan contigo. Ya sea arte, música o lo que surja, tu ciudad tiene por ofrecer más de lo que imaginas.",
+        startSomething: "Haz que algo suceda",
+        startSomethingDesc: "Crea eventos, invita gente y mira cómo todo cobra vida. Es fácil, rápido y sorprendentemente divertido ver quién se une.",
+        realFriendsOnly: "Sólo personas reales",
+        realFriendsOnlyDesc: "Añade a las personas que conoces de verdad. Las conexiones pasan en la vida real, nosotros solo las mantenemos vivas.",
+        rememberTogether: "Recordad juntos",
+        rememberTogetherDesc: "Construido para amistades de la vida real. Captura los momentos que compartiste y revívelos con quienes realmente estuvieron allí.",
+        makeItYours: "Tu perfil, tu estilo",
+        makeItYoursDesc: "Crea un perfil que te represente: tu nombre, tu foto, tus logros… todo tú.",
         
         // Personality Section
-        personalitiesTitle: "Para Cada Tipo de Ti",
-        personalitiesSubtitle: "Ya seas el alma de la fiesta o prefieras momentos tranquilos, nuestra app se adapta a tu vibra.",
+        personalitiesTitle: "Para cada versión de ti",
+        personalitiesSubtitle: "Tanto si eres el alma de la fiesta como si disfrutas de la calma, App4it se ajusta a tu ritmo.",
         personalitySocialTitle: "La Mariposa Social",
-        personalitySocialDesc: "Prosperas en la energía de las multitudes. Fiestas, conciertos, eventos deportivos: siempre estás donde está la acción. Encuentra tu próxima aventura y conoce personas que coincidan con tu energía.",
+        personalitySocialDesc: "Prosperas en la energía de las multitudes. Fiestas, conciertos, eventos deportivos: siempre estás donde está la acción. Encuentra tu próxima aventura y conoce personas que te sigan el ritmo.",
         personalityThoughtfulTitle: "El Explorador Reflexivo",
-        personalityThoughtfulDesc: "Encuentras alegría en momentos tranquilos y experiencias significativas. Exposiciones de arte, clubes de lectura, noches de juegos de mesa: descubre reuniones que alimenten tu alma.",
-        personalityAmbitiousTitle: "El Networker Ambicioso",
+        personalityThoughtfulDesc: "Encuentras alegría en momentos tranquilos y experiencias significativas. Exposiciones de arte, clubes de lectura, noches de juegos de mesa: descubre reuniones que alimenten tu alma y estimulen tu mente.",
+        personalityAmbitiousTitle: "El Profesional con Chispa",
         personalityAmbitiousDesc: "Trabaja duro, juega más duro. Conferencias de día, karaoke de noche. Conéctate con profesionales motivados que saben cómo equilibrar la ambición con la diversión.",
-        personalityCommunityTitle: "El Constructor de Comunidad",
+        personalityCommunityTitle: "El Creador de Comunidades",
         personalityCommunityDesc: "Reúnes a las personas. Grupos de estudio, talleres de teatro, clubes de lectura: creas espacios donde las conexiones florecen y las comunidades crecen.",
         
         // How It Works Section
-        howItWorks: "Cómo Funcionará",
-        howItWorksSubtitle: "Pasos simples desde la descarga hasta tu primer encuentro en la vida real.",
-        downloadApp: "Descargar",
+        howItWorks: "Cómo funciona",
+        howItWorksSubtitle: "Pasos simples, desde la descarga hasta tu primer encuentro en la vida real.",
+        downloadApp: "Descarga la app",
         downloadAppDesc: "Obtén la app para iOS o Android.",
-        signUp: "Registrarse",
+        signUp: "Regístrate",
         signUpDesc: "Crea tu perfil en segundos.",
-        findEvents: "Encontrar Eventos",
+        findEvents: "Encuentra eventos",
         findEventsDesc: "Descubre lo que está pasando a tu alrededor.",
-        connectPeople: "Conectar con Personas",
+        connectPeople: "Conecta con personas",
         connectPeopleDesc: "Conoce en la vida real y amplía tu círculo.",
-        createEvents: "Crear Eventos",
-        createEventsDesc: "Comienza algo y reúne a las personas.",
-        tellFriends: "Cuéntales a tus Amigos",
+        createEvents: "Crea eventos",
+        createEventsDesc: "Comienza algo y reúne a tu gente.",
+        tellFriends: "Cuéntales a tus amigos",
         tellFriendsDesc: "Invita a tu grupo y corre la voz.",
-        
+        shareMemories: "Comparte recuerdos",
+        shareMemoriesDesc: "Captura y comparte momentos, creando recuerdos que duren con tus nuevos amigos.",
+
         // Privacy and Form
-        viewPrivacy: "Ver Detalles de Privacidad",
+        viewPrivacy: "Ver detalles de privacidad",
         privacyText: "Utilizamos Brevo como nuestra plataforma de marketing. Al enviar este formulario, aceptas que los datos personales que proporcionaste se transferirán a Brevo para su procesamiento de acuerdo con",
-        privacyPolicy: "Política de Privacidad de Brevo",
+        privacyPolicy: "Política de privacidad de Brevo",
         agreeText: "Acepto recibir noticias y actualizaciones proporcionadas por App4it y acepto la declaración de privacidad de datos.",
         unsubscribeText: "Puedes darte de baja en cualquier momento usando el enlace en nuestras actualizaciones por correo electrónico.",
-        acceptPrivacy: "Por favor acepta la política de privacidad para continuar.",
-        emailHelp: "Ingresa una dirección de correo electrónico válida para unirte a la lista de espera. Este campo es obligatorio.",
+        acceptPrivacy: "Por favor, acepta la política de privacidad para continuar.",
+        emailHelp: "Introduce una dirección de correo electrónico válida para unirte a la lista de espera. Este campo es obligatorio.",
         
         // Footer
-        copyright: "© 2025 Equipo del Proyecto App4it. Todos los derechos reservados.",
+        copyright: "© 2025 Equipo de App4it. Todos los derechos reservados.",
         impressum: "Aviso Legal",
-        connectWithUs: "¡Conéctate con nosotros!",
+        connectWithUs: "¡Conecta con nosotros!",
         
         // Success Page
-        successTitle: "¡Woohoo! ¡Estás dentro! 🎉",
-        successSubtitle: "¡Choca esos cinco! ✋ Estás oficialmente en la lista de espera para la forma más genial de conocer nuevos amigos. Prepárate para aventuras que son mucho mejores que desplazarse. ¿Eres App4it?",
-        backToHome: "Volver a la Página Principal",
-        confirmationEmailSent: "Se ha enviado un correo electrónico de confirmación. Por favor revisa tu bandeja de entrada (y la carpeta de spam si no lo encuentras). Si no lo recibes en unos minutos, intenta enviarlo nuevamente.",
-        subscriptionSuccessful: "Tu suscripción al acceso anticipado de app4it ha sido exitosa.",
+        successTitle: "¡Yuju! ¡Estás dentro! 🎉",
+        successSubtitle: "¡Choca esos cinco! ✋ Estás oficialmente en la lista de espera para la forma más genial de socializar en este siglo. Prepárate para aventuras que son mucho mejores que desplazarse. ¿Are you up for it?",
+        backToHome: "Volver a la página principal",
+        confirmationEmailSent: "Se ha enviado un correo electrónico de confirmación. Por favor revisa tu bandeja de entrada (y la carpeta de spam si no lo encuentras). Si no lo recibes en unos minutos, inténtalo de nuevo.",
+        subscriptionSuccessful: "Te has suscrito al acceeso anticipado con éxito.",
         
         // Impressum Page
         impressumTitle: "Aviso Legal",
-        impressumBackToHome: "Volver a la Página Principal",
-        projectDetails: "Detalles del Proyecto",
+        impressumBackToHome: "Volver a la página principal",
+        projectDetails: "Detalles del proyecto",
         projectName: "Proyecto App4it",
-        projectTeam: "Equipo del Proyecto",
+        projectTeam: "Equipo",
         address: "Dirección de Contacto",
         contact: "Contacto",
-        responsibleContent: "Responsable del Contenido",
-        country: "Alemania",
-        projectDisclaimer: "Estado del Proyecto",
+        responsibleContent: "Responsable de contenido",
+        projectDisclaimer: "Estado del proyecto",
         projectDisclaimerText: "App4it es actualmente un proyecto previo al lanzamiento desarrollado por un equipo de cuatro personas. Este sitio web sirve para proporcionar información sobre nuestro próximo servicio.",
         
         // Navigation
         home: "Inicio",
-        aboutUs: "Sobre Nosotros",
+        aboutUs: "Sobre nosotros",
         
         // Settings
         settings: "Configuración",
         theme: "Tema",
-        darkTheme: "Tema Oscuro",
-        lightTheme: "Tema Claro",
+        darkTheme: "Oscuro",
+        lightTheme: "Claro",
         language: "Idioma",
         
         // About Page
-        aboutTitle: "Conoce al Equipo de App4it",
+        aboutTitle: "Conoce al equipo de App4it",
         aboutSubtitle: "Somos un equipo apasionado de cuatro personas, dedicados a revolucionar cómo las personas se conectan en eventos y construyen amistades duraderas.",
-        aboutHeroTitle: "Sobre app4it",
-        aboutHeroSubtitle: "Cuatro fundadores, una misión: hacer que las conexiones sean más fáciles, también fuera de línea.",
+        aboutHeroTitle: "Sobre App4it",
+        aboutHeroSubtitle: "Cuatro fundadores, un objetivo: que se pueda volver a conectar con las personas, también fuera de la pantalla.",
         
         // Mission Vision Section
         bringingPeopleTogether: "Reuniendo a las personas",
         bringingPeopleTogetherText: "App4it conecta a las personas a través de eventos de la vida real e intereses compartidos. Te ayudamos a descubrir lo que está sucediendo a tu alrededor: no más aburrimiento, no más FOMO. Es hora de hacer planes, no desplazarse sin fin.",
         reinventingSocialMedia: "Reinventando las redes sociales",
-        reinventingSocialMediaText: "Imaginamos un mundo donde conocer gente nueva es fácil, espontáneo y divertido. Donde los eventos nunca son un misterio. Donde la tecnología no distrae de la vida real, la mejora. Estamos construyendo la plataforma de referencia para descubrir qué está pasando, encontrar a tu gente y hacer que las ciudades pequeñas se sientan grandes con posibilidades.",
+        reinventingSocialMediaText: "Imaginamos un mundo donde conocer gente nueva es fácil, espontáneo y divertido. Donde la tecnología no distrae de la vida real, sino que la mejora. App4it es la plataforma de referencia para descubrir qué está pasando, encontrar a tu gente y hacer que las ciudades pequeñas se sientan grandes con posibilidades.",
         
         // Team Section
         meetTheTeam: "Nuestro Equipo",
-        teamIntro: "Somos un equipo pequeño con gran energía. Cada uno de nosotros aporta una fortaleza diferente a la mesa. Lo que nos une es el impulso de convertir la tecnología en momentos de la vida real que realmente importan.",
+        teamIntro: "Somos un equipo internacional. Pequeño, pero con gran energía. Cada uno de nosotros aporta una fortaleza diferente, y nos une el impulso de usar la tecnología para impulsar la conexión humana, en lugar de sustituirla.",
         
         // Team Member Names and Titles
-        juliaName: "Julia Agüero",
-        juliaTitle: "Desarrolladora Frontend y Experta en JIRA",
+        juliaName: "Julia Agüero Fraguas",
+        juliaTitle: "Especialista en Dirección de Proyectos",
         savoName: "Savo Simeunović",
-        savoTitle: "Especialista en IA/ML y Experto en Bases de Datos",
-        sophiaName: "Sophia Soares",
-        sophiaTitle: "Desarrolladora Frontend y Diseñadora UX/UI",
+        savoTitle: "Especialista en IA/ML y bases de datos",
+        sophiaName: "Sophia Soares Silva",
+        sophiaTitle: "Especialista en UX/UI",
         marinName: "Marin Sušić",
-        marinTitle: "Especialista en Seguridad y Desarrollador Backend",
+        marinTitle: "Especialista en Ciberseguridad",
         
         // Our Story Section
-        ourStory: "Nuestra Historia",
+        ourStory: "Nuestra historia",
         storyText1: "App4it nació de una simple frustración: a pesar de toda la tecnología a nuestro alcance, hacer conexiones reales y encontrar eventos locales todavía se sentía difícil. Queríamos cambiar eso. Nuestro viaje comenzó en una ciudad pequeña, donde vimos de primera mano lo fácil que es sentirse aislado, incluso cuando estás rodeado de personas.",
-        storyText2: "Somos cuatro desarrolladores con diferentes antecedentes: frontend, backend, IA, UX, pero con un objetivo compartido: construir algo que reúna a las personas en el mundo real. Creemos que la tecnología debería ayudarte a salir, no mantenerte pegado a tu pantalla. Por eso nos enfocamos en hacer que sea fácil descubrir lo que está sucediendo a tu alrededor y conocer gente nueva que comparta tus intereses.",
-        storyText3: "Esto no es solo una app para nosotros, es una misión. Estamos construyendo App4it para cualquiera que quiera más de su ciudad, más de su vida social y más de la tecnología. Esperamos que te unas a nosotros para crear una comunidad donde la conexión humana auténtica sea lo primero.",
-        joinOurMission: "Únete a nuestra Misión",
+        storyText2: "Somos cuatro desarrolladores con especialidades diferentes —Dirección de proyectos, Ciberseguridad, UX/UI e IA— pero con un objetivo común: crear algo que acerque a las personas en el mundo real. Queremos que la tecnología te ayude a salir, a conocer gente y a vivir experiencias de verdad, no a quedarte pegado a la pantalla.",
+        storyText3: "App4it no es solo una app: es nuestra manera de que todos puedan sacarle más a su ciudad, a su vida social y a la tecnología. Queremos que formes parte de esta comunidad, donde lo que importa son las conexiones humanas.",
+        joinOurMission: "Únete a nuestra misión",
         
         // Team Descriptions
-        juliaDesc: "Desarrolladora frontend y experta en JIRA. Creando caos colorido con acuarelas y llamándolo arte en mi tiempo libre.",
-        savoDesc: "Especializado en IA/ML y bases de datos. Sirviendo con orgullo cada capricho de mi gato en mi tiempo libre.",
-        sophiaDesc: "Desarrolladora frontend y diseñadora UX/UI. Si quieres un peluche tejido, envíame un DM.",
-        marinDesc: "Apasionado por la seguridad, obligado a hacer también desarrollo backend. Me gusta mentirme a mí mismo de que soy un motociclista decente.",
+        juliaDesc: "Desarrolladora frontend y experta en JIRA. En mi tiempo libre creo caos colorido con acuarelas y lo llamo arte.",
+        savoDesc: "Desarrollador backend y artífice de queries eficientes. Sirviendo con orgullo cada capricho de mi gato en mi tiempo libre.",
+        sophiaDesc: "Desarrolladora frontend y diseñadora UX/UI. Si quieres que te teja un peluche, envíame un DM.",
+        marinDesc: "Apasionado por la seguridad, obligado a programar. Me gusta decirme a mí mismo de que sé montar en moto.",
         
         // Team Fun Facts
         funFact: "Dato Curioso",
-        juliaFunFact: "¡Puedo terminar el nivel experto en Guitar Hero sin despeinarse!",
-        savoFunFact: "Mi gato es mejor programador que yo, aunque siempre encuentra tiempo para acostarse encima de mi laptop y jugar con mi configuración.",
-        sophiaFunFact: "¡Me encanta tejer, así que si App4it alguna vez necesita una mascota de peluche, yo la haré!",
-        marinFunFact: "Mi viaje de desarrollo comenzó con un plugin de Minecraft y hackeando sistemas de información",
-   
+        juliaFunFact: "¡Puedo terminar el nivel experto del Guitar Hero sin despeinarme!",
+        savoFunFact: "Mi gato programa mejor que yo… ¡duerme sobre mi ordenador y me cambia la configuración!",
+        sophiaFunFact: "Me encanta hacer crochet, así que si App4it alguna vez necesita una mascota de peluche, ¡la voy a hacer yo!",
+        marinFunFact: "Di mis primeros pasos en Informática con un plugin de Minecraft y hackeando sistemas.",
+
    
         // Email change page
-        emailUpdateTitle: "¡Todo Listo!",
-        emailUpdateMessage: "Tu correo electrónico se ha actualizado correctamente. Descubre más eventos increíbles y haz nuevos amigos. ¿Eres App4it?",
+        emailUpdateTitle: "¡Todo listo!",
+        emailUpdateMessage: "Tu correo electrónico se ha actualizado correctamente. Descubre más eventos increíbles y haz nuevos amigos. ¿Are you App4it?",
     }
 };
 
