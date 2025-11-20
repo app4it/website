@@ -172,6 +172,95 @@
       </div>
     </main>
 
+    <!-- How It Works Section -->
+    <section class="howitworks-section" aria-labelledby="howitworks-title">
+      <h2 id="howitworks-title" class="section-title" data-i18n="howItWorks">How It's Gonna Work</h2>
+      <p class="section-subtitle" data-i18n="howItWorksSubtitle">Simple steps to go from download to your first real-life meetup.</p>
+      <div class="hiw-container">
+        <!-- Common steps stacked -->
+        <div class="hiw-common-stack" role="group" aria-label="Download and Sign Up">
+          <div class="hiw-step app-card animate-in">
+            <div class="hiw-icon"><i class="fas fa-download feature-icon" aria-hidden="true"></i></div>
+            <h3 class="hiw-title" data-i18n="downloadApp">Download</h3>
+            <p class="hiw-text" data-i18n="downloadAppDesc">Get the app for iOS or Android.</p>
+          </div>
+          <div class="hiw-connector vertical" aria-hidden="true"></div>
+          <div class="hiw-step app-card animate-in" style="animation-delay: .1s">
+            <div class="hiw-icon"><i class="fas fa-user-plus feature-icon" aria-hidden="true"></i></div>
+            <h3 class="hiw-title" data-i18n="signUp">Sign Up</h3>
+            <p class="hiw-text" data-i18n="signUpDesc">Create your profile in seconds.</p>
+          </div>
+        </div>
+
+        <!-- Elbow connectors from Sign Up to branches -->
+        <div class="hiw-connectors" aria-hidden="true">
+          <span class="seg h central"></span>
+          <div class="elbow elbow-left">
+            <span class="seg v top"></span>
+            <span class="seg v bottom"></span>
+          </div>
+          <div class="elbow elbow-right">
+            <span class="seg v top"></span>
+            <span class="seg v bottom"></span>
+          </div>
+        </div>
+
+        <!-- Branches -->
+        <div class="hiw-branches" role="group" aria-label="Choose your path">
+          <!-- Path 1: Find events -->
+          <div class="hiw-branch">
+            <div class="hiw-step app-card animate-in" style="animation-delay: .2s">
+              <div class="hiw-icon"><i class="fas fa-magnifying-glass feature-icon" aria-hidden="true"></i></div>
+              <h3 class="hiw-title" data-i18n="findEvents">Find Events</h3>
+              <p class="hiw-text" data-i18n="findEventsDesc">Discover what's happening around you.</p>
+            </div>
+            <div class="hiw-connector vertical" aria-hidden="true"></div>
+            <div class="hiw-step app-card animate-in" style="animation-delay: .3s">
+              <div class="hiw-icon"><i class="fas fa-users feature-icon" aria-hidden="true"></i></div>
+              <h3 class="hiw-title" data-i18n="connectPeople">Connect with People</h3>
+              <p class="hiw-text" data-i18n="connectPeopleDesc">Meet in real life and grow your circle.</p>
+            </div>
+          </div>
+
+          <!-- Path 2: Create & Tell your Friends -->
+          <div class="hiw-branch">
+            <div class="hiw-step app-card animate-in" style="animation-delay: .2s">
+              <div class="hiw-icon"><i class="fas fa-plus feature-icon" aria-hidden="true"></i></div>
+              <h3 class="hiw-title" data-i18n="createEvents">Create Events</h3>
+              <p class="hiw-text" data-i18n="createEventsDesc">Start something and bring people together.</p>
+            </div>
+            <div class="hiw-connector vertical" aria-hidden="true"></div>
+            <div class="hiw-step app-card animate-in" style="animation-delay: .3s">
+              <div class="hiw-icon"><i class="fas fa-share-nodes feature-icon" aria-hidden="true"></i></div>
+              <h3 class="hiw-title" data-i18n="tellFriends">Tell your Friends</h3>
+              <p class="hiw-text" data-i18n="tellFriendsDesc">Invite your crew and spread the word.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Elbow connectors merging to final -->
+        <div class="hiw-merge-connectors" aria-hidden="true">
+          <span class="seg h central"></span>
+          <div class="elbow elbow-inward-left">
+            <span class="seg v top"></span>
+            <span class="seg v bottom"></span>
+          </div>
+          <div class="elbow elbow-inward-right">
+            <span class="seg v top"></span>
+          </div>
+        </div>
+
+        <!-- Final tile -->
+        <div class="hiw-final">
+          <div class="hiw-step app-card animate-in" style="animation-delay: .4s">
+            <div class="hiw-icon"><i class="fas fa-star feature-icon" aria-hidden="true"></i></div>
+            <h3 class="hiw-title" data-i18n="shareMemories">Share Memories</h3>
+            <p class="hiw-text" data-i18n="shareMemoriesDesc">Capture moments together and relive them later.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Features Section -->
     <section class="features-section" aria-labelledby="features-title">
       <h2 class="section-title" id="features-title" data-i18n="ourFeatures">The Tools for Real Connections</h2>
@@ -285,95 +374,6 @@
         <button class="carousel-btn next" aria-label="Next features" aria-controls="features-carousel-track">
           <i class="fas fa-chevron-right" aria-hidden="true"></i>
         </button>
-      </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="howitworks-section" aria-labelledby="howitworks-title">
-      <h2 id="howitworks-title" class="section-title" data-i18n="howItWorks">How It's Gonna Work</h2>
-      <p class="section-subtitle" data-i18n="howItWorksSubtitle">Simple steps to go from download to your first real-life meetup.</p>
-      <div class="hiw-container">
-        <!-- Common steps stacked -->
-        <div class="hiw-common-stack" role="group" aria-label="Download and Sign Up">
-          <div class="hiw-step app-card animate-in">
-            <div class="hiw-icon"><i class="fas fa-download feature-icon" aria-hidden="true"></i></div>
-            <h3 class="hiw-title" data-i18n="downloadApp">Download</h3>
-            <p class="hiw-text" data-i18n="downloadAppDesc">Get the app for iOS or Android.</p>
-          </div>
-          <div class="hiw-connector vertical" aria-hidden="true"></div>
-          <div class="hiw-step app-card animate-in" style="animation-delay: .1s">
-            <div class="hiw-icon"><i class="fas fa-user-plus feature-icon" aria-hidden="true"></i></div>
-            <h3 class="hiw-title" data-i18n="signUp">Sign Up</h3>
-            <p class="hiw-text" data-i18n="signUpDesc">Create your profile in seconds.</p>
-          </div>
-        </div>
-
-        <!-- Elbow connectors from Sign Up to branches -->
-        <div class="hiw-connectors" aria-hidden="true">
-          <span class="seg h central"></span>
-          <div class="elbow elbow-left">
-            <span class="seg v top"></span>
-            <span class="seg v bottom"></span>
-          </div>
-          <div class="elbow elbow-right">
-            <span class="seg v top"></span>
-            <span class="seg v bottom"></span>
-          </div>
-        </div>
-
-        <!-- Branches -->
-        <div class="hiw-branches" role="group" aria-label="Choose your path">
-          <!-- Path 1: Find events -->
-          <div class="hiw-branch">
-            <div class="hiw-step app-card animate-in" style="animation-delay: .2s">
-              <div class="hiw-icon"><i class="fas fa-magnifying-glass feature-icon" aria-hidden="true"></i></div>
-              <h3 class="hiw-title" data-i18n="findEvents">Find Events</h3>
-              <p class="hiw-text" data-i18n="findEventsDesc">Discover what's happening around you.</p>
-            </div>
-            <div class="hiw-connector vertical" aria-hidden="true"></div>
-            <div class="hiw-step app-card animate-in" style="animation-delay: .3s">
-              <div class="hiw-icon"><i class="fas fa-users feature-icon" aria-hidden="true"></i></div>
-              <h3 class="hiw-title" data-i18n="connectPeople">Connect with People</h3>
-              <p class="hiw-text" data-i18n="connectPeopleDesc">Meet in real life and grow your circle.</p>
-            </div>
-          </div>
-
-          <!-- Path 2: Create & Tell your Friends -->
-          <div class="hiw-branch">
-            <div class="hiw-step app-card animate-in" style="animation-delay: .2s">
-              <div class="hiw-icon"><i class="fas fa-plus feature-icon" aria-hidden="true"></i></div>
-              <h3 class="hiw-title" data-i18n="createEvents">Create Events</h3>
-              <p class="hiw-text" data-i18n="createEventsDesc">Start something and bring people together.</p>
-            </div>
-            <div class="hiw-connector vertical" aria-hidden="true"></div>
-            <div class="hiw-step app-card animate-in" style="animation-delay: .3s">
-              <div class="hiw-icon"><i class="fas fa-share-nodes feature-icon" aria-hidden="true"></i></div>
-              <h3 class="hiw-title" data-i18n="tellFriends">Tell your Friends</h3>
-              <p class="hiw-text" data-i18n="tellFriendsDesc">Invite your crew and spread the word.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Elbow connectors merging to final -->
-        <div class="hiw-merge-connectors" aria-hidden="true">
-          <span class="seg h central"></span>
-          <div class="elbow elbow-inward-left">
-            <span class="seg v top"></span>
-            <span class="seg v bottom"></span>
-          </div>
-          <div class="elbow elbow-inward-right">
-            <span class="seg v top"></span>
-          </div>
-        </div>
-
-        <!-- Final tile -->
-        <div class="hiw-final">
-          <div class="hiw-step app-card animate-in" style="animation-delay: .4s">
-            <div class="hiw-icon"><i class="fas fa-star feature-icon" aria-hidden="true"></i></div>
-            <h3 class="hiw-title" data-i18n="shareMemories">Share Memories</h3>
-            <p class="hiw-text" data-i18n="shareMemoriesDesc">Capture moments together and relive them later.</p>
-          </div>
-        </div>
       </div>
     </section>
 
