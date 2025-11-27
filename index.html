@@ -88,16 +88,23 @@
       "@type": "Organization",
       "name": "App4it",
       "url": "https://app4it.de",
-      "logo": "https://app4it.de/assets/icons/app_icon_light.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://app4it.de/assets/icons/app_icon_light.png",
+        "width": 512,
+        "height": 512
+      },
       "description": "App4it is an authentic social events app that helps people discover real events and connect with genuine people in their area.",
       "sameAs": [
-        "https://x.com/AreYouApp4it",
+        "https://x.com/AreYouApp4it"
       ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "availableLanguage": ["English", "German", "Spanish"]
-      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "availableLanguage": ["English", "German", "Spanish"]
+        }
+      ],
       "potentialAction": {
         "@type": "SubscribeAction",
         "target": "https://app4it.de/early-access.html",
