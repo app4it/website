@@ -1,10 +1,17 @@
 // Reusable component templates
 
 function createNavbar(activePage = '') {
+    // Determine base path based on current location
+    const isBlogPage = window.location.pathname.includes('/blog/');
+    const homePath = isBlogPage ? '../index.html' : 'index.html';
+    const aboutPath = isBlogPage ? '../about-us.html' : 'about-us.html';
+    const blogPath = isBlogPage ? 'index.html' : 'blog/index.html';
+    
     return `
     <div class="nav-container" role="navigation" aria-label="Primary">
-      <a href="index.html" class="nav-link${activePage === 'home' ? ' active' : ''}" data-i18n="home"${activePage === 'home' ? ' aria-current="page"' : ''}>Home</a>
-      <a href="about-us.html" class="nav-link${activePage === 'about' ? ' active' : ''}" data-i18n="aboutUs"${activePage === 'about' ? ' aria-current="page"' : ''}>About Us</a>
+      <a href="${homePath}" class="nav-link${activePage === 'home' ? ' active' : ''}" data-i18n="home"${activePage === 'home' ? ' aria-current="page"' : ''}>Home</a>
+      <a href="${aboutPath}" class="nav-link${activePage === 'about' ? ' active' : ''}" data-i18n="aboutUs"${activePage === 'about' ? ' aria-current="page"' : ''}>About Us</a>
+      <a href="${blogPath}" class="nav-link${activePage === 'blog' ? ' active' : ''}" data-i18n="blog"${activePage === 'blog' ? ' aria-current="page"' : ''}>Blog</a>
     </div>
     `;
 }
