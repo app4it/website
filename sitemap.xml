@@ -38,7 +38,7 @@
 
   <!-- Blog Index Page -->
   <url>
-    <loc>https://app4it.de/blog/index.html</loc>
+    <loc>https://blog.app4it.de/index.html</loc>
     <lastmod>2025-01-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

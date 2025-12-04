@@ -2,10 +2,10 @@
 
 function createNavbar(activePage = '') {
     // Determine base path based on current location
-    const isBlogPage = window.location.pathname.includes('/blog/');
-    const homePath = isBlogPage ? '../index.html' : 'index.html';
-    const aboutPath = isBlogPage ? '../about-us.html' : 'about-us.html';
-    const blogPath = isBlogPage ? 'index.html' : 'blog/index.html';
+    const isBlogDomain = window.location.hostname === 'blog.app4it.de';
+    const homePath = isBlogDomain ? 'https://app4it.de/index.html' : 'index.html';
+    const aboutPath = isBlogDomain ? 'https://app4it.de/about-us.html' : 'about-us.html';
+    const blogPath = isBlogDomain ? 'index.html' : 'https://blog.app4it.de/index.html';
     
     return `
     <div class="nav-container" role="navigation" aria-label="Primary">
