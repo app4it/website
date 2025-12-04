@@ -36,7 +36,7 @@ After setting up GitHub Pages, add the following DNS record in Cloudflare:
 
 ## Adding New Blog Posts
 
-1. Create a new markdown file in the `_posts` folder
+1. Create a new markdown file in the `posts` folder
 2. Use the following front matter format:
 
 ```markdown
@@ -51,7 +51,7 @@ tags: tag1, tag2, tag3
 Your post content here...
 ```
 
-3. Add the filename to `_posts/posts.json`:
+3. Add the filename to `posts/posts.json`:
 
 ```json
 [
@@ -67,6 +67,6 @@ Your post content here...
 
 - Posts are sorted by date (newest first)
 - The blog uses marked.js for markdown parsing
-- All posts should be in the `_posts` folder
+- All posts should be in the `posts` folder
 - The `posts.json` file must list all post filenames
 
