@@ -35,5 +35,13 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  
+
+  <!-- Blog Index Page -->
+  <url>
+    <loc>https://app4it.de/blog/index.html</loc>
+    <lastmod>2025-01-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
