@@ -1,10 +1,17 @@
 // Reusable component templates
 
 function createNavbar(activePage = '') {
+    // Determine base path based on current location
+    const isOnBlogDomain = window.location.hostname === 'blog.app4it.de';
+    const homePath = isOnBlogDomain ? 'https://app4it.de/index.html' : 'index.html';
+    const aboutPath = isOnBlogDomain ? 'https://app4it.de/about-us.html' : 'about-us.html';
+    const blogPath = isOnBlogDomain ? 'index.html' : 'https://blog.app4it.de/index.html';
+    
     return `
     <div class="nav-container" role="navigation" aria-label="Primary">
-      <a href="index.html" class="nav-link${activePage === 'home' ? ' active' : ''}" data-i18n="home"${activePage === 'home' ? ' aria-current="page"' : ''}>Home</a>
-      <a href="about-us.html" class="nav-link${activePage === 'about' ? ' active' : ''}" data-i18n="aboutUs"${activePage === 'about' ? ' aria-current="page"' : ''}>About Us</a>
+      <a href="${homePath}" class="nav-link${activePage === 'home' ? ' active' : ''}" data-i18n="home"${activePage === 'home' ? ' aria-current="page"' : ''}>Home</a>
+      <a href="${aboutPath}" class="nav-link${activePage === 'about' ? ' active' : ''}" data-i18n="aboutUs"${activePage === 'about' ? ' aria-current="page"' : ''}>About Us</a>
+      <a href="${blogPath}" class="nav-link${activePage === 'blog' ? ' active' : ''}" data-i18n="blog"${activePage === 'blog' ? ' aria-current="page"' : ''}>Blog</a>
     </div>
     `;
 }

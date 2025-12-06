@@ -105,6 +105,7 @@ const translations = {
         // Navigation
         home: "Home",
         aboutUs: "About Us",
+        blog: "Blog",
         
         // Settings
         settings: "Settings",
@@ -282,6 +283,7 @@ const translations = {
         // Navigation
         home: "Startseite",
         aboutUs: "Über Uns",
+        blog: "Blog",
         
         // Settings
         settings: "Einstellungen",
@@ -445,6 +447,7 @@ const translations = {
         // Navigation
         home: "Inicio",
         aboutUs: "Sobre nosotros",
+        blog: "Blog",
         
         // Settings
         settings: "Configuración",
