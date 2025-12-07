@@ -227,75 +227,14 @@ body {
     max-width: var(--max-width);
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
-.difference-card {
-    background: var(--card-color);
-    border-radius: var(--border-radius);
-    border: 1px solid var(--primary-color);
-    padding: 2rem;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(var(--primary-color-rgb), 0.08);
-}
-
-.difference-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(var(--primary-color-rgb), 0.15);
-}
-
-[data-theme="dark"] .difference-card {
-    background: var(--card-color);
-    box-shadow: 0 4px 15px rgba(64, 224, 208, 0.1);
-    border: none;
-}
-
-[data-theme="dark"] .difference-card:hover {
-    box-shadow: 0 12px 40px rgba(64, 224, 208, 0.2);
-}
-
-.difference-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--border-radius-circle);
-    background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.1), rgba(var(--secondary-color-rgb), 0.1));
-    transition: all 0.3s ease;
-}
-
-.difference-card:hover .difference-icon {
-    background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.2), rgba(var(--secondary-color-rgb), 0.2));
-    transform: scale(1.1);
-}
-
-.difference-icon i {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    transition: all 0.3s ease;
-}
-
-.difference-card:hover .difference-icon i {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.difference-card h3 {
-    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-    margin-bottom: 1rem;
-    color: var(--text-color);
-}
-
-.difference-card p {
-    font-size: clamp(0.9rem, 2vw, 1rem);
-    color: var(--light-text);
-    line-height: 1.6;
+@media (min-width: 1200px) {
+    .differences-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 [data-theme="dark"] .why-different-section {

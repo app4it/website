@@ -14,6 +14,7 @@ const translations = {
         
         // Values Section
         ourValues: "Our Values",
+        ourValuesSubtitle: "The principles that guide everything we build.",
         keepItReal: "Keep It Real",
         keepItRealDesc: "We celebrate authenticity. Real people, real interests, and real connections. No filters, no fakes. Just honest experiences that feel like you.",
         safetyFirst: "Safety First, Always",
@@ -33,7 +34,7 @@ const translations = {
         uspPhrase7: "Meet people, not profiles",
         
         // Features Section
-        ourFeatures: "The Tools for Real Connections",
+        ourFeatures: "Why People Love App4it",
         ourFeaturesSubtitle: "Everything you need to discover events, meet real people, and create memories that last.",
         seeWhatsHappening: "See What's Happening",
         seeWhatsHappeningDesc: "Stay in the loop with everything going on around you. No more FOMO, no more \"I didn't know that was happening.\"",
@@ -182,12 +183,12 @@ const translations = {
         whyDifferentSubtitle: "We're not just another social app. Here's what sets us apart.",
         realLifeFirstTitle: "Real Life First",
         realLifeFirstDesc: "We believe the best connections happen face-to-face. Our app is designed to get you off your phone and into the world.",
-        privacyMattersTitle: "Privacy Matters",
-        privacyMattersDesc: "Your data is yours. We don't sell it, we don't exploit it. Just honest connections without the creepy tracking.",
+        safeConnectionsTitle: "Safe Connections",
+        safeConnectionsDesc: "No random friend requests from strangers. You can only connect by scanning someone's QR code in person. Real meetings, real trust.",
         communityDrivenTitle: "Community Driven",
-        communityDrivenDesc: "Built by people who wanted something better. We listen to our users and evolve based on what you actually need.",
-        noAlgorithmsTitle: "No Manipulative Algorithms",
-        noAlgorithmsDesc: "We show you what's actually happening, not what keeps you scrolling. Real events, real people, no manipulation.",
+        communityDrivenDesc: "You create the events, you mark attendance, you comment, you like, you build the vibe. This isn't our platform—it's yours. We just keep the lights on.",
+        memoriesWithMeaningTitle: "Memories With Meaning",
+        memoriesWithMeaningDesc: "Every post comes from a real moment you lived. On App4it, memories are tied to events you attended, making your profile a collection of genuine experiences.",
         
         // Email change page
         emailUpdateTitle: "All Set!",
@@ -207,6 +208,7 @@ const translations = {
         
         // Values Section
         ourValues: "Unsere Werte",
+        ourValuesSubtitle: "Die Prinzipien, die alles leiten, was wir bauen.",
         keepItReal: "Bleib echt",
         keepItRealDesc: "Wir feiern Authentizität. Echte Menschen, echte Interessen, echte Verbindungen. Keine Filter, keine Fakes. Nur ehrliche Begegnungen, die sich richtig anfühlen.",
         safetyFirst: "Sicherheit an erster Stelle",
@@ -226,7 +228,7 @@ const translations = {
         uspPhrase7: "Menschen treffen, nicht Profile",
         
         // Features Section
-        ourFeatures: "Alles für echte Begegnungen",
+        ourFeatures: "Warum Leute App4it lieben",
         ourFeaturesSubtitle: "Alles, was du brauchst, um Events zu entdecken, echte Menschen zu treffen und Erinnerungen zu schaffen, die bleiben.",
         seeWhatsHappening: "Verpasse nichts mehr",
         seeWhatsHappeningDesc: "Bleib auf dem Laufenden, was in deiner Umgebung los ist. Kein FOMO mehr, kein \"Davon hab ich ja gar nichts mitbekommen\".",
@@ -387,12 +389,12 @@ const translations = {
         whyDifferentSubtitle: "Wir sind nicht einfach nur eine weitere Social App. Das unterscheidet uns.",
         realLifeFirstTitle: "Echtes Leben zuerst",
         realLifeFirstDesc: "Wir glauben, dass die besten Verbindungen von Angesicht zu Angesicht entstehen. Unsere App ist so gebaut, dass du vom Handy runterkommst und raus in die Welt gehst.",
-        privacyMattersTitle: "Privatsphäre ist wichtig",
-        privacyMattersDesc: "Deine Daten gehören dir. Wir verkaufen sie nicht, wir nutzen sie nicht aus. Nur ehrliche Verbindungen ohne creepy Tracking.",
+        safeConnectionsTitle: "Sichere Verbindungen",
+        safeConnectionsDesc: "Keine zufälligen Freundschaftsanfragen von Fremden. Du kannst dich nur verbinden, indem du den QR-Code einer Person persönlich scannst. Echte Treffen, echtes Vertrauen.",
         communityDrivenTitle: "Von der Community getrieben",
-        communityDrivenDesc: "Gebaut von Leuten, die was Besseres wollten. Wir hören auf unsere User und entwickeln uns weiter, basierend auf dem, was du wirklich brauchst.",
-        noAlgorithmsTitle: "Keine manipulativen Algorithmen",
-        noAlgorithmsDesc: "Wir zeigen dir, was wirklich passiert, nicht was dich am Scrollen hält. Echte Events, echte Menschen, keine Manipulation.",
+        communityDrivenDesc: "Du erstellst die Events, du markierst Teilnahmen, du kommentierst, du likest, du baust die Stimmung auf. Das ist nicht unsere Plattform—es ist deine. Wir halten nur die Lichter an.",
+        memoriesWithMeaningTitle: "Erinnerungen mit Bedeutung",
+        memoriesWithMeaningDesc: "Jeder Post stammt von einem echten Moment, den du erlebt hast. Bei App4it sind Erinnerungen mit Events verknüpft, an denen du teilgenommen hast, sodass dein Profil eine Sammlung echter Erlebnisse ist.",
         
         // Email change page
         emailUpdateTitle: "Alles erledigt!",
@@ -411,7 +413,8 @@ const translations = {
         emailPlaceholder: "tu@email.com",
         
         // Values Section
-        ourValues: "Nuestros Valores",
+        ourValues: "Nuestros valores",
+        ourValuesSubtitle: "Los principios que guían todo lo que construimos.",
         keepItReal: "Personas que existen",
         keepItRealDesc: "Celebramos la autenticidad, sin filtros ni apariencias. Conecta con quienes son tal como son. Solo experiencias honestas y ganas de conectar de verdad.",
         safetyFirst: "La seguridad primero",
@@ -431,7 +434,7 @@ const translations = {
         uspPhrase7: "Conoce personas, no perfiles",
         
         // Features Section
-        ourFeatures: "Lo que necesitas para crear conexiones reales",
+        ourFeatures: "Por qué la gente ama App4it",
         ourFeaturesSubtitle: "Herramientas para descubrir eventos, conocer gente auténtica y crear recuerdos que duren.",
         seeWhatsHappening: "Lo que pasa, pasa cerca de ti",
         seeWhatsHappeningDesc: "Mantente al día con todo lo que ocurre cerca de ti. Nada de FOMO, nada de \“no me enteré\”.",
@@ -539,7 +542,7 @@ const translations = {
         reinventingSocialMediaText: "Imaginamos un mundo donde conocer gente nueva es fácil, espontáneo y divertido. Donde la tecnología no distrae de la vida real, sino que la mejora. App4it es la plataforma de referencia para descubrir qué está pasando, encontrar a tu gente y hacer que las ciudades pequeñas se sientan grandes con posibilidades.",
         
         // Team Section
-        meetTheTeam: "Nuestro Equipo",
+        meetTheTeam: "Nuestro equipo",
         teamIntro: "Somos un equipo internacional. Pequeño, pero con gran energía. Cada uno de nosotros aporta una fortaleza diferente, y nos une el impulso de usar la tecnología para impulsar la conexión humana, en lugar de sustituirla.",
         
         // Team Member Names and Titles
@@ -580,12 +583,12 @@ const translations = {
         whyDifferentSubtitle: "No somos solo otra app social. Esto es lo que nos diferencia.",
         realLifeFirstTitle: "La vida real primero",
         realLifeFirstDesc: "Creemos que las mejores conexiones ocurren cara a cara. Nuestra app está diseñada para sacarte del teléfono y llevarte al mundo.",
-        privacyMattersTitle: "La privacidad importa",
-        privacyMattersDesc: "Tus datos son tuyos. No los vendemos, no los explotamos. Solo conexiones honestas sin rastreo espeluznante.",
+        safeConnectionsTitle: "Conexiones seguras",
+        safeConnectionsDesc: "Sin solicitudes de amistad aleatorias de extraños. Solo puedes conectarte escaneando el código QR de alguien en persona. Encuentros reales, confianza real.",
         communityDrivenTitle: "Impulsada por la comunidad",
-        communityDrivenDesc: "Construida por personas que querían algo mejor. Escuchamos a nuestros usuarios y evolucionamos según lo que realmente necesitas.",
-        noAlgorithmsTitle: "Sin algoritmos manipuladores",
-        noAlgorithmsDesc: "Te mostramos lo que realmente está pasando, no lo que te mantiene desplazándote. Eventos reales, personas reales, sin manipulación.",
+        communityDrivenDesc: "Tú creas los eventos, tú marcas asistencia, tú comentas, tú das like, tú construyes el ambiente. Esta no es nuestra plataforma—es tuya. Nosotros solo mantenemos las luces encendidas.",
+        memoriesWithMeaningTitle: "Recuerdos con significado",
+        memoriesWithMeaningDesc: "Cada publicación proviene de un momento real que viviste. En App4it, los recuerdos están vinculados a eventos a los que asististe, haciendo de tu perfil una colección de experiencias genuinas.",
         
         // Email change page
         emailUpdateTitle: "¡Todo listo!",
