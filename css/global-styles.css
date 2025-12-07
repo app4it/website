@@ -816,10 +816,6 @@ body {
         align-items: center;
     }
     
-    .settings-container {
-        padding: 0.3rem;
-    }
-    
     /* Mobile settings already handled by 655px breakpoint */
     .desktop-settings {
         display: none !important;
