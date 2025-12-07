@@ -117,6 +117,7 @@ const translations = {
         
         // Navigation
         home: "Home",
+        features: "Features",
         aboutUs: "About Us",
         blog: "Blog",
         
@@ -174,6 +175,20 @@ const translations = {
         marinFunFact: "My dev journey started with a Minecraft plugin and hacking info systems",
    
    
+        // Features Page
+        featuresHeroTitle: "Built for Real Connections",
+        featuresHeroSubtitle: "Discover the tools that make meeting people and creating memories effortless. No gimmicks, just features that work.",
+        whyDifferentTitle: "What Makes Us Different",
+        whyDifferentSubtitle: "We're not just another social app. Here's what sets us apart.",
+        realLifeFirstTitle: "Real Life First",
+        realLifeFirstDesc: "We believe the best connections happen face-to-face. Our app is designed to get you off your phone and into the world.",
+        privacyMattersTitle: "Privacy Matters",
+        privacyMattersDesc: "Your data is yours. We don't sell it, we don't exploit it. Just honest connections without the creepy tracking.",
+        communityDrivenTitle: "Community Driven",
+        communityDrivenDesc: "Built by people who wanted something better. We listen to our users and evolve based on what you actually need.",
+        noAlgorithmsTitle: "No Manipulative Algorithms",
+        noAlgorithmsDesc: "We show you what's actually happening, not what keeps you scrolling. Real events, real people, no manipulation.",
+        
         // Email change page
         emailUpdateTitle: "All Set!",
         emailUpdateMessage: "Your email has been updated successfully. Discover more amazing events and make new friends. Are you App4it?",
@@ -308,6 +323,7 @@ const translations = {
         
         // Navigation
         home: "Startseite",
+        features: "Features",
         aboutUs: "Über Uns",
         blog: "Blog",
         
@@ -364,6 +380,20 @@ const translations = {
         sophiaFunFact: "Ich liebe das Häkeln, also falls App4it jemals ein Plüsch-Maskottchen braucht, werde ich es herstellen!",
         marinFunFact: "Meine Dev-Journey begann mit einem Minecraft-Plugin und dem Hacken von Info-Systemen",
     
+        // Features Page
+        featuresHeroTitle: "Gemacht für echte Verbindungen",
+        featuresHeroSubtitle: "Entdecke die Tools, die es mühelos machen, Leute zu treffen und Erinnerungen zu schaffen. Keine Spielereien, nur Features, die funktionieren.",
+        whyDifferentTitle: "Was uns anders macht",
+        whyDifferentSubtitle: "Wir sind nicht einfach nur eine weitere Social App. Das unterscheidet uns.",
+        realLifeFirstTitle: "Echtes Leben zuerst",
+        realLifeFirstDesc: "Wir glauben, dass die besten Verbindungen von Angesicht zu Angesicht entstehen. Unsere App ist so gebaut, dass du vom Handy runterkommst und raus in die Welt gehst.",
+        privacyMattersTitle: "Privatsphäre ist wichtig",
+        privacyMattersDesc: "Deine Daten gehören dir. Wir verkaufen sie nicht, wir nutzen sie nicht aus. Nur ehrliche Verbindungen ohne creepy Tracking.",
+        communityDrivenTitle: "Von der Community getrieben",
+        communityDrivenDesc: "Gebaut von Leuten, die was Besseres wollten. Wir hören auf unsere User und entwickeln uns weiter, basierend auf dem, was du wirklich brauchst.",
+        noAlgorithmsTitle: "Keine manipulativen Algorithmen",
+        noAlgorithmsDesc: "Wir zeigen dir, was wirklich passiert, nicht was dich am Scrollen hält. Echte Events, echte Menschen, keine Manipulation.",
+        
         // Email change page
         emailUpdateTitle: "Alles erledigt!",
         emailUpdateMessage: "Deine E-Mail wurde erfolgreich aktualisiert. Entdecke noch mehr spannende Events und triff neue Freunde. Bist du App4it?",
@@ -485,6 +515,7 @@ const translations = {
         
         // Navigation
         home: "Inicio",
+        features: "Características",
         aboutUs: "Sobre nosotros",
         blog: "Blog",
         
@@ -542,6 +573,20 @@ const translations = {
         marinFunFact: "Di mis primeros pasos en Informática con un plugin de Minecraft y hackeando sistemas.",
 
    
+        // Features Page
+        featuresHeroTitle: "Creada para conexiones reales",
+        featuresHeroSubtitle: "Descubre las herramientas que hacen que conocer gente y crear recuerdos sea fácil. Sin trucos, solo funciones que funcionan.",
+        whyDifferentTitle: "Lo que nos hace diferentes",
+        whyDifferentSubtitle: "No somos solo otra app social. Esto es lo que nos diferencia.",
+        realLifeFirstTitle: "La vida real primero",
+        realLifeFirstDesc: "Creemos que las mejores conexiones ocurren cara a cara. Nuestra app está diseñada para sacarte del teléfono y llevarte al mundo.",
+        privacyMattersTitle: "La privacidad importa",
+        privacyMattersDesc: "Tus datos son tuyos. No los vendemos, no los explotamos. Solo conexiones honestas sin rastreo espeluznante.",
+        communityDrivenTitle: "Impulsada por la comunidad",
+        communityDrivenDesc: "Construida por personas que querían algo mejor. Escuchamos a nuestros usuarios y evolucionamos según lo que realmente necesitas.",
+        noAlgorithmsTitle: "Sin algoritmos manipuladores",
+        noAlgorithmsDesc: "Te mostramos lo que realmente está pasando, no lo que te mantiene desplazándote. Eventos reales, personas reales, sin manipulación.",
+        
         // Email change page
         emailUpdateTitle: "¡Todo listo!",
         emailUpdateMessage: "Tu correo electrónico se ha actualizado correctamente. Descubre más eventos increíbles y haz nuevos amigos. ¿Are you App4it?",

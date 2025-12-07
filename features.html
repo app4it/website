@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    // Check localStorage first, then system theme preference
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    } else if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  </script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover App4it's powerful features designed for real connections. From event discovery to memory sharing, everything you need to meet real people and create lasting experiences." />
+    <meta name="keywords" content="App4it features, event discovery, social connections, memory sharing, real-life meetups, authentic social app" />
+    <link rel="canonical" href="https://app4it.de/features.html" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Features - App4it" />
+    <meta property="og:description" content="Discover App4it's powerful features designed for real connections. Everything you need to meet real people and create lasting experiences." />
+    <meta property="og:image" content="https://app4it.de/assets/icons/app_icon_light.png" />
+    <meta property="og:url" content="https://app4it.de/features.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="App4it" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Features - App4it" />
+    <meta name="twitter:description" content="Discover App4it's powerful features designed for real connections. Everything you need to meet real people and create lasting experiences." />
+    <meta name="twitter:image" content="https://app4it.de/assets/icons/app_icon_light.png" />
+    
+    <title>App4it - Features</title>
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_light.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon_light.png" />
+    <link rel="mask-icon" href="./assets/icons/favicon_light.png" color="#000000" />
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/features.css" />
+    <link rel="stylesheet" type="text/css" href="css/global-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" rel="stylesheet" />
+    <!-- Theme change listener -->
+    <script>
+      // Listen for system theme changes
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (e) => {
+          document.documentElement.setAttribute(
+            "data-theme",
+            e.matches ? "dark" : "light"
+          );
+        });
+    </script>
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SJTXC37LXF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-SJTXC37LXF");
+    </script>
+  </head>
+  <body>
+    <div id="nav-placeholder" data-active="features"></div>
+    <div id="nav-mobile-placeholder" data-active="features"></div>
+    <div id="settings-placeholder"></div>
+
+    <!-- Hero Section -->
+    <main class="hero">
+      <div class="decorative-circle circle-1" aria-hidden="true"></div>
+      <div class="decorative-circle circle-2" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <h1 class="hero-title animate-in" data-i18n="featuresHeroTitle">
+          Built for Real Connections
+        </h1>
+        <p
+          class="hero-subtitle animate-in"
+          style="animation-delay: 0.2s"
+          data-i18n="featuresHeroSubtitle"
+        >
+          Discover the tools that make meeting people and creating memories effortless. No gimmicks, just features that work.
+        </p>
+      </div>
+    </main>
+
+    <!-- Features Section -->
+    <section class="features-section" aria-labelledby="features-title">
+      <h2 class="section-title" id="features-title" data-i18n="ourFeatures">The Tools for Real Connections</h2>
+      <p class="section-subtitle" data-i18n="ourFeaturesSubtitle">Everything you need to discover events, meet real people, and create memories that last.</p>
+      <!-- Carousel -->
+      <div class="mockup-carousel" role="region" aria-roledescription="carousel" aria-label="App features">
+        <div class="carousel-container">
+          <div class="carousel-track" id="features-carousel-track" aria-live="polite">
+            <!-- Feature 1 -->
+            <div class="carousel-slide">
+              <div class="mockup-feature">
+                <div class="mockup-image">
+                  <img src="./assets/images/mockups/feed-1.png" alt="See What's Happening">
+                </div>
+                <div class="mockup-content">
+                  <h3 data-i18n="seeWhatsHappening">See What's Happening</h3>
+                  <p data-i18n="seeWhatsHappeningDesc">
+                    Stay in the loop with everything going on around you. No more FOMO,
+                    no more "I didn't know that was happening."
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="carousel-slide">
+              <div class="mockup-feature">
+                <div class="mockup-image">
+                  <img src="./assets/images/mockups/discovery.png" alt="Events Made for You">
+                </div>
+                <div class="mockup-content">
+                  <h3 data-i18n="eventsMadeForYou">Events Made for You</h3>
+                  <p data-i18n="eventsMadeForYouDesc">
+                    Explore gatherings that match your vibe. Whether you're into art,
+                    music, or something in between, your city has more than you think.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="carousel-slide">
+              <div class="mockup-feature">
+                <div class="mockup-image">
+                  <img src="./assets/images/mockups/create-event.png" alt="Start Something">
+                </div>
+                <div class="mockup-content">
+                  <h3 data-i18n="startSomething">Start Something</h3>
+                  <p data-i18n="startSomethingDesc">
+                    Create your own events and bring people together. It's easy, fast,
+                    and surprisingly fun to see who shows up.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="carousel-slide">
+              <div class="mockup-feature">
+                <div class="mockup-image">
+                  <img src="./assets/images/mockups/scanning.png" alt="Real Friends Only">
+                </div>
+                <div class="mockup-content">
+                  <h3 data-i18n="realFriendsOnly">Real Friends Only</h3>
+                  <p data-i18n="realFriendsOnlyDesc">
+                    Add only the people you've met in person. Connections happen in real
+                    life. We're just here to keep them going.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 5 -->
+            <div class="carousel-slide">
+              <div class="mockup-feature">
+                <div class="mockup-image">
+                  <img src="./assets/images/mockups/memory-details.png" alt="Remember Together">
+                </div>
+                <div class="mockup-content">
+                  <h3 data-i18n="rememberTogether">Remember Together</h3>
+                  <p data-i18n="rememberTogetherDesc">
+                    Capture moments from the events you attend and share memories with
+                    the people who made them special.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Feature 6 -->
+            <div class="carousel-slide">
+              <div class="mockup-feature">
+                <div class="mockup-image">
+                  <img src="./assets/images/mockups/profile.png" alt="Make It Yours">
+                </div>
+                <div class="mockup-content">
+                  <h3 data-i18n="makeItYours">Make It Yours</h3>
+                  <p data-i18n="makeItYoursDesc">
+                    Customize your profile to reflect your vibe: username, photo, stats
+                    and all.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Navigation Arrows -->
+        <button class="carousel-btn prev" aria-label="Previous features" aria-controls="features-carousel-track">
+          <i class="fas fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <button class="carousel-btn next" aria-label="Next features" aria-controls="features-carousel-track">
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Why Different Section -->
+    <section class="why-different-section" aria-labelledby="why-different-title">
+      <h2 class="section-title" id="why-different-title" data-i18n="whyDifferentTitle">What Makes Us Different</h2>
+      <p class="section-subtitle" data-i18n="whyDifferentSubtitle">We're not just another social app. Here's what sets us apart.</p>
+      
+      <div class="differences-container">
+        <div class="difference-card animate-in">
+          <div class="difference-icon">
+            <i class="fas fa-handshake" aria-hidden="true"></i>
+          </div>
+          <h3 data-i18n="realLifeFirstTitle">Real Life First</h3>
+          <p data-i18n="realLifeFirstDesc">
+            We believe the best connections happen face-to-face. Our app is designed to get you off your phone and into the world.
+          </p>
+        </div>
+
+        <div class="difference-card animate-in" style="animation-delay: 0.1s">
+          <div class="difference-icon">
+            <i class="fas fa-shield-halved" aria-hidden="true"></i>
+          </div>
+          <h3 data-i18n="privacyMattersTitle">Privacy Matters</h3>
+          <p data-i18n="privacyMattersDesc">
+            Your data is yours. We don't sell it, we don't exploit it. Just honest connections without the creepy tracking.
+          </p>
+        </div>
+
+        <div class="difference-card animate-in" style="animation-delay: 0.2s">
+          <div class="difference-icon">
+            <i class="fas fa-users-line" aria-hidden="true"></i>
+          </div>
+          <h3 data-i18n="communityDrivenTitle">Community Driven</h3>
+          <p data-i18n="communityDrivenDesc">
+            Built by people who wanted something better. We listen to our users and evolve based on what you actually need.
+          </p>
+        </div>
+
+        <div class="difference-card animate-in" style="animation-delay: 0.3s">
+          <div class="difference-icon">
+            <i class="fas fa-ban" aria-hidden="true"></i>
+          </div>
+          <h3 data-i18n="noAlgorithmsTitle">No Manipulative Algorithms</h3>
+          <p data-i18n="noAlgorithmsDesc">
+            We show you what's actually happening, not what keeps you scrolling. Real events, real people, no manipulation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta-section" aria-labelledby="final-cta-title">
+      <div class="final-cta-container">
+        <div class="final-cta-content animate-in">
+          <h2 class="final-cta-title" id="final-cta-title" data-i18n="finalCtaTitle">
+            Ready to experience real connections?
+          </h2>
+          <p class="final-cta-subtitle" data-i18n="finalCtaSubtitle">
+            Join the waitlist and be among the first to discover a better way to connect, plan, and create memories.
+          </p>
+          <a
+            href="early-access.html"
+            class="cta-button"
+            data-i18n="joinWaitlist"
+          >Join the Waitlist</a>
+        </div>
+      </div>
+    </section>
+
+    <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/language.js"></script>
+  </body>
+</html>
