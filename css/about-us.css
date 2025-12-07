@@ -1,12 +1,13 @@
 /* About Page Styles */
 body.about-page {
     color: var(--text-color);
+    background: var(--background-color);
 }
 
 [data-theme="dark"] body.about-page {
-    background: linear-gradient(rgba(var(--primary-color-rgb), 0.1), rgba(142, 226, 220, 0.1));
+    background: linear-gradient(to bottom, #1a1a1a, #1e2e2c);
 }
-
+ 
 .about-container {
     max-width: var(--max-width);
     margin: 0 auto;

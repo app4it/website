@@ -6,7 +6,7 @@ body.impressum-page {
 }
 
 [data-theme="dark"] body.impressum-page {
-    background: linear-gradient(rgba(var(--primary-color-rgb), 0.1), rgba(142, 226, 220, 0.1));
+    background: linear-gradient(to bottom, #1a1a1a, #1e2e2c);
 }
 
 .impressum-container {
@@ -39,7 +39,7 @@ body.impressum-page {
     margin-bottom: 2rem;
     position: relative;
     z-index: 2;
-    box-shadow: 0 4px 20px rgba(23, 155, 149, 0.08);
+    box-shadow: 0 4px 20px rgba(var(--primary-color-rgb), 0.08);
 }
 
 .impressum-section {
