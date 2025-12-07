@@ -448,8 +448,12 @@ body.about-page {
     justify-content: center;
     width: 24px;
     height: 24px;
-    border-radius: 50%;
+    border-radius: 100%;
     background: transparent;
+}
+
+.social-link i {
+    line-height: 24px;
 }
 
 .social-link:hover {
