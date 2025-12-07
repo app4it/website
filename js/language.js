@@ -23,6 +23,15 @@ const translations = {
         poweredByJoy: "Powered by Joy",
         poweredByJoyDesc: "No more endless scrolling just to feel entertained. There's always something to do, someone to join, and a good time waiting. Boredom doesn't stand a chance.",
         
+        // USP Section
+        uspPhrase1: "Find your niche",
+        uspPhrase2: "Organizing events was never so easy",
+        uspPhrase3: "Quality over quantity",
+        uspPhrase4: "Remember your experiences forever",
+        uspPhrase5: "Real friends only",
+        uspPhrase6: "Share with people who matter",
+        uspPhrase7: "Meet people, not profiles",
+        
         // Features Section
         ourFeatures: "The Tools for Real Connections",
         ourFeaturesSubtitle: "Everything you need to discover events, meet real people, and create memories that last.",
@@ -50,6 +59,10 @@ const translations = {
         personalityAmbitiousDesc: "Work hard, play harder. Conferences by day, karaoke by night. Connect with driven professionals who know how to balance ambition with fun.",
         personalityCommunityTitle: "The Community Builder",
         personalityCommunityDesc: "You bring people together. Study groups, theater workshops, book clubs—you create spaces where connections flourish and communities grow.",
+        
+        // Final CTA Section
+        finalCtaTitle: "Ready to experience real connections?",
+        finalCtaSubtitle: "Join the waitlist and be among the first to discover a better way to connect, plan, and create memories.",
         
         // How It Works Section
         howItWorks: "How It's Gonna Work",
@@ -188,6 +201,15 @@ const translations = {
         poweredByJoy: "Angetrieben von Lebensfreude",
         poweredByJoyDesc: "Schluss mit endlosem Scrollen. Hier gibt's immer was zu erleben, Leute zum Mitmachen und gute Zeiten. Langeweile? Zwecklos.",
         
+        // USP Section
+        uspPhrase1: "Finde deine Leute",
+        uspPhrase2: "Events organisieren war noch nie so leicht",
+        uspPhrase3: "Qualität statt Quantität",
+        uspPhrase4: "Erlebnisse, die bleiben",
+        uspPhrase5: "Nur echte Freunde",
+        uspPhrase6: "Teile mit denen, die zählen",
+        uspPhrase7: "Menschen treffen, nicht Profile",
+        
         // Features Section
         ourFeatures: "Alles für echte Begegnungen",
         ourFeaturesSubtitle: "Alles, was du brauchst, um Events zu entdecken, echte Menschen zu treffen und Erinnerungen zu schaffen, die bleiben.",
@@ -228,6 +250,10 @@ const translations = {
         eventImageAlt6: "Gruppe von Menschen, die ihre Hunde in einem Park spazieren führen",
         eventImageAlt7: "Buchclub",
         eventImageAlt8: "Installationskunst-Ausstellung mit interaktiven Stücken",
+        
+        // Final CTA Section
+        finalCtaTitle: "Bereit für echte Verbindungen?",
+        finalCtaSubtitle: "Komm auf die Warteliste und sei einer der Ersten, die eine bessere Art zu connecten, zu planen und Erinnerungen zu schaffen erleben.",
         
         // How It Works Section
         howItWorks: "So funktioniert's",
@@ -365,6 +391,15 @@ const translations = {
         poweredByJoy: "Disfruta el momento",
         poweredByJoyDesc: "No más desplazamiento infinito solo para sentirte entretenido. Siempre hay algo que hacer, alguien con quien quedar y un buen momento esperando. El aburrimiento aquí no tiene sitio.",
         
+        // USP Section
+        uspPhrase1: "Encuentra tu lugar",
+        uspPhrase2: "Organizar nunca fue tan fácil",
+        uspPhrase3: "Calidad antes que cantidad",
+        uspPhrase4: "Recuerdos que duran para siempre",
+        uspPhrase5: "Solo amigos de verdad",
+        uspPhrase6: "Comparte con quien importa",
+        uspPhrase7: "Conoce personas, no perfiles",
+        
         // Features Section
         ourFeatures: "Lo que necesitas para crear conexiones reales",
         ourFeaturesSubtitle: "Herramientas para descubrir eventos, conocer gente auténtica y crear recuerdos que duren.",
@@ -392,6 +427,10 @@ const translations = {
         personalityAmbitiousDesc: "Trabaja duro, juega más duro. Conferencias de día, karaoke de noche. Conéctate con profesionales motivados que saben cómo equilibrar la ambición con la diversión.",
         personalityCommunityTitle: "El Creador de Comunidades",
         personalityCommunityDesc: "Reúnes a las personas. Grupos de estudio, talleres de teatro, clubes de lectura: creas espacios donde las conexiones florecen y las comunidades crecen.",
+        
+        // Final CTA Section
+        finalCtaTitle: "¿Listo para conexiones reales?",
+        finalCtaSubtitle: "Únete a la lista de espera y sé de los primeros en descubrir una mejor forma de conectar, planear y crear recuerdos.",
         
         // How It Works Section
         howItWorks: "Cómo funciona",
