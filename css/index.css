@@ -59,19 +59,20 @@ body {
     }
 }
 
-/* Fix background image sizing for mobile devices */
+/* Fix background image sizing for mobile devices - fill height and maintain ratio */
 @media only screen and (max-width: 768px) {
     .hero {
-        background-size: contain !important;
+        background-size: cover !important;
         background-position: center center !important;
         min-height: 100vh;
         height: 100vh;
+        overflow: hidden;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .hero {
-        background-size: contain !important;
+        background-size: cover !important;
         background-position: center center !important;
     }
 }
