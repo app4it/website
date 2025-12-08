@@ -59,6 +59,23 @@ body {
     }
 }
 
+/* Fix background image sizing for mobile devices */
+@media only screen and (max-width: 768px) {
+    .hero {
+        background-size: contain !important;
+        background-position: center center !important;
+        min-height: 100vh;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero {
+        background-size: contain !important;
+        background-position: center center !important;
+    }
+}
+
 /* Home Page Navigation - White text for visibility on dark background */
 .nav-link {
     color: white !important;
