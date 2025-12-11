@@ -71,21 +71,6 @@ body {
     color: var(--primary-color) !important;
 }
 
-/* Mobile navigation - White text */
-.nav-mobile-item {
-    color: white !important;
-}
-
-.nav-mobile-item:hover {
-    color: var(--primary-color) !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-}
-
-.nav-mobile-item.active {
-    color: var(--primary-color) !important;
-    background: rgba(255, 255, 255, 0.15) !important;
-}
-
 /* USP Section */
 .usp-section {
     position: relative;
