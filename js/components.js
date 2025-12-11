@@ -3,9 +3,9 @@
 function createNavbar(activePage = '') {
     // Determine base path based on current location
     const isOnBlogDomain = window.location.hostname === 'blog.app4it.de';
-    const homePath = isOnBlogDomain ? 'https://app4it.de/index.html' : 'index.html';
-    const featuresPath = isOnBlogDomain ? 'https://app4it.de/features.html' : 'features.html';
-    const aboutPath = isOnBlogDomain ? 'https://app4it.de/about-us.html' : 'about-us.html';
+    const homePath = isOnBlogDomain ? 'https://app4it.de/index.html' : 'index';
+    const featuresPath = isOnBlogDomain ? 'https://app4it.de/features.html' : 'features';
+    const aboutPath = isOnBlogDomain ? 'https://app4it.de/about-us.html' : 'about-us';
     const blogPath = isOnBlogDomain ? 'index.html' : 'https://blog.app4it.de/index.html';
     
     return `
