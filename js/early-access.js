@@ -55,7 +55,7 @@ function handleBrevoFormSuccess() {
     if (successMessage) {
         successMessage.style.display = 'block';
         setTimeout(() => {
-            window.location.href = 'success.html';
+            window.location.href = 'success';
         }, 1500);
     }
 }
