@@ -3,10 +3,10 @@
 function createNavbar(activePage = '') {
     // Determine base path based on current location
     const isOnBlogDomain = window.location.hostname === 'blog.app4it.de';
-    const homePath = isOnBlogDomain ? 'https://app4it.de' : '';
+    const homePath = isOnBlogDomain ? 'https://app4it.de' : './';
     const featuresPath = isOnBlogDomain ? 'https://app4it.de/features' : 'features';
     const aboutPath = isOnBlogDomain ? 'https://app4it.de/about-us' : 'about-us';
-    const blogPath = isOnBlogDomain ? 'index.html' : 'https://blog.app4it.de';
+    const blogPath = isOnBlogDomain ? './' : 'https://blog.app4it.de';
     
     return `
     <div class="nav-container" role="navigation" aria-label="Primary">
@@ -178,10 +178,10 @@ document.addEventListener('DOMContentLoaded', () => {
 function populateNavDropdown(activePage = '') {
     const isOnBlogDomain = window.location.hostname === 'blog.app4it.de';
     const navItems = [
-        { key: 'home', path: isOnBlogDomain ? 'https://app4it.de' : '', label: 'Home' },
+        { key: 'home', path: isOnBlogDomain ? 'https://app4it.de' : './', label: 'Home' },
         { key: 'features', path: isOnBlogDomain ? 'https://app4it.de/features' : 'features', label: 'Features' },
         { key: 'about', path: isOnBlogDomain ? 'https://app4it.de/about-us' : 'about-us', label: 'About Us' },
-        { key: 'blog', path: isOnBlogDomain ? 'index.html' : 'https://blog.app4it.de', label: 'Blog' }
+        { key: 'blog', path: isOnBlogDomain ? './' : 'https://blog.app4it.de', label: 'Blog' }
     ];
     
     const dropdown = document.querySelector('.nav-mobile-dropdown');
