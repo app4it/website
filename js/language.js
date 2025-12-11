@@ -518,7 +518,7 @@ const translations = {
         
         // Navigation
         home: "Inicio",
-        features: "Características",
+        features: "Funciones",
         aboutUs: "Sobre nosotros",
         blog: "Blog",
         
@@ -584,11 +584,11 @@ const translations = {
         realLifeFirstTitle: "La vida real primero",
         realLifeFirstDesc: "Creemos que las mejores conexiones ocurren cara a cara. Nuestra app está diseñada para sacarte del teléfono y llevarte al mundo.",
         safeConnectionsTitle: "Conexiones seguras",
-        safeConnectionsDesc: "Sin solicitudes de amistad aleatorias de extraños. Solo puedes conectarte escaneando el código QR de alguien en persona. Encuentros reales, confianza real.",
+        safeConnectionsDesc: "Sin solicitudes de amistad aleatorias de extraños. Solo puedes conectar con gente escaneando su código QR (en persona). Encuentros reales, confianza real.",
         communityDrivenTitle: "Impulsada por la comunidad",
-        communityDrivenDesc: "Tú creas los eventos, tú marcas asistencia, tú comentas, tú das like, tú construyes el ambiente. Esta no es nuestra plataforma—es tuya. Nosotros solo mantenemos las luces encendidas.",
+        communityDrivenDesc: "Tú creas los eventos, tú marcas asistencia, tú comentas, tú das like, tú construyes el ambiente. Esta no es nuestra plataforma. Es tuya. Nosotros solo mantenemos las luces encendidas.",
         memoriesWithMeaningTitle: "Recuerdos con significado",
-        memoriesWithMeaningDesc: "Cada publicación proviene de un momento real que viviste. En App4it, los recuerdos están vinculados a eventos a los que asististe, haciendo de tu perfil una colección de experiencias genuinas.",
+        memoriesWithMeaningDesc: "Cada publicación proviene de un momento real que has vivido. En App4it, los recuerdos están vinculados a planes a los que has ido, haciendo de tu perfil un album de recuerdos de verdad.",
         
         // Email change page
         emailUpdateTitle: "¡Todo listo!",
