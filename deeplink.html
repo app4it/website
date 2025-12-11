@@ -244,11 +244,11 @@
             return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
         }
 
-        // Function to convert dash-separated string to slash-separated path
+        // Function to convert underscore-separated string to slash-separated path
         function convertToDeeplink(path) {
             if (!path) return '';
-            // Replace dashes with slashes
-            return path.replace(/-/g, '/');
+            // Replace underscores with slashes, keep dashes as-is
+            return path.replace(/_/g, '/');
         }
 
         // Main redirect logic
