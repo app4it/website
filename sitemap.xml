@@ -36,14 +36,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Impressum (Legal) Page -->
-  <url>
-    <loc>https://app4it.de/impressum.html</loc>
-    <lastmod>2025-12-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
   <!-- Blog Index Page -->
   <url>
     <loc>https://blog.app4it.de/index.html</loc>
