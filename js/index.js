@@ -230,6 +230,51 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Countdown functionality
+    const countdownRoot = document.getElementById('beta-countdown');
+    if (countdownRoot) {
+        const daysEl = document.getElementById('countdown-days');
+        const hoursEl = document.getElementById('countdown-hours');
+        const minutesEl = document.getElementById('countdown-minutes');
+        const secondsEl = document.getElementById('countdown-seconds');
+
+        const releaseUtc = countdownRoot.getAttribute('data-release-utc');
+        const releaseTimeMs = releaseUtc ? Date.parse(releaseUtc) : NaN;
+
+        const pad2 = (n) => String(Math.max(0, n)).padStart(2, '0');
+
+        const render = (days, hours, minutes, seconds) => {
+            if (daysEl) daysEl.textContent = String(days);
+            if (hoursEl) hoursEl.textContent = pad2(hours);
+            if (minutesEl) minutesEl.textContent = pad2(minutes);
+            if (secondsEl) secondsEl.textContent = pad2(seconds);
+        };
+
+        const tick = () => {
+            if (!Number.isFinite(releaseTimeMs)) return;
+
+            const nowMs = Date.now();
+            const diffMs = releaseTimeMs - nowMs;
+
+            if (diffMs <= 0) {
+                render(0, 0, 0, 0);
+                countdownRoot.setAttribute('data-released', 'true');
+                return;
+            }
+
+            const totalSeconds = Math.floor(diffMs / 1000);
+            const days = Math.floor(totalSeconds / 86400);
+            const hours = Math.floor((totalSeconds % 86400) / 3600);
+            const minutes = Math.floor((totalSeconds % 3600) / 60);
+            const seconds = totalSeconds % 60;
+
+            render(days, hours, minutes, seconds);
+        };
+
+        tick();
+        setInterval(tick, 1000);
+    }
+
     // Scroll-to-top button
     const scrollTopBtn = document.querySelector('.scroll-top');
     if (scrollTopBtn) {

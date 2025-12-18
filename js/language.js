@@ -11,6 +11,13 @@ const translations = {
         earlyAccessSubtitle: "Be among the first to experience a new way of connecting at events. Join our waitlist today!",
         joinWaitlist: "Join the Waitlist",
         emailPlaceholder: "your@email.com",
+
+        betaCountdownTitle: "Beta release is coming!",
+        betaCountdownSubtitle: "January 15th • 18:00 (CET, UTC+1) • Android + iOS",
+        countdownDays: "Days",
+        countdownHours: "Hours",
+        countdownMinutes: "Minutes",
+        countdownSeconds: "Seconds",
         
         // Values Section
         ourValues: "Our Values",
@@ -205,6 +212,13 @@ const translations = {
         earlyAccessSubtitle: "Sei dabei, wenn wir eine neue Art des Zusammenkommens schaffen. Trag dich jetzt in die Warteliste ein!",
         joinWaitlist: "Auf die Warteliste",
         emailPlaceholder: "deine@email.com",
+
+        betaCountdownTitle: "Beta-Release steht bevor!",
+        betaCountdownSubtitle: "15. Januar • 18:00 (MEZ, UTC+1) • Android + iOS",
+        countdownDays: "Tage",
+        countdownHours: "Stunden",
+        countdownMinutes: "Minuten",
+        countdownSeconds: "Sekunden",
         
         // Values Section
         ourValues: "Unsere Werte",
@@ -411,6 +425,13 @@ const translations = {
         earlyAccessSubtitle: "Sé de los primeros en experimentar una nueva forma de conectar en la vida real. ¡Únete a nuestra lista de espera ya!",
         joinWaitlist: "Sé parte del cambio",
         emailPlaceholder: "tu@email.com",
+
+        betaCountdownTitle: "¡La versión beta casi está aquí!",
+        betaCountdownSubtitle: "15 de enero • 18:00 (CET, UTC+1) • Android + iOS",
+        countdownDays: "Días",
+        countdownHours: "Horas",
+        countdownMinutes: "Minutos",
+        countdownSeconds: "Segundos",
         
         // Values Section
         ourValues: "Nuestros valores",
