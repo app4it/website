@@ -10,7 +10,7 @@ body {
 
 /* Home Page Hero Section with Parallax Background */
 .hero {
-    background-image: url('../assets/images/hero/Banner dark.png') !important;
+    background-image: url('../assets/images/hero/Banner dark.webp') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
