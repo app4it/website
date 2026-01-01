@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    // Check localStorage first, then system theme preference
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    } else if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  </script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="App4it's Privacy Policy - Learn how we collect, use, and protect your personal information when using our social events app." />
+    <link rel="canonical" href="https://app4it.de/app4it-privacy-policy" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Privacy Policy - App4it" />
+    <meta property="og:description" content="Learn how App4it collects, uses, and protects your personal information when using our social events app." />
+    <meta property="og:image" content="https://app4it.de/assets/icons/app_icon_light.png" />
+    <meta property="og:url" content="https://app4it.de/app4it-privacy-policy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="App4it" />
+    <meta property="og:locale" content="en_US" />
+
+    <title>Privacy Policy – App4it</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://app4it.de/assets/icons/favicon_light.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://app4it.de/assets/icons/favicon_light.png"
+    />
+    <link
+      rel="mask-icon"
+      href="https://app4it.de/assets/icons/favicon_light.png"
+      color="#000000"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/global-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Theme change listener -->
+    <script>
+      // Listen for system theme changes
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (e) => {
+          document.documentElement.setAttribute(
+            "data-theme",
+            e.matches ? "dark" : "light"
+          );
+        });
+    </script>
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SJTXC37LXF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-SJTXC37LXF");
+    </script>
+    <style>
+      .privacy-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .privacy-content h1 {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .privacy-content h2 {
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 0.5rem;
+      }
+
+      .privacy-content h3 {
+        color: var(--text-color);
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .privacy-content .meta {
+        text-align: center;
+        color: var(--light-text);
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+      }
+
+      .privacy-content p {
+        margin-bottom: 1rem;
+        color: var(--text-color);
+      }
+
+      .privacy-content ul {
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .privacy-content li {
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+      }
+
+      .privacy-content a {
+        color: var(--primary-color);
+        text-decoration: none;
+        word-break: break-word;
+      }
+
+      .privacy-content a:hover {
+        text-decoration: underline;
+      }
+
+      .privacy-content .highlight-box {
+        background: rgba(23, 155, 149, 0.1);
+        border: 1px solid var(--primary-color);
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+
+      .privacy-content .highlight-box strong {
+        color: var(--primary-color);
+      }
+
+      .privacy-content hr {
+        border: none;
+        border-top: 1px solid var(--border-color);
+        margin: 2rem 0;
+      }
+
+      @media (max-width: 600px) {
+        .privacy-content {
+          padding: 15px;
+        }
+
+        .privacy-content h1 {
+          font-size: 2rem;
+        }
+
+        .privacy-content h2 {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <style>
+      .back-button {
+        display: inline-block;
+        padding: 12px 24px;
+        background: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+        border: 1px solid var(--primary-color);
+      }
+
+      .back-button:hover {
+        background: var(--secondary-color);
+        border-color: var(--secondary-color);
+      }
+    </style>
+
+    <div style="text-align: center; margin: 20px 0; padding: 0 20px;">
+      <a href="./" class="back-button">← Back to Website</a>
+    </div>
+
+    <div class="privacy-content">
+      <h1>Privacy Policy – App4it</h1>
+
+  <p class="meta"><strong>Last updated:</strong> 01 Jan 2026</p>
+
+  <p>
+    This Privacy Policy explains how App4it ("App4it", "we", "us") processes information when you use the
+    App4it mobile application for Android and iOS (the "App").
+  </p>
+
+  <h2>1) Who we are &amp; how to contact us</h2>
+  <p>
+    App4it is the developer name/pseudonym under which the App is published.
+    For privacy questions or requests, contact: <a href="mailto:privacy@app4it.de">privacy@app4it.de</a>.
+    A contact mechanism is provided so users can submit privacy inquiries.
+  </p>
+
+  <h2>2) Summary (key points)</h2>
+  <ul>
+    <li>The App lets users create and discover events and post content (events, comments, images/memories, descriptions, profile images).</li>
+    <li>Content you post is visible to <strong>all App users</strong> (not to non-users).</li>
+    <li>Event addresses and coordinates are stored and shown to other users, so do not post private addresses unless you want other users to see them.</li>
+    <li>The App uses Supabase (core backend), Brevo (transactional email delivery), OneSignal (push notifications), and Geoapify (address autocomplete/geocoding).</li>
+  </ul>
+
+  <h2>3) What data is processed</h2>
+
+  <h3>3.1 Account data</h3>
+  <p>When you register and use the App, the following may be processed:</p>
+  <ul>
+    <li>Email address</li>
+    <li>Username</li>
+    <li>Authentication data required to sign in (passwords are handled by the authentication system; plaintext passwords are not accessible to App4it)</li>
+  </ul>
+
+  <h3>3.2 User-generated content (public to App users)</h3>
+  <p>The App processes and stores content you create or upload, such as:</p>
+  <ul>
+    <li>Events (including event title/description and event address)</li>
+    <li>Comments</li>
+    <li>Images, "memories", and descriptions</li>
+    <li>Profile information and profile images</li>
+  </ul>
+
+  <div class="highlight-box">
+    <p>
+      <strong>Visibility warning:</strong> At this time, the App does not support private profiles or private events;
+      your posted content is visible to all App users.
+    </p>
+  </div>
+
+  <h3>3.3 Location data</h3>
+  <p>The App can process location data in two different ways:</p>
+  <ul>
+    <li>
+      <strong>Precise device location (optional):</strong> If you grant location permission, the App uses your device's precise
+      location to calculate which events to display around you and to render the event map experience; this device location is not
+      stored by App4it as a profile attribute.
+    </li>
+    <li>
+      <strong>Event location (stored):</strong> If you create an event, the event address and its coordinates are processed and stored
+      so other users can see the event location.
+    </li>
+  </ul>
+
+  <h3>3.4 Camera and photos/media access</h3>
+  <p>If you grant permission, camera and photo library access is used:</p>
+  <ul>
+    <li>To take/upload photos for posts</li>
+    <li>To upload/update your profile image</li>
+    <li>To scan QR codes for in-app features (e.g., adding a friend)</li>
+  </ul>
+
+  <h3>3.5 Push notifications</h3>
+  <p>
+    If you enable push notifications, the App uses OneSignal to deliver notifications to your device.
+    As described by OneSignal, their SDK processes push tokens and may process additional device/app signals (e.g., device OS, language,
+    timezone, and similar fields) for notification delivery and related functionality.
+  </p>
+
+  <h3>3.6 Technical data (logs)</h3>
+  <p>
+    When you use the App, technical data (such as IP address, timestamps, and request metadata) may be processed in backend logs for:
+  </p>
+  <ul>
+    <li>Security and abuse prevention</li>
+    <li>Debugging and reliability</li>
+  </ul>
+
+  <p>
+    Other than the categories described above, the App does not request access to your contacts, calendars, or call/SMS logs.
+  </p>
+
+  <h2>4) How data is used (purposes)</h2>
+  <p>Data is processed to:</p>
+  <ul>
+    <li>Create and manage user accounts and authenticate users</li>
+    <li>Provide the App's core features (posting content, creating events, viewing events)</li>
+    <li>Display event locations and nearby events (including map functionality)</li>
+    <li>Send transactional emails (email verification, password recovery)</li>
+    <li>Send push notifications (if enabled)</li>
+    <li>Maintain security, prevent abuse, and keep the service reliable</li>
+  </ul>
+
+  <h2>5) Sharing &amp; third-party services</h2>
+  <p>The App relies on third-party services to operate:</p>
+  <ul>
+    <li><strong>Supabase</strong>: authentication, database, file storage, and backend functions.</li>
+    <li><strong>Brevo (SMTP)</strong>: delivering transactional emails (e.g., verification, password recovery), which involves processing your email address for delivery.</li>
+    <li><strong>OneSignal</strong>: push notifications; OneSignal processes push tokens and other fields described in its "data collected by the SDK" documentation.</li>
+    <li><strong>Geoapify</strong>: address autocomplete/geocoding; address fragments you type are sent from your device to Geoapify to return suggestions and coordinates.</li>
+  </ul>
+
+  <h2>6) Retention and deletion</h2>
+  <ul>
+    <li>Data is retained until you delete it or delete your account.</li>
+    <li>When you delete content in the App, deletion is performed without undue delay.</li>
+    <li>
+      When you delete your account in the App, data associated with your account is deleted; <strong>events/albums may remain</strong> for other users,
+      but will be <strong>unassigned</strong> from your account (the event/album owner reference becomes empty/NULL).
+    </li>
+  </ul>
+
+  <h2>7) Your choices and controls</h2>
+  <ul>
+    <li><strong>Access / export:</strong> You can request a data export by contacting <a href="mailto:privacy@app4it.de">privacy@app4it.de</a>.</li>
+    <li><strong>Rectification:</strong> You can change certain information in the App where available, or contact <a href="mailto:privacy@app4it.de">privacy@app4it.de</a>.</li>
+    <li><strong>Deletion:</strong> You can delete certain data in the App and delete your account within the App.</li>
+    <li><strong>Notifications:</strong> You can disable notifications in your device settings and/or in-app prompts (where available).</li>
+  </ul>
+
+  <h2>8) Security</h2>
+  <p>
+    The App uses HTTPS for data transmission and applies access controls (including database access policies) to help protect stored data.
+    No method of storage or transmission is 100% secure, but reasonable measures are used to reduce risk.
+  </p>
+
+  <h2>9) Age restriction</h2>
+  <p>The App is intended for users <strong>16+</strong> and does not allow registration for users under 16.</p>
+
+  <h2>10) Changes to this policy</h2>
+  <p>This policy may be updated from time to time, and the "Last updated" date will show the latest version.</p>
+
+  <h2>11) Contact</h2>
+  <p>
+    Privacy questions and requests:
+    <a href="mailto:privacy@app4it.de">privacy@app4it.de</a>.
+  </p>
+
+    </div>
+  </body>
+</html>

@@ -7,7 +7,7 @@ function createNavbar(activePage = '') {
     const featuresPath = isOnBlogDomain ? 'https://app4it.de/features' : 'features';
     const aboutPath = isOnBlogDomain ? 'https://app4it.de/about-us' : 'about-us';
     const blogPath = isOnBlogDomain ? './' : 'https://blog.app4it.de';
-    
+
     return `
     <div class="nav-container" role="navigation" aria-label="Primary">
       <a href="${homePath}" class="nav-link${activePage === 'home' ? ' active' : ''}" data-i18n="home"${activePage === 'home' ? ' aria-current="page"' : ''}>Home</a>
