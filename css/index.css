@@ -10,11 +10,13 @@ body {
 
 /* Home Page Hero Section with Parallax Background */
 .hero {
-    background-image: url('../assets/images/hero/Banner dark.png') !important;
+    background-image: url('../assets/images/hero/Banner dark.webp') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
+    background-origin: padding-box !important;
+    background-clip: padding-box !important;
     position: relative;
 }
 
@@ -55,25 +57,66 @@ body {
 /* Disable parallax on mobile devices for better performance */
 @media only screen and (max-device-width: 1366px) {
     .hero {
-        background-attachment: scroll;
+        background-attachment: scroll !important;
     }
 }
 
-/* Fix background image sizing for mobile devices - fill height and maintain ratio */
+/* Fix background image sizing for mobile devices - use dynamic viewport height */
 @media only screen and (max-width: 768px) {
     .hero {
+        /* Use 100dvh for mobile to account for browser UI, with fallback */
+        min-height: 100vh;
+        min-height: 100dvh;
+        height: 100vh;
+        height: 100dvh;
+        max-height: 100vh;
+        max-height: 100dvh;
+        /* Reduce padding on mobile to ensure container fits viewport */
+        padding-top: 4rem;
+        padding-bottom: 1.5rem;
+        /* Ensure background fits within container and is centered */
         background-size: cover !important;
         background-position: center center !important;
-        min-height: 100vh;
-        height: 100vh;
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important;
+        /* Prevent overflow */
         overflow: hidden;
+        /* Ensure proper containment */
+        position: relative;
+        /* Fix for iOS Safari */
+        -webkit-background-size: cover;
+        /* Ensure the container doesn't exceed viewport */
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .hero {
+        /* Use 100dvh for mobile to account for browser UI, with fallback */
+        min-height: 100vh;
+        min-height: 100dvh;
+        height: 100vh;
+        height: 100dvh;
+        max-height: 100vh;
+        max-height: 100dvh;
+        /* Reduce padding on mobile to ensure container fits viewport */
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        /* Ensure background fits within container and is centered */
         background-size: cover !important;
         background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important;
+        /* Prevent overflow */
+        overflow: hidden;
+        /* Ensure proper containment */
+        position: relative;
+        /* Fix for iOS Safari */
+        -webkit-background-size: cover;
+        /* Ensure the container doesn't exceed viewport */
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
