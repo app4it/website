@@ -28,14 +28,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Privacy Policy Page -->
-  <url>
-    <loc>https://app4it.de/app4it-privacy-policy</loc>
-    <lastmod>2025-12-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
   <!-- Early Access Page -->
   <url>
     <loc>https://app4it.de/early-access.html</loc>

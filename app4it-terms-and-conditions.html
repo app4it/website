@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    // Check localStorage first, then system theme preference
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    } else if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  </script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="&quot;App4it - Social Events&Meetups&quot; Terms of Service - Learn about the terms and conditions for using our social events app." />
+    <link rel="canonical" href="https://app4it.de/app4it-terms-and-conditions" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Terms of Service - &quot;App4it - Social Events&Meetups&quot;" />
+    <meta property="og:description" content="Learn about the terms and conditions for using &quot;App4it - Social Events&Meetups&quot; social events app." />
+    <meta property="og:image" content="https://app4it.de/assets/icons/app_icon_light.png" />
+    <meta property="og:url" content="https://app4it.de/app4it-terms-and-conditions" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="App4it" />
+    <meta property="og:locale" content="en_US" />
+
+    <title>Terms of Service – &quot;App4it - Social Events&Meetups&quot;</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://app4it.de/assets/icons/favicon_light.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://app4it.de/assets/icons/favicon_light.png"
+    />
+    <link
+      rel="mask-icon"
+      href="https://app4it.de/assets/icons/favicon_light.png"
+      color="#000000"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/global-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Theme change listener -->
+    <script>
+      // Listen for system theme changes
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (e) => {
+          document.documentElement.setAttribute(
+            "data-theme",
+            e.matches ? "dark" : "light"
+          );
+        });
+    </script>
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SJTXC37LXF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-SJTXC37LXF");
+    </script>
+    <style>
+      .privacy-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .privacy-content h1 {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .privacy-content h2 {
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 0.5rem;
+      }
+
+      .privacy-content h3 {
+        color: var(--text-color);
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .privacy-content .meta {
+        text-align: center;
+        color: var(--light-text);
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+      }
+
+      .privacy-content p {
+        margin-bottom: 1rem;
+        color: var(--text-color);
+      }
+
+      .privacy-content ul {
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .privacy-content li {
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+      }
+
+      .privacy-content a {
+        color: var(--primary-color);
+        text-decoration: none;
+        word-break: break-word;
+      }
+
+      .privacy-content a:hover {
+        text-decoration: underline;
+      }
+
+      .privacy-content .highlight-box {
+        background: rgba(23, 155, 149, 0.1);
+        border: 1px solid var(--primary-color);
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+
+      .privacy-content .highlight-box strong {
+        color: var(--primary-color);
+      }
+
+      .privacy-content hr {
+        border: none;
+        border-top: 1px solid var(--border-color);
+        margin: 2rem 0;
+      }
+
+      @media (max-width: 600px) {
+        .privacy-content {
+          padding: 15px;
+        }
+
+        .privacy-content h1 {
+          font-size: 2rem;
+        }
+
+        .privacy-content h2 {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <style>
+      .back-button {
+        display: inline-block;
+        padding: 12px 24px;
+        background: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+        border: 1px solid var(--primary-color);
+      }
+
+      .back-button:hover {
+        background: var(--secondary-color);
+        border-color: var(--secondary-color);
+      }
+    </style>
+
+    <div style="text-align: center; margin: 20px 0; padding: 0 20px;">
+      <a href="./" class="back-button">← Back to Website</a>
+    </div>
+
+    <div class="privacy-content">
+      <h1>Terms of Service – "App4it - Social Events&Meetups"</h1>
+
+      <p class="meta"><strong>Effective:</strong> 08 Jan 2026</p>
+
+      <p>
+        These Terms of Service ("Terms") govern your access to and use of the "App4it - Social Events&Meetups" mobile application 
+        for Android and iOS (the "App") and related services provided by App4it ("App4it", "we", "us"). 
+        By using the App, you agree to these Terms.
+      </p>
+
+      <h2>1) What the App is for</h2>
+      <p>
+        "App4it - Social Events&Meetups" is a social platform for discovering and organizing <strong>real-world events and gatherings</strong> 
+        (meetups, group activities, local events). It is <strong>NOT</strong> a dating app, hookup service, 
+        or platform for sexual encounters.
+      </p>
+
+      <h2>2) Who can use the App</h2>
+      <ul>
+        <li>You must be at least <strong>16 years old</strong> to use the App.</li>
+        <li>You must not be prohibited from receiving our services under applicable law.</li>
+      </ul>
+
+      <h2>3) Content rules (what you cannot post)</h2>
+      <div class="highlight-box">
+        <p><strong>Prohibited content includes:</strong></p>
+        <ul>
+          <li>Nudity, pornography, or sexually explicit material</li>
+          <li>Violence, gore, or graphic content</li>
+          <li>Hate speech, harassment, or threats</li>
+          <li>Illegal activities or promotion of illegal acts</li>
+          <li>Spam, scams, or deceptive content</li>
+          <li>Impersonation of others</li>
+        </ul>
+      </div>
+
+      <h2>4) Your responsibilities</h2>
+      <ul>
+        <li>You own your content but grant App4it a worldwide, non-exclusive, royalty-free license to host, display, and distribute it within the App.</li>
+        <li>Content you post is <strong>public to all App users</strong> (events, comments, images, profile info).</li>
+        <li>You are responsible for the safety of events you organize (venue, activities, attendees).</li>
+        <li>Do not use the App to stalk, harass, or engage in unwanted contact.</li>
+      </ul>
+
+      <h2>5) Account and security</h2>
+      <ul>
+        <li>You are responsible for keeping your account secure.</li>
+        <li>Do not share your login credentials or create accounts for others.</li>
+        <li>We may suspend or terminate accounts that violate these Terms.</li>
+      </ul>
+
+      <h2>6) Third-party services</h2>
+      <p>
+        The App uses Supabase, Brevo, OneSignal, and Geoapify. Your use of the App is also subject to 
+        their terms and privacy policies.
+      </p>
+
+      <h2>7) Our rights</h2>
+      <ul>
+        <li>We can modify, suspend, or discontinue the App at any time.</li>
+        <li>We can remove content or accounts that violate these Terms.</li>
+        <li>We do not guarantee the App will always be available or error-free.</li>
+      </ul>
+
+      <h2>8) Payments (future)</h2>
+      <p>
+        The App currently has no paid features. Future paid services will have separate terms.
+      </p>
+
+      <h2>9) Termination</h2>
+      <ul>
+        <li>You can delete your account anytime in the App settings.</li>
+        <li>We can terminate your access for violations of these Terms.</li>
+      </ul>
+
+      <h2>10) Liability</h2>
+      <p>
+        The App is provided "as is". To the fullest extent permitted by law, App4it is not liable for 
+        indirect damages, lost profits, or damages from user content or event attendance.
+      </p>
+
+      <h2>11) Changes to Terms</h2>
+      <p>
+        We may update these Terms. Continued use of the App after changes means you accept the new Terms.
+      </p>
+
+      <h2>12) Governing law</h2>
+      <p>These Terms are governed by the laws of Germany.</p>
+
+      <h2>13) Contact</h2>
+      <p>
+        Questions about these Terms? Email: <a href="mailto:privacy@app4it.de">privacy@app4it.de</a>.
+      </p>
+
+    </div>
+  </body>
+</html>
