@@ -200,6 +200,11 @@ const translations = {
         // Email change page
         emailUpdateTitle: "All Set!",
         emailUpdateMessage: "Your email has been updated successfully. Discover more amazing events and make new friends. Are you App4it?",
+        
+        // Email confirmation page
+        emailConfirmTitle: "Email Confirmed!",
+        emailConfirmMessage: "Your email has been successfully confirmed. You're all set to start discovering amazing events and making new friends. Are you App4it?",
+        openingApp: "Opening App4it...",
     },
     de: {
         // Hero Section
@@ -413,6 +418,11 @@ const translations = {
         // Email change page
         emailUpdateTitle: "Alles erledigt!",
         emailUpdateMessage: "Deine E-Mail wurde erfolgreich aktualisiert. Entdecke noch mehr spannende Events und triff neue Freunde. Bist du App4it?",
+        
+        // Email confirmation page
+        emailConfirmTitle: "E-Mail bestätigt!",
+        emailConfirmMessage: "Deine E-Mail wurde erfolgreich bestätigt. Du bist bereit, spannende Events zu entdecken und neue Freunde zu finden. Bist du App4it?",
+        openingApp: "App4it wird geöffnet...",
     },
     es: {
         // Hero Section
@@ -614,6 +624,11 @@ const translations = {
         // Email change page
         emailUpdateTitle: "¡Todo listo!",
         emailUpdateMessage: "Tu correo electrónico se ha actualizado correctamente. Descubre más eventos increíbles y haz nuevos amigos. ¿Are you App4it?",
+        
+        // Email confirmation page
+        emailConfirmTitle: "¡Correo confirmado!",
+        emailConfirmMessage: "Tu correo electrónico ha sido confirmado con éxito. Ya estás listo para descubrir eventos increíbles y hacer nuevos amigos. ¿Are you App4it?",
+        openingApp: "Abriendo App4it...",
     }
 };
 
