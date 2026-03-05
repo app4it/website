@@ -14,6 +14,20 @@ window.translation = {
 };
 window.AUTOHIDE = Boolean(0);
 
+// Brevo form action URLs per language (each form posts to its own list in Brevo)
+const BREVO_FORM_ACTIONS = {
+    en: 'https://6d6d3cee.sibforms.com/serve/MUIFADW-g-uCXGUEHkPaGiqsp0cJ38zZWX-KwkgOZqE5dCBzO7aitcov01XdWuNCSLQp3EoVUKUnLoTwhGQJy2bZY4pt1gDAGl27x0C089SXXFe6QMxLSNMlogfDKNKyMMuJ-x7910oHg6lYNEd_HEz7grTaTtuwM5UV7-E8rcXRDRnLP227xxhVieHXugDww51SjkDTXgidm2ZD',
+    de: 'https://6d6d3cee.sibforms.com/serve/MUIFAA8YWMKGs75YhPMZNxc6fJa0b5YAfaokDlzR9pFGl63m2GiSvTczycEMse3NqwnvxhAen8TlmfsmvE88qo3QeO75nQWJIx0R2hoosqiSEh5jfSmu8C6he9fbCWVkarYL7mvLFCX0xH6waQ-5TUbsV0nhBH3H2urSnvgDmr5y0tXdTC_RBlo9oE2k2zWXzOyhH6O7MRjQzuLC',
+    es: 'https://6d6d3cee.sibforms.com/serve/MUIFANhcGna7s1A7bFA0Ip4BdZFor1Z1WDfHZo3O_ETNXW5-K8Sh3OgnnqUqHJyeumXR328b4-udvRfS9fHHCPJqFALQB-cJHMQf4NsHBhWuyfs0HAdg8h7DigROtmPepvi5A79VtPROeAkLVZMR4JJUUc-r1ppE8FuxpcTtg8Eg3HsTGuIVj8IXTLu423vQTjJUCEAi9zoRoDnb'
+};
+
+function applyBrevoFormForLanguage(lang) {
+    const form = document.getElementById('sib-form');
+    if (!form) return;
+    const action = BREVO_FORM_ACTIONS[lang] || BREVO_FORM_ACTIONS.en;
+    form.action = action;
+}
+
 // Email validation function
 function isValidEmail(email) {
     // Basic format check
@@ -113,6 +127,14 @@ function handleEmailValidation(input) {
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('sib-form');
     if (form) {
+        // Set form action and locale from current language (language.js runs first and sets document.documentElement.lang)
+        const currentLang = document.documentElement.lang || 'en';
+        applyBrevoFormForLanguage(currentLang);
+
+        // When user changes language, switch to that language's form
+        window.addEventListener('languageChanged', function(e) {
+            if (e.detail && e.detail.lang) applyBrevoFormForLanguage(e.detail.lang);
+        });
         // Add privacy toggle handler
         const privacyToggle = form.querySelector('.privacy-toggle');
         const privacyDetails = document.getElementById('privacy-details');
@@ -153,8 +175,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            // Get the submit button and add loading state
-            const submitButton = form.querySelector('.sib-form-block__button');
+            // Get the submit button and add loading state (supports .cta-button and Brevo's .sib-form-block__button)
+            const submitButton = form.querySelector('button[type="submit"]');
+            const initialButtonText = submitButton ? submitButton.textContent : 'Submit';
             if (submitButton) {
                 submitButton.disabled = true;
                 submitButton.style.opacity = '0.7';
@@ -193,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (submitButton) {
                     submitButton.disabled = false;
                     submitButton.style.opacity = '1';
-                    submitButton.textContent = 'SUBMIT';
+                    submitButton.textContent = initialButtonText;
                 }
             });
         });

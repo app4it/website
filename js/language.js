@@ -736,6 +736,9 @@ function setPageLanguage(lang) {
             console.warn('Placeholder translation not found for key:', key, 'in language:', lang);
         }
     });
+
+    // Notify other scripts (e.g. early-access form) that language has changed
+    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
 }
 
 // Force refresh translations (can be called from console)
