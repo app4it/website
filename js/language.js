@@ -70,7 +70,13 @@ const translations = {
         
         // Final CTA Section
         finalCtaTitle: "Ready to experience real connections?",
-        finalCtaSubtitle: "Join the waitlist and be among the first to discover a better way to connect, plan, and create memories.",
+        finalCtaSubtitle: "Download the app for iOS or Android and start discovering events and real connections near you.",
+        storeBadgesAriaLabel: "Download App4it from the App Store or Google Play",
+        appStoreUrl: "https://apps.apple.com/app/id6757461872",
+        appStoreBadgeSrc: "assets/images/store_badges/App_Store_US.svg",
+        appStoreBadgeAlt: "Download on the App Store",
+        googlePlayBadgeSrc: "assets/images/store_badges/GooglePlay_English.svg",
+        googlePlayBadgeAlt: "Get it on Google Play",
         
         // How It Works Section
         howItWorks: "How It's Gonna Work",
@@ -289,7 +295,13 @@ const translations = {
         
         // Final CTA Section
         finalCtaTitle: "Bereit für echte Verbindungen?",
-        finalCtaSubtitle: "Komm auf die Warteliste und sei einer der Ersten, die eine bessere Art zu connecten, zu planen und Erinnerungen zu schaffen erleben.",
+        finalCtaSubtitle: "Hol dir die App für iOS oder Android und entdecke Events und echte Verbindungen in deiner Nähe.",
+        storeBadgesAriaLabel: "App4it im App Store oder bei Google Play herunterladen",
+        appStoreUrl: "https://apps.apple.com/de/app/id6757461872",
+        appStoreBadgeSrc: "assets/images/store_badges/App_Store_DE.svg",
+        appStoreBadgeAlt: "Laden im App Store",
+        googlePlayBadgeSrc: "assets/images/store_badges/GooglePlay_German.svg",
+        googlePlayBadgeAlt: "Jetzt bei Google Play",
         
         // How It Works Section
         howItWorks: "So funktioniert's",
@@ -494,7 +506,13 @@ const translations = {
         
         // Final CTA Section
         finalCtaTitle: "¿Listo para conexiones reales?",
-        finalCtaSubtitle: "Únete a la lista de espera y sé de los primeros en descubrir una mejor forma de conectar, planear y crear recuerdos.",
+        finalCtaSubtitle: "Descarga la app para iOS o Android y empieza a descubrir eventos y conexiones reales cerca de ti.",
+        storeBadgesAriaLabel: "Descarga App4it en el App Store o Google Play",
+        appStoreUrl: "https://apps.apple.com/es/app/id6757461872",
+        appStoreBadgeSrc: "assets/images/store_badges/App_Store_ES.svg",
+        appStoreBadgeAlt: "Consíguelo en el App Store",
+        googlePlayBadgeSrc: "assets/images/store_badges/GooglePlay_Spanish.svg",
+        googlePlayBadgeAlt: "Disponible en Google Play",
         
         // How It Works Section
         howItWorks: "Cómo funciona",
@@ -734,6 +752,34 @@ function setPageLanguage(lang) {
             element.placeholder = translations[lang][key];
         } else {
             console.warn('Placeholder translation not found for key:', key, 'in language:', lang);
+        }
+    });
+
+    document.querySelectorAll('[data-i18n-src]').forEach(element => {
+        const key = element.getAttribute('data-i18n-src');
+        if (translations[lang][key]) {
+            element.setAttribute('src', translations[lang][key]);
+        }
+    });
+
+    document.querySelectorAll('[data-i18n-img-alt]').forEach(element => {
+        const key = element.getAttribute('data-i18n-img-alt');
+        if (translations[lang][key]) {
+            element.alt = translations[lang][key];
+        }
+    });
+
+    document.querySelectorAll('[data-i18n-href]').forEach(element => {
+        const key = element.getAttribute('data-i18n-href');
+        if (translations[lang][key]) {
+            element.setAttribute('href', translations[lang][key]);
+        }
+    });
+
+    document.querySelectorAll('[data-i18n-aria-label]').forEach(element => {
+        const key = element.getAttribute('data-i18n-aria-label');
+        if (translations[lang][key]) {
+            element.setAttribute('aria-label', translations[lang][key]);
         }
     });
 

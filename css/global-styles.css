@@ -799,6 +799,50 @@ body {
     transform: translateY(0) !important;
 }
 
+/* App Store / Google Play badge row */
+.store-badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.store-badge-link {
+    display: inline-block;
+    line-height: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.store-badge-link:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+}
+
+.store-badge-link:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+.store-badge-img {
+    height: 50px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+@media (max-width: 480px) {
+    .store-badges {
+        gap: 0.65rem 1rem;
+    }
+
+    .store-badge-img {
+        height: 44px;
+    }
+}
+
 /* Dark mode adjustments for nav */
 [data-theme="dark"] .nav-container {
     background: rgba(var(--primary-color-rgb), 0.15);

@@ -176,6 +176,10 @@ body {
     box-shadow: 0 2px 12px rgba(var(--primary-color-rgb), 0.3);
 }
 
+.hero-content .store-badges {
+    margin-top: 1.75rem;
+}
+
 /* USP Section */
 .usp-section {
     position: relative;
